@@ -38,7 +38,7 @@
 .parent-signin .silder {
   position: relative;
 }
-.parent-signin .silder img {
+.parent-signin .silder .main-img img {
   width: 100% !important;
   height: 100vh;
 }
@@ -60,6 +60,18 @@
   font-family: "Manrope", sans-serif;
   opacity: 0.7;
 }
+.parent-signin .silder .vector {
+  position: absolute;
+  bottom: 0;
+}
 .parent-signin .silder .vector img {
-  width: 10%;
+  width: 100%;
+}
+.parent-signin .silder .indicator {
+  position: absolute;
+  bottom: 80px;
+  left: 350px;
+}
+.parent-signin .silder .indicator img {
+  width: 100%;
 }/*# sourceMappingURL=signin.css.map */
