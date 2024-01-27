@@ -17,7 +17,8 @@
   font-size: 35.25px;
   font-style: normal;
   font-weight: 600;
-  line-height: 125%; /* 44.063px */
+  line-height: 125%;
+  /* 44.063px */
   letter-spacing: -1.41px;
   color: #323142;
   font-family: "Poppins", sans-serif;
@@ -30,15 +31,28 @@
 .parent-signin .fields-parent .fields .google-apple .button button {
   width: 105.438px;
   cursor: pointer;
-  height: 35.37px;
+  height: 40.37px;
+  border-radius: 10px;
   flex-shrink: 0;
   border: none;
 }
 .parent-signin .fields-parent .fields .google-apple .button button i {
   font-size: 18px;
 }
+.parent-signin .fields-parent .fields .or {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
 .parent-signin .fields-parent .fields .or span {
-  text-align: center;
+  color: rgba(50, 49, 66, 0.35);
+  font-family: "Poppins", sans-serif;
+  font-size: 20.011px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
 }
 .parent-signin .fields-parent .fields .input-container .input-email {
   position: relative;

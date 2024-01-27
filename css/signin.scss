@@ -10,42 +10,61 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    .fields-parent{
+    .fields-parent {
         display: flex !important;
         justify-content: center !important;
         align-items: center;
+
         .fields {
-          .google-apple{
-            h1 {
-                font-size: 35.25px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 125%; /* 44.063px */
-                letter-spacing: -1.41px;
-                color: #323142;
-                font-family: 'Poppins', sans-serif;
+            .google-apple {
+                h1 {
+                    font-size: 35.25px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 125%;
+                    /* 44.063px */
+                    letter-spacing: -1.41px;
+                    color: #323142;
+                    font-family: 'Poppins', sans-serif;
+                }
+
+                .button {
+                    padding-top: 30px;
+                    display: flex;
+                    gap: 0 10px;
+
+                    button {
+                        width: 105.438px;
+                        cursor: pointer;
+                        height: 40.37px;
+                        border-radius: 10px;
+                        flex-shrink: 0;
+                        border: none;
+
+                        i {
+                            font-size: 18px;
+                        }
+                    }
+                }
             }
-          .button{
-            padding-top: 30px;
-            display: flex;
-            gap: 0 10px;
-            button{
-                width: 105.438px;
-                cursor: pointer;
-height: 35.37px;
-flex-shrink: 0;
-border: none;
-i{
-    font-size: 18px;
-}
+
+            .or {
+                display: flex;
+                justify-content: center;
+                padding: 10px 0;
+
+                span {
+                    color: rgba(50, 49, 66, 0.35);
+
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 20.011px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.6px;
+                    text-transform: uppercase;
+                }
             }
-          }
-          }
-          .or{
-            span{
-                text-align: center;
-            }
-          }
 
             .input-container {
 
