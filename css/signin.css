@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -35,7 +35,28 @@
 .parent-signin .fields .email-input::placeholder {
   padding: 10px 41px;
 }
+.parent-signin .silder {
+  position: relative;
+}
 .parent-signin .silder img {
   width: 100% !important;
   height: 100vh;
+}
+.parent-signin .silder .text {
+  position: absolute;
+  bottom: 120px;
+  width: 80%;
+  left: 80px;
+  margin: auto;
+}
+.parent-signin .silder .text h1 {
+  color: white;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+}
+.parent-signin .silder .text p {
+  color: #FFF;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  opacity: 0.7;
 }/*# sourceMappingURL=signin.css.map */
