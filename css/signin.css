@@ -29,10 +29,10 @@
   gap: 0 10px;
 }
 .parent-signin .fields-parent .fields .google-apple .button button {
-  width: 155.438px;
+  width: 158.438px;
   cursor: pointer;
   height: 40.37px;
-  border-radius: 10px;
+  border-radius: 8px;
   flex-shrink: 0;
   border: none;
 }
@@ -59,20 +59,24 @@
 }
 .parent-signin .fields-parent .fields .input-container .input-email .envelope {
   position: absolute;
-  top: 50%;
-  left: 10px;
+  top: 36%;
+  left: 20px;
   transform: translateY(-50%);
-  color: #555;
+  color: #C2C3CB;
+  font-size: 18px;
 }
 .parent-signin .fields-parent .fields .input-container .input-email input {
-  width: 330.441px;
-  height: 60.487px;
+  width: 230.441px;
+  height: 35.487px;
   flex-shrink: 0;
-  border-radius: 14.275px;
+  border-radius: 8.275px;
   background: #F5F5F5;
   border: none;
   outline: none;
   margin-bottom: 20px;
+  padding: 10px 50px;
+  font-family: "Poppins", sans-serif;
+  color: #C2C3CB;
 }
 .parent-signin .fields-parent .fields .input-container .input-email .hide {
   position: absolute;
@@ -82,10 +86,14 @@
   color: #555;
 }
 .parent-signin .fields-parent .fields .email-input::-moz-placeholder {
-  padding: 10px 41px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #C2C3CB;
 }
 .parent-signin .fields-parent .fields .email-input::placeholder {
-  padding: 10px 41px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #C2C3CB;
 }
 .parent-signin .silder {
   position: relative;
