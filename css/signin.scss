@@ -34,7 +34,7 @@
                     gap: 0 10px;
 
                     button {
-                        width: 105.438px;
+                        width: 155.438px;
                         cursor: pointer;
                         height: 40.37px;
                         border-radius: 10px;
@@ -78,7 +78,16 @@
                         transform: translateY(-50%);
                         color: #555;
                     }
-
+input{
+    width: 330.441px;
+height: 60.487px;
+flex-shrink: 0;
+border-radius: 14.275px;
+background: #F5F5F5;
+border: none;
+outline: none;
+margin-bottom: 20px;
+}
                     .hide {
                         position: absolute;
                         top: 50%;
