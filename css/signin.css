@@ -119,6 +119,7 @@
 }
 .parent-signin .fields-parent .fields .input-container .new-account p {
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 .parent-signin .fields-parent .fields .input-container .new-account .signup {
   color: #FF7B5F;
