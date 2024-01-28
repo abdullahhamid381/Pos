@@ -29,10 +29,10 @@
   gap: 0 10px;
 }
 .main-parent-signup .parent-signin .fields-parent .fields .google-apple .button button {
-  width: 183.438px;
+  width: 185.438px;
   cursor: pointer;
   height: 63px;
-  border-radius: 8px;
+  border-radius: 4px;
   flex-shrink: 0;
   border: none;
 }
@@ -85,6 +85,7 @@
   color: #FF7B5F;
   outline: none;
   margin-bottom: 20px;
+  font-size: 16px;
   padding: 0 50px;
   font-family: "Poppins", sans-serif;
   color: #C2C3CB;
@@ -114,6 +115,7 @@
   color: white;
   cursor: pointer;
   margin-top: 20px;
+  font-size: 18px;
 }
 .main-parent-signup .parent-signin .fields-parent .fields .input-container .new-account {
   display: flex;
@@ -131,12 +133,12 @@
 }
 .main-parent-signup .parent-signin .fields-parent .fields .email-input::-moz-placeholder {
   font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #FF7B5F;
 }
 .main-parent-signup .parent-signin .fields-parent .fields .email-input::placeholder {
   font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #FF7B5F;
 }
 .main-parent-signup .parent-signin .silder {

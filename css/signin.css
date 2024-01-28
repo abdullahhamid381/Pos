@@ -29,15 +29,15 @@
   gap: 0 10px;
 }
 .main-parent-signin .parent-signin .fields-parent .fields .google-apple .button button {
-  width: 183.438px;
+  width: 185.438px;
   cursor: pointer;
   height: 63px;
-  border-radius: 8px;
+  border-radius: 4px;
   flex-shrink: 0;
   border: none;
 }
 .main-parent-signin .parent-signin .fields-parent .fields .google-apple .button button i {
-  font-size: 18px;
+  font-size: 28px;
 }
 .main-parent-signin .parent-signin .fields-parent .fields .or {
   display: flex;
@@ -79,11 +79,13 @@
   width: 280.441px;
   height: 63px;
   flex-shrink: 0;
-  border-radius: 8.275px;
-  background: #F5F5F5;
+  border-radius: 4px;
+  background: #F0F0F0;
   border: none;
+  color: #C2C3CB;
   outline: none;
   margin-bottom: 20px;
+  font-size: 16px;
   padding: 0 50px;
   font-family: "Poppins", sans-serif;
   color: #C2C3CB;
@@ -113,6 +115,7 @@
   color: white;
   cursor: pointer;
   margin-top: 20px;
+  font-size: 18px;
 }
 .main-parent-signin .parent-signin .fields-parent .fields .input-container .new-account {
   display: flex;

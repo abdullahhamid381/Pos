@@ -35,10 +35,10 @@
                         gap: 0 10px;
 
                         button {
-                            width: 183.438px;
+                            width: 185.438px;
                             cursor: pointer;
                             height: 63px;
-                            border-radius: 8px;
+                            border-radius: 4px;
                             flex-shrink: 0;
                             border: none;
 
@@ -101,7 +101,7 @@
                         color: #FF7B5F;
                             outline: none;
                             margin-bottom: 20px;
-
+font-size: 16px;
                             padding: 0 50px;
                             font-family: 'Poppins', sans-serif;
 
@@ -140,6 +140,7 @@
                             color: white;
                             cursor: pointer;
                             margin-top: 20px;
+                            font-size: 18px;
                         }
                     }
 
@@ -168,7 +169,7 @@
                 .email-input::placeholder {
 
                     font-family: 'Poppins', sans-serif;
-                    text-transform: uppercase;
+                    text-transform: capitalize;
                     color: #FF7B5F;
                 }
 
