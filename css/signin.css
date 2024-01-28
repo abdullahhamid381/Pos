@@ -177,6 +177,16 @@
 .main-parent-signin .parent-signin .policy {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
   margin: auto;
+  margin-top: -50px;
+}
+.main-parent-signin .parent-signin .policy p {
+  color: var(--Greyscale-600, #718096);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.2px;
 }/*# sourceMappingURL=signin.css.map */
