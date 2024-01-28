@@ -8,6 +8,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media only screen and (max-width: 992px) {
+  .main-parent-forget .parent-signin {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+  }
+}
 .main-parent-forget .parent-signin .fields-parent {
   display: flex !important;
   justify-content: center !important;
@@ -18,9 +26,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: 125%;
-  text-align: center;
   /* 44.063px */
   letter-spacing: -1.41px;
+  text-align: center;
   color: #323142;
   font-family: "Poppins", sans-serif;
 }
@@ -37,13 +45,18 @@
   flex-shrink: 0;
   border: none;
 }
+@media only screen and (max-width: 992px) {
+  .main-parent-forget .parent-signin .fields-parent .fields .google-apple .button button {
+    width: 49%;
+  }
+}
 .main-parent-forget .parent-signin .fields-parent .fields .google-apple .button button i {
   font-size: 28px;
 }
 .main-parent-forget .parent-signin .fields-parent .fields .or {
   display: flex;
   justify-content: center;
-  padding: 20px 0 40px 0;
+  padding: 20px 0;
 }
 .main-parent-forget .parent-signin .fields-parent .fields .or span {
   color: rgba(50, 49, 66, 0.35);
@@ -63,8 +76,8 @@
   top: 36%;
   left: 20px;
   transform: translateY(-50%);
-  font-size: 18px;
   color: #FF7B5F;
+  font-size: 18px;
 }
 .main-parent-forget .parent-signin .fields-parent .fields .input-container .input-email .hide {
   position: absolute;
@@ -78,22 +91,29 @@
 }
 .main-parent-forget .parent-signin .fields-parent .fields .input-container .input-email input {
   width: 280.441px;
+  border: 2px solid #FF7B5F;
   height: 63px;
   flex-shrink: 0;
   border-radius: 4px;
   background: #F0F0F0;
-  border: none;
   color: #FF7B5F;
-  border: 2px solid #FF7B5F;
   outline: none;
   margin-bottom: 20px;
   font-size: 16px;
   padding: 0 50px;
   font-family: "Poppins", sans-serif;
 }
+@media only screen and (max-width: 992px) {
+  .main-parent-forget .parent-signin .fields-parent .fields .input-container .input-email input {
+    width: 67%;
+  }
+}
 .main-parent-forget .parent-signin .fields-parent .fields .input-container .forgot {
   display: flex;
   justify-content: end;
+}
+.main-parent-forget .parent-signin .fields-parent .fields .input-container .forgot a {
+  text-decoration: none;
 }
 .main-parent-forget .parent-signin .fields-parent .fields .input-container .forgot p {
   opacity: 0.7;
@@ -134,17 +154,22 @@
   text-decoration: none;
 }
 .main-parent-forget .parent-signin .fields-parent .fields .email-input::-moz-placeholder {
-  color: #FF7B5F;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
+  color: #FF7B5F;
 }
 .main-parent-forget .parent-signin .fields-parent .fields .email-input::placeholder {
-  color: #FF7B5F;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
+  color: #FF7B5F;
 }
 .main-parent-forget .parent-signin .silder {
   position: relative;
+}
+@media only screen and (max-width: 992px) {
+  .main-parent-forget .parent-signin .silder {
+    display: none;
+  }
 }
 .main-parent-forget .parent-signin .silder .main-img img {
   width: 100% !important;
@@ -189,6 +214,16 @@
   width: 80%;
   margin: auto;
   margin-top: -50px;
+}
+@media only screen and (max-width: 992px) {
+  .main-parent-forget .parent-signin .policy {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: -20px;
+    gap: 40px;
+  }
 }
 .main-parent-forget .parent-signin .policy p {
   color: var(--Greyscale-600, #718096);
