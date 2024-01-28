@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signin</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/signup.css" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="main-parent-signup">
+      <div class="parent-signin">
+        <div class="fields-parent">
+          <div class="fields">
+            <div class="google-apple">
+              <h1>Sign Up</h1>
+              <div class="button">
+                <button><i class="fa fa-google"></i></button>
+                <button><i class="fa fa-apple"></i></button>
+              </div>
+            </div>
+
+            <div class="or">
+              <span>OR</span>
+            </div>
+            <div class="input-container">
+              <form id="signInForm" onsubmit="return validateForm()">
+                
+                <div class="input-email">
+                    <i class="fa fa-user envelope"></i>
+                    <input
+                      type="text"
+                      class="name-input email-input"
+                      placeholder="Full Name"
+                      id="nameInput"
+                    />
+                  </div>
+                <div class="input-email">
+                  <i class="fa fa-envelope envelope"></i>
+                  <input
+                    type="email"
+                    class="email-input"
+                    placeholder="Email"
+                    id="emailInput"
+                  />
+                </div>
+
+
+                <div class="input-email">
+                  <i class="fa fa-lock envelope"></i>
+                  <i
+                    class="fa fa-eye-slash hide"
+                    onclick="togglePassword()"
+                    id="eyeIcon"
+                  ></i>
+                  <input
+                    type="password"
+                    class="password-input email-input"
+                    id="passwordInput"
+                    placeholder="Password"
+                  />
+                </div>
+             
+                <div class="signin-button">
+                  <button type="submit">SIGN IN</button>
+                </div>
+              </form>
+
+              <div class="new-account">
+                <p>Already Have An Account? </p>
+                <p class="signup">Log In</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="silder">
+          <div class="main-img">
+            <img src="./images/1.png" alt="" />
+          </div>
+          <div class="text">
+            <h1>Find Foods With Love</h1>
+            <p>
+              Eatly Is The Food Delivery Dashboard And Having More Than 2K+
+              Dishes Including Asian, Chinese, Italians And Many More. Our
+              Dashboard Helps You To Manage Orders And Money.
+            </p>
+          </div>
+          <div class="vector">
+            <img src="./images/Vector.png" alt="" />
+          </div>
+          <div class="indicator">
+            <img src="./images/indicator.png" alt="" />
+          </div>
+        </div>
+        <div class="policy">
+          <p>Privacy Policy</p>
+          <p>Copyright 2022</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function togglePassword() {
+        var passwordInput = document.getElementById("passwordInput");
+        var eyeIcon = document.getElementById("eyeIcon");
+
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          eyeIcon.classList.remove("fa-eye-slash");
+          eyeIcon.classList.add("fa-eye");
+        } else {
+          passwordInput.type = "password";
+          eyeIcon.classList.remove("fa-eye");
+          eyeIcon.classList.add("fa-eye-slash");
+        }
+      }
+
+      function validateForm() {
+        var nameInput = document.getElementById("nameInput").value;
+        var emailInput = document.getElementById("emailInput").value;
+     
+        var passwordInput = document.getElementById("passwordInput").value;
+
+        // Email validation using a simple regular expression
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailInput)) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+
+        // Name validation - Check if the name is not empty
+        if (nameInput.trim() === "") {
+          alert("Please enter your full name.");
+          return false;
+        }
+
+        // Password validation for a minimum length of 8 characters
+        if (passwordInput.length < 8) {
+          alert("Password must be at least 8 characters long.");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </body>
+</html>
