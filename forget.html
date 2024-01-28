@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signin</title>
+    <title>Forgot Password</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/signin.css" />
+    <link rel="stylesheet" href="css/forget.css" />
 
     <!-- Font awesome -->
     <link
@@ -21,18 +21,15 @@
         <div class="fields-parent">
           <div class="fields">
             <div class="google-apple">
-              <h1>Sign In</h1>
-              <div class="button">
-                <button><i class="fa fa-google"></i></button>
-                <button><i class="fa fa-apple"></i></button>
-              </div>
+              <h1>Forget Password</h1>
+              <!-- Remove social media buttons for password reset -->
             </div>
 
             <div class="or">
-              <span>OR</span>
+              <span>Enter Your Mail To Reset</span>
             </div>
             <div class="input-container">
-              <form id="signInForm" onsubmit="return validateForm()">
+              <form id="forgotPasswordForm" onsubmit="return validateForm()">
                 <div class="input-email">
                   <i class="fa fa-envelope envelope"></i>
                   <input
@@ -42,32 +39,15 @@
                     id="emailInput"
                   />
                 </div>
-
-                <div class="input-email">
-                  <i class="fa fa-lock envelope"></i>
-                  <i
-                    class="fa fa-eye-slash hide"
-                    onclick="togglePassword()"
-                    id="eyeIcon"
-                  ></i>
-                  <input
-                    type="password"
-                    class="password-input email-input"
-                    id="passwordInput"
-                    placeholder="Password"
-                  />
-                </div>
-                <div class="forgot">
-                 <a href=""> <p>Forgot password ?</p></a>
-                </div>
+            
                 <div class="signin-button">
-                  <button type="submit">SIGN IN</button>
+                  <button type="submit">VERIFY</button>
                 </div>
               </form>
 
               <div class="new-account">
-                <p>Create A New Account?</p>
-                <p class="signup"><a href="./signup.html">Sign Up</a></p>
+                <p>Remember your password? </p>
+                <p class="signup"><a href="./signin.html">Log In</a></p>
               </div>
             </div>
           </div>
@@ -100,35 +80,13 @@
     </div>
 
     <script>
-      function togglePassword() {
-        var passwordInput = document.getElementById("passwordInput");
-        var eyeIcon = document.getElementById("eyeIcon");
-
-        if (passwordInput.type === "password") {
-          passwordInput.type = "text";
-          eyeIcon.classList.remove("fa-eye-slash");
-          eyeIcon.classList.add("fa-eye");
-        } else {
-          passwordInput.type = "password";
-          eyeIcon.classList.remove("fa-eye");
-          eyeIcon.classList.add("fa-eye-slash");
-        }
-      }
-
       function validateForm() {
         var emailInput = document.getElementById("emailInput").value;
-        var passwordInput = document.getElementById("passwordInput").value;
 
         // Email validation using a simple regular expression
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(emailInput)) {
           alert("Please enter a valid email address.");
-          return false;
-        }
-
-        // Password validation for a minimum length of 8 characters
-        if (passwordInput.length < 8) {
-          alert("Password must be at least 8 characters long.");
           return false;
         }
 
