@@ -8,6 +8,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media only screen and (max-width: 992px) {
+  .main-parent-otp .parent-signin {
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+}
 .main-parent-otp .parent-signin .fields-parent {
   display: flex !important;
   justify-content: center !important;
@@ -125,6 +131,11 @@
 }
 .main-parent-otp .parent-signin .silder {
   position: relative;
+}
+@media only screen and (max-width: 992px) {
+  .main-parent-otp .parent-signin .silder {
+    display: none;
+  }
 }
 .main-parent-otp .parent-signin .silder .main-img img {
   width: 100% !important;
