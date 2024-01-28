@@ -11,9 +11,9 @@
 @media only screen and (max-width: 992px) {
   .main-parent-signin .parent-signin {
     grid-template-columns: 1fr;
-    width: 80%;
-    padding: 40px 0 0 0;
+    width: 100%;
     margin: auto;
+    height: 100vh;
   }
 }
 .main-parent-signin .parent-signin .fields-parent {
@@ -218,11 +218,11 @@
 @media only screen and (max-width: 992px) {
   .main-parent-signin .parent-signin .policy {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 80%;
     margin: auto;
-    /* margin-top: -50px; */
-    padding-top: 30px;
+    margin-top: -20px;
+    gap: 40px;
   }
 }
 .main-parent-signin .parent-signin .policy p {
