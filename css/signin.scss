@@ -80,6 +80,16 @@
                             color: #C2C3CB;
                             font-size: 18px;
                         }
+                        .hide {
+                            position: absolute;
+                            top: 36%;
+                            right: 25px;
+                            transform: translateY(-50%);
+                            color: #C2C3CB;
+                            cursor: pointer;
+                            font-size: 18px;
+                            cursor: pointer;
+                        }
 
                         input {
                             width: 280.441px;
@@ -97,13 +107,7 @@
                             color: #C2C3CB;
                         }
 
-                        .hide {
-                            position: absolute;
-                            top: 50%;
-                            right: 10px;
-                            transform: translateY(-50%);
-                            color: #555;
-                        }
+                    
                     }
 
                     .forgot {

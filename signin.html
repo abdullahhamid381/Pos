@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/signin.css" />
 
     <!-- Font awesome -->
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -33,31 +32,45 @@
               <span>OR</span>
             </div>
             <div class="input-container">
-              <div class="input-email">
-                <i class="fa fa-envelope envelope"></i>
-                <input type="text" class="email-input" placeholder="Email" />
-              </div>
+              <form id="signInForm" onsubmit="return validateForm()">
+                <div class="input-email">
+                  <i class="fa fa-envelope envelope"></i>
+                  <input
+                    type="email"
+                    class="email-input"
+                    placeholder="Email"
+                    id="emailInput"
+                  />
+                </div>
 
-              <div class="input-email">
-                <i class="fa fa-lock envelope"></i>
-                <!-- <i class="fa fa-eye-slash hide" ></i> -->
-                <input type="text" class="email-input" placeholder="Email" />
-              </div>
-              <div class="forgot">
-                <p>Forgot password ?</p>
-              </div>
-              <div class="signin-button">
-                <button>SIGN IN</button>
-              </div>
+                <div class="input-email">
+                  <i class="fa fa-lock envelope"></i>
+                  <i
+                    class="fa fa-eye-slash hide"
+                    onclick="togglePassword()"
+                    id="eyeIcon"
+                  ></i>
+                  <input
+                    type="password"
+                    class="password-input email-input"
+                    id="passwordInput"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="forgot">
+                  <p>Forgot password ?</p>
+                </div>
+                <div class="signin-button">
+                  <button type="submit">SIGN IN</button>
+                </div>
+              </form>
 
               <div class="new-account">
                 <p>Create A New Account?</p>
                 <p class="signup">Sign Up</p>
               </div>
             </div>
-         
           </div>
-
         </div>
 
         <div class="silder">
@@ -78,14 +91,49 @@
           <div class="indicator">
             <img src="./images/indicator.png" alt="" />
           </div>
-
-      
         </div>
         <div class="policy">
-            <p>Privacy Policy</p>
-            <p>Copyright 2022</p>
-          </div>
+          <p>Privacy Policy</p>
+          <p>Copyright 2022</p>
+        </div>
       </div>
     </div>
+
+    <script>
+      function togglePassword() {
+        var passwordInput = document.getElementById("passwordInput");
+        var eyeIcon = document.getElementById("eyeIcon");
+
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          eyeIcon.classList.remove("fa-eye-slash");
+          eyeIcon.classList.add("fa-eye");
+        } else {
+          passwordInput.type = "password";
+          eyeIcon.classList.remove("fa-eye");
+          eyeIcon.classList.add("fa-eye-slash");
+        }
+      }
+
+      function validateForm() {
+        var emailInput = document.getElementById("emailInput").value;
+        var passwordInput = document.getElementById("passwordInput").value;
+
+        // Email validation using a simple regular expression
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailInput)) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+
+        // Password validation for a minimum length of 8 characters
+        if (passwordInput.length < 8) {
+          alert("Password must be at least 8 characters long.");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
   </body>
 </html>
