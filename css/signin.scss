@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import './media.scss';
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +10,12 @@
     .parent-signin {
         display: grid;
         grid-template-columns: 1fr 1fr;
-
+@include lg{
+    grid-template-columns: 1fr;
+    width: 80%;
+    padding: 40px 0 0 0;
+    margin: auto;
+}
         .fields-parent {
             display: flex !important;
             justify-content: center !important;
@@ -41,6 +46,9 @@
                             border-radius: 4px;
                             flex-shrink: 0;
                             border: none;
+                            @include lg{
+                                width: 49%;
+                            }
 
                             i {
                                 font-size: 28px;
@@ -80,6 +88,7 @@
                             color: #C2C3CB;
                             font-size: 18px;
                         }
+
                         .hide {
                             position: absolute;
                             top: 36%;
@@ -93,31 +102,37 @@
 
                         input {
                             width: 280.441px;
+
                             height: 63px;
                             flex-shrink: 0;
                             border-radius: 4px;
                             background: #F0F0F0;
                             border: none;
-                        color: #C2C3CB;
+                            color: #C2C3CB;
 
                             outline: none;
                             margin-bottom: 20px;
-font-size: 16px;
+                            font-size: 16px;
                             padding: 0 50px;
                             font-family: 'Poppins', sans-serif;
 
                             color: #C2C3CB;
+                            @include lg{
+                                width: 67%;
+                            }
                         }
 
-                    
+
                     }
 
                     .forgot {
                         display: flex;
                         justify-content: end;
-a{
-    text-decoration: none;
-}
+
+                        a {
+                            text-decoration: none;
+                        }
+
                         p {
                             opacity: 0.7;
                             color: var(--p1, #FF7B5F);
@@ -160,7 +175,7 @@ a{
 
                         .signup a {
                             color: #FF7B5F;
-                            font-weight:bolder;
+                            font-weight: bolder;
                             text-decoration: none;
 
                         }
@@ -182,7 +197,9 @@ a{
 
         .silder {
             position: relative;
-
+@include lg{
+    display: none;
+}
             .main-img {
                 img {
                     width: 100% !important;
@@ -233,23 +250,33 @@ a{
             }
 
         }
-        
+
         .policy {
             display: flex;
             justify-content: space-between;
             width: 80%;
-           
+
             margin: auto;
             margin-top: -50px;
-            p{
+            @include lg{
+                display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    /* margin-top: -50px; */
+    padding-top: 30px;
+            }
+
+            p {
                 color: var(--Greyscale-600, #718096);
 
-font-family: 'Poppins', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 150%; /* 24px */
-letter-spacing: 0.2px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%;
+                /* 24px */
+                letter-spacing: 0.2px;
             }
         }
     }

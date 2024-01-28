@@ -8,6 +8,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media only screen and (max-width: 992px) {
+  .main-parent-signin .parent-signin {
+    grid-template-columns: 1fr;
+    width: 80%;
+    padding: 40px 0 0 0;
+    margin: auto;
+  }
+}
 .main-parent-signin .parent-signin .fields-parent {
   display: flex !important;
   justify-content: center !important;
@@ -35,6 +43,11 @@
   border-radius: 4px;
   flex-shrink: 0;
   border: none;
+}
+@media only screen and (max-width: 992px) {
+  .main-parent-signin .parent-signin .fields-parent .fields .google-apple .button button {
+    width: 49%;
+  }
 }
 .main-parent-signin .parent-signin .fields-parent .fields .google-apple .button button i {
   font-size: 28px;
@@ -89,6 +102,11 @@
   padding: 0 50px;
   font-family: "Poppins", sans-serif;
   color: #C2C3CB;
+}
+@media only screen and (max-width: 992px) {
+  .main-parent-signin .parent-signin .fields-parent .fields .input-container .input-email input {
+    width: 67%;
+  }
 }
 .main-parent-signin .parent-signin .fields-parent .fields .input-container .forgot {
   display: flex;
@@ -148,6 +166,11 @@
 .main-parent-signin .parent-signin .silder {
   position: relative;
 }
+@media only screen and (max-width: 992px) {
+  .main-parent-signin .parent-signin .silder {
+    display: none;
+  }
+}
 .main-parent-signin .parent-signin .silder .main-img img {
   width: 100% !important;
   height: 100vh;
@@ -192,12 +215,23 @@
   margin: auto;
   margin-top: -50px;
 }
+@media only screen and (max-width: 992px) {
+  .main-parent-signin .parent-signin .policy {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    /* margin-top: -50px; */
+    padding-top: 30px;
+  }
+}
 .main-parent-signin .parent-signin .policy p {
   color: var(--Greyscale-600, #718096);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%; /* 24px */
+  line-height: 150%;
+  /* 24px */
   letter-spacing: 0.2px;
 }/*# sourceMappingURL=signin.css.map */
