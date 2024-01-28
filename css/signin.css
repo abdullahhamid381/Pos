@@ -123,6 +123,7 @@
 }
 .main-parent-signin .parent-signin .fields-parent .fields .input-container .new-account .signup {
   color: #FF7B5F;
+  font-weight: bolder;
 }
 .main-parent-signin .parent-signin .fields-parent .fields .email-input::-moz-placeholder {
   font-family: "Poppins", sans-serif;
