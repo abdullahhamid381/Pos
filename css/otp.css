@@ -181,6 +181,11 @@
   margin: auto;
   margin-top: -50px;
 }
+@media only screen and (max-width: 992px) {
+  .main-parent-otp .parent-signin .policy {
+    display: none;
+  }
+}
 .main-parent-otp .parent-signin .policy p {
   color: var(--Greyscale-600, #718096);
   font-family: "Poppins", sans-serif;

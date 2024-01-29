@@ -215,6 +215,9 @@ font-size: 28px;
 
             margin: auto;
             margin-top: -50px;
+            @include lg{
+                display: none;
+            }
 
             p {
                 color: var(--Greyscale-600, #718096);

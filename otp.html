@@ -65,7 +65,7 @@
                   <div class="time">
                     <div id="timer"><span style="color: #FF7B5F; font-size: 20px;">(03:00)</span></div>
                   </div>
-                  <button type="submit">VERIFY</button>
+                 <a href="resetpassword.html" style="text-decoration: none;"> <button type="submit">VERIFY</button></a>
                 </div>
               </form>
 
@@ -104,56 +104,60 @@
     </div>
 
     <script>
-
-
       var timer;
-
+    
       function startTimer(duration, display) {
         var timer = duration, minutes, seconds;
-        setInterval(function () {
+        var timerInterval = setInterval(function () {
           minutes = parseInt(timer / 60, 10);
           seconds = parseInt(timer % 60, 10);
-
+    
           minutes = minutes < 10 ? "0" + minutes : minutes;
           seconds = seconds < 10 ? "0" + seconds : seconds;
-
+    
           display.innerHTML = "<span style='color: #FF7B5F; font-size: 20px;'>(" + minutes + ":" + seconds + ")</span>";
-
+    
           if (--timer < 0) {
-            timer = duration;
+            clearInterval(timerInterval);
+            display.innerHTML = "<span style='color: #FF7B5F; font-size: 20px;'>(00:00)</span>";
+            // You can add additional actions when the timer reaches 00:00 here
           }
         }, 1000);
       }
-
+    
       document.addEventListener("DOMContentLoaded", function () {
         var threeMinutes = 60 * 3,
             display = document.querySelector("#timer");
         startTimer(threeMinutes, display);
       });
-
+    
       function moveToNext(nextInputId, currentInputId) {
         var nextInput = document.getElementById(nextInputId);
         var currentInput = document.getElementById(currentInputId);
-
+    
         if (currentInput.value.length === 1) {
           nextInput.focus();
         }
       }
-
+    
       function validateForm() {
         var otpInput1 = document.getElementById("otpInput1").value;
         var otpInput2 = document.getElementById("otpInput2").value;
         var otpInput3 = document.getElementById("otpInput3").value;
         var otpInput4 = document.getElementById("otpInput4").value;
-
+    
         // Check if all OTP fields are filled
         if (otpInput1.length !== 1 || otpInput2.length !== 1 || otpInput3.length !== 1 || otpInput4.length !== 1) {
           alert("Please enter a valid 4-digit OTP.");
           return false;
         }
-
-        return true;
+    
+        // Redirect to resetpassword.html if OTP is valid
+        window.location.href = "resetpassword.html";
+        return false; // Prevents the form from submitting (optional)
       }
     </script>
+    
+    
   </body>
 </html>

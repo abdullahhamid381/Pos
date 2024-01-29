@@ -127,19 +127,18 @@
       function validateForm() {
         var nameInput = document.getElementById("nameInput").value;
         var emailInput = document.getElementById("emailInput").value;
-     
         var passwordInput = document.getElementById("passwordInput").value;
+
+        // Name validation - Check if the name is not empty
+        if (nameInput.trim() === "") {
+          alert("Please enter your full name.");
+          return false;
+        }
 
         // Email validation using a simple regular expression
         var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(emailInput)) {
           alert("Please enter a valid email address.");
-          return false;
-        }
-
-        // Name validation - Check if the name is not empty
-        if (nameInput.trim() === "") {
-          alert("Please enter your full name.");
           return false;
         }
 

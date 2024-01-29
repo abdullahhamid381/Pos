@@ -41,7 +41,7 @@
                 </div>
             
                 <div class="signin-button">
-                  <button type="submit">VERIFY</button>
+                  <a href="otp.html" style="text-decoration: none;"><button type="submit">VERIFY</button></a>
                 </div>
               </form>
 
@@ -81,17 +81,20 @@
 
     <script>
       function validateForm() {
-        var emailInput = document.getElementById("emailInput").value;
+    var emailInput = document.getElementById("emailInput").value;
 
-        // Email validation using a simple regular expression
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(emailInput)) {
-          alert("Please enter a valid email address.");
-          return false;
-        }
+    // Email validation using a simple regular expression
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(emailInput)) {
+      alert("Please enter a valid email address.");
+      return false;
+    }
 
-        return true;
-      }
+    // Redirect to otp.html if email is valid
+    window.location.href = "otp.html";
+    return false; // Prevents the form from submitting (optional)
+  }
+
     </script>
   </body>
 </html>

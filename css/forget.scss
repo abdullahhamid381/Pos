@@ -263,6 +263,7 @@ border: 2px solid #FF7B5F;
             @include lg{
                 display: flex;
     justify-content: center;
+    display: none;
     width: 80%;
     margin: auto;
     margin-top: -20px;

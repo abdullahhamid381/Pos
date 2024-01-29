@@ -219,6 +219,7 @@
   .main-parent-forget .parent-signin .policy {
     display: flex;
     justify-content: center;
+    display: none;
     width: 80%;
     margin: auto;
     margin-top: -20px;

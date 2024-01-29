@@ -261,6 +261,7 @@
             margin-top: -50px;
             @include lg{
                 display: flex;
+                display: none;
     justify-content: center;
     width: 80%;
     margin: auto;

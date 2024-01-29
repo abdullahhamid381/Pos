@@ -8,6 +8,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media only screen and (max-width: 992px) {
+  .main-parent-signup .parent-signin {
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+}
 .main-parent-signup .parent-signin .fields-parent {
   display: flex !important;
   justify-content: center !important;
@@ -35,6 +41,11 @@
   border-radius: 4px;
   flex-shrink: 0;
   border: none;
+}
+@media only screen and (max-width: 992px) {
+  .main-parent-signup .parent-signin .fields-parent .fields .google-apple .button button {
+    width: 49%;
+  }
 }
 .main-parent-signup .parent-signin .fields-parent .fields .google-apple .button button i {
   font-size: 28px;
@@ -88,7 +99,16 @@
   font-size: 16px;
   padding: 0 50px;
   font-family: "Poppins", sans-serif;
-  color: #C2C3CB;
+}
+@media only screen and (max-width: 992px) {
+  .main-parent-signup .parent-signin .fields-parent .fields .input-container .input-email input {
+    width: 67%;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .main-parent-signup .parent-signin .fields-parent .fields .input-container .input-email input {
+    width: 63%;
+  }
 }
 .main-parent-signup .parent-signin .fields-parent .fields .input-container .forgot {
   display: flex;
@@ -145,6 +165,11 @@
 .main-parent-signup .parent-signin .silder {
   position: relative;
 }
+@media only screen and (max-width: 992px) {
+  .main-parent-signup .parent-signin .silder {
+    display: none;
+  }
+}
 .main-parent-signup .parent-signin .silder .main-img img {
   width: 100% !important;
   height: 100vh;
@@ -188,6 +213,11 @@
   width: 80%;
   margin: auto;
   margin-top: -50px;
+}
+@media only screen and (max-width: 992px) {
+  .main-parent-signup .parent-signin .policy {
+    display: none;
+  }
 }
 .main-parent-signup .parent-signin .policy p {
   color: var(--Greyscale-600, #718096);
