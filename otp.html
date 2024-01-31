@@ -1,163 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reset Password</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/otp.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Password</title>
 
-    <!-- Font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/otp.css" />
 
-  <body>
-    <div class="main-parent-otp">
-      <div class="parent-signin">
-        <div class="fields-parent">
-          <div class="fields">
-            <div class="google-apple">
-              <h1>Verify Email</h1>
-              <!-- Remove social media buttons for password reset -->
-            </div>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
 
-            <div class="or">
-              <span>Code Send To Your Email</span>
-            </div>
-            <div class="input-container">
-              <form id="resetPasswordForm" onsubmit="return validateForm()">
-                <div class="otp-inputs">
-                  <input
-                    type="text"
-                    class="otp-input"
-                    id="otpInput1"
-                    maxlength="1" placeholder="0"
-                    oninput="moveToNext('otpInput2', 'otpInput1')"
-                  />
-                  <input
-                    type="text"
-                    class="otp-input"
-                    id="otpInput2"placeholder="0"
-                    maxlength="1"
-                    oninput="moveToNext('otpInput3', 'otpInput2')"
-                  />
-                  <input
-                    type="text"
-                    class="otp-input"
-                    id="otpInput3" placeholder="0"
-                    maxlength="1"
-                    oninput="moveToNext('otpInput4', 'otpInput3')"
-                  />
-                  <input
-                    type="text"
-                    class="otp-input" placeholder="0"
-                    id="otpInput4"
-                    maxlength="1"
-                    oninput="moveToNext('otpInput4', 'otpInput4')"
-                  />
-                </div>
+<body>
+  <div class="main-parent-otp">
+    <div class="parent-signin">
+      <div class="fields-parent">
+        <div class="fields">
+          <div class="google-apple">
+            <h1>Verify Email</h1>
+            <!-- Remove social media buttons for password reset -->
+          </div>
 
-                <div class="signin-button">
-                  <div class="time">
-                    <div id="timer"><span style="color: #FF7B5F; font-size: 20px;">(03:00)</span></div>
-                  </div>
-                 <a href="resetpassword.html" style="text-decoration: none;"> <button type="submit">VERIFY</button></a>
-                </div>
-              </form>
-
-              <div class="new-account">
-                <p>Remember your password? </p>
-                <p class="signup"><a href="./signin.html">Log In</a></p>
+          <div class="or">
+            <span>Code Send To Your Email</span>
+          </div>
+          <div class="input-container">
+            <form id="resetPasswordForm" onsubmit="return validateForm()">
+              <div class="otp-inputs">
+                <input type="text" class="otp-input" id="otpInput1" maxlength="1" placeholder="0"
+                  oninput="moveToNext('otpInput2', 'otpInput1')" />
+                <input type="text" class="otp-input" id="otpInput2" placeholder="0" maxlength="1"
+                  oninput="moveToNext('otpInput3', 'otpInput2')" />
+                <input type="text" class="otp-input" id="otpInput3" placeholder="0" maxlength="1"
+                  oninput="moveToNext('otpInput4', 'otpInput3')" />
+                <input type="text" class="otp-input" placeholder="0" id="otpInput4" maxlength="1"
+                  oninput="moveToNext('otpInput4', 'otpInput4')" />
               </div>
+
+              <div class="signin-button">
+                <div class="time">
+                  <div id="timer"><span style="color: #FF7B5F; font-size: 20px;">(03:00)</span></div>
+                </div>
+                <a href="resetpassword.html" style="text-decoration: none;"> <button type="submit">VERIFY</button></a>
+              </div>
+            </form>
+
+            <div class="new-account">
+              <p>Remember your password? </p>
+              <p class="signup"><a href="./signin.html">Log In</a></p>
             </div>
           </div>
-        </div>
-
-        <div class="silder">
-          <div class="main-img">
-            <img src="./images/1.png" alt="" />
-          </div>
-          <div class="text">
-            <h1>Find Foods With Love</h1>
-            <p>
-              Eatly Is The Food Delivery Dashboard And Having More Than 2K+
-              Dishes Including Asian, Chinese, Italians And Many More. Our
-              Dashboard Helps You To Manage Orders And Money.
-            </p>
-          </div>
-          <div class="vector">
-            <img src="./images/Vector.png" alt="" />
-          </div>
-          <div class="indicator">
-            <img src="./images/indicator.png" alt="" />
-          </div>
-        </div>
-        <div class="policy">
-          <p>Privacy Policy</p>
-          <p>Copyright 2022</p>
         </div>
       </div>
-    </div>
 
-    <script>
-      var timer;
-    
-      function startTimer(duration, display) {
-        var timer = duration, minutes, seconds;
-        var timerInterval = setInterval(function () {
-          minutes = parseInt(timer / 60, 10);
-          seconds = parseInt(timer % 60, 10);
-    
-          minutes = minutes < 10 ? "0" + minutes : minutes;
-          seconds = seconds < 10 ? "0" + seconds : seconds;
-    
-          display.innerHTML = "<span style='color: #FF7B5F; font-size: 20px;'>(" + minutes + ":" + seconds + ")</span>";
-    
-          if (--timer < 0) {
-            clearInterval(timerInterval);
-            display.innerHTML = "<span style='color: #FF7B5F; font-size: 20px;'>(00:00)</span>";
-            // You can add additional actions when the timer reaches 00:00 here
-          }
-        }, 1000);
-      }
-    
-      document.addEventListener("DOMContentLoaded", function () {
-        var threeMinutes = 60 * 3,
-            display = document.querySelector("#timer");
-        startTimer(threeMinutes, display);
-      });
-    
-      function moveToNext(nextInputId, currentInputId) {
-        var nextInput = document.getElementById(nextInputId);
-        var currentInput = document.getElementById(currentInputId);
-    
-        if (currentInput.value.length === 1) {
-          nextInput.focus();
+      <div class="silder">
+        <div class="main-img">
+          <img src="./images/1.png" alt="" />
+        </div>
+        <div class="text">
+          <h1>Find Foods With Love</h1>
+          <p>
+            Eatly Is The Food Delivery Dashboard And Having More Than 2K+
+            Dishes Including Asian, Chinese, Italians And Many More. Our
+            Dashboard Helps You To Manage Orders And Money.
+          </p>
+        </div>
+        <div class="vector">
+          <img src="./images/Vector.png" alt="" />
+        </div>
+        <div class="indicator">
+          <img src="./images/indicator.png" alt="" />
+        </div>
+      </div>
+      <div class="policy">
+        <p>Privacy Policy</p>
+        <p>Copyright 2022</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var timer;
+
+    function startTimer(duration, display) {
+      var timer = duration, minutes, seconds;
+      var timerInterval = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.innerHTML = "<span style='color: #FF7B5F; font-size: 20px;'>(" + minutes + ":" + seconds + ")</span>";
+
+        if (--timer < 0) {
+          clearInterval(timerInterval);
+          display.innerHTML = "<span style='color: #FF7B5F; font-size: 20px;'>(00:00)</span>";
+          // You can add additional actions when the timer reaches 00:00 here
         }
+      }, 1000);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var threeMinutes = 60 * 3,
+        display = document.querySelector("#timer");
+      startTimer(threeMinutes, display);
+    });
+
+    function moveToNext(nextInputId, currentInputId) {
+      var nextInput = document.getElementById(nextInputId);
+      var currentInput = document.getElementById(currentInputId);
+
+      if (currentInput.value.length === 1) {
+        nextInput.focus();
       }
-    
-      function validateForm() {
-        var otpInput1 = document.getElementById("otpInput1").value;
-        var otpInput2 = document.getElementById("otpInput2").value;
-        var otpInput3 = document.getElementById("otpInput3").value;
-        var otpInput4 = document.getElementById("otpInput4").value;
-    
-        // Check if all OTP fields are filled
-        if (otpInput1.length !== 1 || otpInput2.length !== 1 || otpInput3.length !== 1 || otpInput4.length !== 1) {
-          alert("Please enter a valid 4-digit OTP.");
-          return false;
-        }
-    
-        // Redirect to resetpassword.html if OTP is valid
-        window.location.href = "resetpassword.html";
-        return false; // Prevents the form from submitting (optional)
+    }
+
+    function validateForm() {
+      var otpInput1 = document.getElementById("otpInput1").value;
+      var otpInput2 = document.getElementById("otpInput2").value;
+      var otpInput3 = document.getElementById("otpInput3").value;
+      var otpInput4 = document.getElementById("otpInput4").value;
+
+      // Check if all OTP fields are filled
+      if (otpInput1.length !== 1 || otpInput2.length !== 1 || otpInput3.length !== 1 || otpInput4.length !== 1) {
+        alert("Please enter a valid 4-digit OTP.");
+        return false;
       }
-    </script>
-    
-    
-  </body>
+
+      // Redirect to resetpassword.html if OTP is valid
+      window.location.href = "resetpassword.html";
+      return false; // Prevents the form from submitting (optional)
+    }
+  </script>
+
+
+</body>
+
 </html>
