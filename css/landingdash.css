@@ -84,7 +84,7 @@ body {
   display: grid;
   width: 100%;
   margin: 0 auto;
-  gap: 1.8rem;
+  gap: 2.8rem;
   grid-template-columns: 18rem auto 23rem;
 }
 .landing-dashboard-parent a {
@@ -270,6 +270,29 @@ body {
 }
 .landing-dashboard-parent .main-section-mid-parent main .category .pizza .img img {
   width: 100%;
+}
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .title h1 {
+  font-size: 25px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .title a {
+  text-decoration: none;
+}
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .title a input {
+  background: none;
+  border: none;
+  color: #ACADB9;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 .landing-dashboard-parent .right {
   margin-top: 1.4rem;
