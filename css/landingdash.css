@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* DECLARATIONS */
 :root {
   --color-primary: #7380ec;
@@ -64,17 +65,10 @@ body {
 
 .landing-dashboard-parent {
   /* ROOT VARIABLES */
-  /* START ASIDE */
-  /* START SIDEBAR */
+  /* START SIDEBAR============================= */
   /* END SIDEBAR */
   /* END ASIDE */
   /* START MAIN */
-  /* START DATE INPUT */
-  /* END DATE INPUT */
-  /* START INSIGHTS */
-  /* END INSIGHTS */
-  /* START RECENT ORDERS */
-  /* END RECENT ORDERS */
   /* START RIGHT SECTION */
   /* START RECENT UPDATES */
   /* END RECENT UPDATES */
@@ -148,6 +142,7 @@ body {
 }
 .landing-dashboard-parent .aside-parent {
   background: #1A1A1A;
+  padding: 20px 0;
 }
 .landing-dashboard-parent .aside-parent aside {
   height: 100vh;
@@ -184,11 +179,21 @@ body {
 .landing-dashboard-parent .aside-parent aside .sidebar a {
   display: flex;
   color: white;
-  gap: 1rem;
   align-items: center;
   position: relative;
   height: 3.7rem;
   transition: all 300ms ease;
+  padding: 0 10px;
+}
+.landing-dashboard-parent .aside-parent aside .sidebar a i {
+  font-size: 16px;
+}
+.landing-dashboard-parent .aside-parent aside .sidebar a span {
+  font-size: 16px;
+}
+.landing-dashboard-parent .aside-parent aside .sidebar a h3 {
+  font-size: 16px;
+  padding-left: 15px;
 }
 .landing-dashboard-parent .aside-parent aside .sidebar a span {
   font-size: 1.6rem;
@@ -200,10 +205,13 @@ body {
   width: 100%;
 }
 .landing-dashboard-parent .aside-parent aside .sidebar a.active {
-  background: #FF7B5F;
   color: white;
   margin-left: 0;
   border-radius: 8px;
+}
+.landing-dashboard-parent .aside-parent aside .sidebar a:focus {
+  border-radius: 8px;
+  background: #FF7B5F;
 }
 .landing-dashboard-parent .aside-parent aside .sidebar a.active:before {
   content: "";
@@ -215,10 +223,11 @@ body {
   margin-left: calc(1rem - 6px);
 }
 .landing-dashboard-parent .aside-parent aside .sidebar a:hover {
-  color: var(--color-primary);
+  background: #FF7B5F;
+  border-radius: 8px;
 }
 .landing-dashboard-parent .aside-parent aside .sidebar a:hover span {
-  margin-left: 1rem;
+  margin-left: 0;
 }
 .landing-dashboard-parent .aside-parent aside .sidebar .message-count {
   background: var(--color-danger);
@@ -227,138 +236,37 @@ body {
   font-size: 11px;
   border-radius: var(--border-radius-1);
 }
-.landing-dashboard-parent main {
-  margin-top: 1.4rem;
+.landing-dashboard-parent .main-section-mid-parent main {
+  padding-top: 43px;
 }
-.landing-dashboard-parent main .date {
-  display: inline-block;
-  background: var(--color-light);
-  border-radius: var(--border-radius-1);
-  margin-top: 1rem;
-  padding: 0.5rem 1.6rem;
+.landing-dashboard-parent .main-section-mid-parent main .title {
+  font-family: "Poppins", sans-serif;
+  color: #1A202C;
+  font-weight: 600;
+  font-size: 24px;
 }
-.landing-dashboard-parent main .date input[type=date] {
-  background: transparent;
-  color: var(--color-dark);
-}
-.landing-dashboard-parent main .insights {
+.landing-dashboard-parent .main-section-mid-parent main .category {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.6rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.landing-dashboard-parent main .insights > div {
-  background: var(--color-white);
-  padding: var(--card-padding);
-  border-radius: var(--card-border-radius);
-  margin-top: 1rem;
-  box-shadow: var(--box-shadow);
-  transition: all 300ms ease;
-}
-.landing-dashboard-parent main .insights > div:hover {
-  cursor: pointer;
-  box-shadow: none;
-}
-.landing-dashboard-parent main .insights > div span {
-  background: var(--color-primary);
-  padding: 0.5rem;
-  border-radius: 50%;
-  color: var(--color-white);
-  font-size: 2rem;
-}
-.landing-dashboard-parent main .insights > div.expenses span {
-  background: var(--color-danger);
-}
-.landing-dashboard-parent main .insights > div.income span {
-  background: var(--color-success);
-}
-.landing-dashboard-parent main .insights > div .middle {
+.landing-dashboard-parent .main-section-mid-parent main .category .pizza {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.landing-dashboard-parent main .insights h3 {
-  margin: 1rem 0 0.6rem;
-  font-size: 1rem;
-}
-.landing-dashboard-parent main .insights .progress {
-  position: relative;
-  width: 92px;
-  height: 92px;
-  border-radius: 50%;
-}
-.landing-dashboard-parent main .insights svg {
-  width: 7rem;
-  height: 7rem;
-}
-.landing-dashboard-parent main .insights svg circle {
-  fill: none;
-  stroke: var(--color-primary);
-  stroke-width: 14;
-  stroke-linecap: round;
-  transform: translate(5px, 5px);
-  stroke-dasharray: 110;
-  stroke-dashoffset: 92;
-}
-.landing-dashboard-parent main .insights .sales svg circle {
-  stroke-dashoffset: -30;
-  stroke-dasharray: 200;
-}
-.landing-dashboard-parent main .insights .expenses svg circle {
-  stroke-dashoffset: 20;
-  stroke-dasharray: 80;
-}
-.landing-dashboard-parent main .insights .income svg circle {
-  stroke-dashoffset: 35;
-}
-.landing-dashboard-parent main .insights .progress .number {
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  height: 100%;
-  width: 100%;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 0 10px;
 }
-.landing-dashboard-parent main .insights small {
-  margin-top: 1.6rem;
-  display: block;
+.landing-dashboard-parent .main-section-mid-parent main .category .pizza p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #D69900;
+  font-family: "Poppins", sans-serif;
 }
-.landing-dashboard-parent main .recent-orders {
-  margin-top: 2rem;
-}
-.landing-dashboard-parent main .recent-orders h2 {
-  margin-bottom: 0.8rem;
-}
-.landing-dashboard-parent main .recent-orders table {
-  background: var(--color-white);
+.landing-dashboard-parent .main-section-mid-parent main .category .pizza .img img {
   width: 100%;
-  border-radius: var(--card-border-radius);
-  padding: var(--card-padding);
-  text-align: center;
-  box-shadow: var(--box-shadow);
-  transition: all 300ms ease;
-}
-.landing-dashboard-parent main .recent-orders table:hover {
-  cursor: pointer;
-  box-shadow: none;
-}
-.landing-dashboard-parent main table tbody td {
-  height: 2.8rem;
-  border-bottom: 1px solid var(--color-light);
-  color: var(--color-dark-variant);
-}
-.landing-dashboard-parent main table tbody tr:last-child td {
-  border: none;
-}
-.landing-dashboard-parent main .recent-orders a {
-  text-align: center;
-  display: block;
-  margin: 1rem auto;
-  color: var(--color-primary);
 }
 .landing-dashboard-parent .right {
   margin-top: 1.4rem;
+  padding-right: 45px;
 }
 .landing-dashboard-parent .right .top {
   display: flex;
