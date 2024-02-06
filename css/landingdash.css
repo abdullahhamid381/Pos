@@ -247,13 +247,20 @@ body {
 }
 .landing-dashboard-parent .main-section-mid-parent main .category {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 80%;
+  padding-top: 40px;
+  gap: 0 20px;
 }
 .landing-dashboard-parent .main-section-mid-parent main .category .pizza {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #fcf5f3;
+  padding: 10px;
+  border-radius: 15px;
   gap: 0 10px;
+  cursor: pointer;
 }
 .landing-dashboard-parent .main-section-mid-parent main .category .pizza p {
   font-weight: 500;
