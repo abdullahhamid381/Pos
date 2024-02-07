@@ -147,25 +147,25 @@ body {
     padding: 0;
   }
 }
-.landing-dashboard-parent .aside-parent aside .coloumn {
+.landing-dashboard-parent .aside-parent aside .top .coloumn {
   width: 80%;
   margin: auto;
 }
 @media only screen and (max-width: 992px) {
-  .landing-dashboard-parent .aside-parent aside .coloumn .logo {
+  .landing-dashboard-parent .aside-parent aside .top .coloumn .logo {
     padding-top: 20px;
   }
 }
-.landing-dashboard-parent .aside-parent aside .coloumn .logo img {
+.landing-dashboard-parent .aside-parent aside .top .coloumn .logo img {
   width: 100%;
 }
-.landing-dashboard-parent .aside-parent aside .coloumn .nav-list {
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list {
   display: flex;
   flex-direction: column;
   gap: 20px 0;
   padding-top: 60px;
 }
-.landing-dashboard-parent .aside-parent aside .coloumn .nav-list .list {
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list {
   padding: 10px;
   display: flex;
   align-items: center;
@@ -173,20 +173,34 @@ body {
   transition: 0.8s;
   cursor: pointer;
 }
-.landing-dashboard-parent .aside-parent aside .coloumn .nav-list .list i {
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list i {
   color: white;
   font-size: 20px;
 }
-.landing-dashboard-parent .aside-parent aside .coloumn .nav-list .list h1 {
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list h1 {
   font-size: 18px;
   color: #FFFFFF;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
-.landing-dashboard-parent .aside-parent aside .coloumn .nav-list .list:focus {
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list:focus {
   background: #FF7B5F;
   padding: 10px;
   border-radius: 8px;
+}
+.landing-dashboard-parent .aside-parent aside .top .coloumn .close {
+  display: none;
+  position: absolute;
+  right: 13px;
+  top: 28px;
+}
+.landing-dashboard-parent .aside-parent aside .top .coloumn .close span {
+  color: white;
+}
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .aside-parent aside .top .coloumn .close {
+    display: block;
+  }
 }
 @media only screen and (max-width: 992px) {
   .landing-dashboard-parent .main-section-mid-parent {
@@ -434,6 +448,11 @@ body {
 .landing-dashboard-parent .right-parent .right {
   margin-top: 1.4rem;
   padding-right: 45px;
+}
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .right-parent .right {
+    padding-right: 0;
+  }
 }
 .landing-dashboard-parent .right-parent .right .top {
   display: flex;
@@ -719,7 +738,7 @@ body {
   }
   .landing-dashboard-parent aside {
     position: fixed;
-    left: 100%;
+    left: -100%;
     background: #1A1A1A;
     width: 18rem;
     z-index: 3;
@@ -728,6 +747,11 @@ body {
     padding-right: var(--card-padding);
     display: none;
     animation: showMenu 400ms ease forwards;
+  }
+  @keyframes showMenu {
+    to {
+      left: -100%;
+    }
   }
   @keyframes showMenu {
     to {

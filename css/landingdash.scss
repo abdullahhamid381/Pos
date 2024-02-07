@@ -151,56 +151,82 @@ body {
     .aside-parent {
         background: #1A1A1A;
         padding: 20px 0;
-        @include lg{
+
+        @include lg {
             background: #1A1A1A;
             padding: 0;
         }
-aside{
-    .coloumn{
-        width: 80%;
-        margin: auto;
-.logo{
-    @include lg{
-        padding-top: 20px;
-    }
-img{
-    width: 100%;
-}
 
-}
-.nav-list{
-    display: flex;
-    flex-direction: column;
-    gap: 20px 0;
-    padding-top: 60px;
-    .list{
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        gap: 0 15px;
-        transition: .8s;
-        cursor: pointer;
-        i{
-            color: white;
-            font-size: 20px;
+        aside {
+            .top {
+                .coloumn {
+                    width: 80%;
+                    margin: auto;
+
+                    .logo {
+                        @include lg {
+                            padding-top: 20px;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+
+                    }
+
+                    .nav-list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px 0;
+                        padding-top: 60px;
+
+                        .list {
+                            padding: 10px;
+                            display: flex;
+                            align-items: center;
+                            gap: 0 15px;
+                            transition: .8s;
+                            cursor: pointer;
+
+                            i {
+                                color: white;
+                                font-size: 20px;
+                            }
+
+                            h1 {
+                                font-size: 18px;
+                                color: #FFFFFF;
+                                font-weight: 600;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                        }
+
+                        .list:focus {
+                            background: #FF7B5F;
+                            padding: 10px;
+                            border-radius: 8px;
+                        }
+                    }
+
+                    .close {
+                        display: none;
+                        position: absolute;
+                        right: 13px;
+                        top: 28px;
+
+                        span {
+                            color: white;
+                        }
+
+                        @include lg {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
         }
-       h1{
-        font-size: 18px;
-        color: #FFFFFF;
-        font-weight: 600;
-        font-family: 'Poppins', sans-serif;
-       }
-    }
-   
-    .list:focus{
-        background: #FF7B5F;
-        padding: 10px;
-        border-radius: 8px;
-    }
-}
-    }
-}
-    
+
     }
 
 
@@ -216,10 +242,11 @@ img{
 
     /* START MAIN */
     .main-section-mid-parent {
-        @include lg{
+        @include lg {
             margin-top: -88px;
 
         }
+
         main {
             padding-top: 25px;
 
@@ -239,11 +266,13 @@ img{
                 width: 80%;
                 padding-top: 40px;
                 gap: 0 20px;
-@include lg{
-grid-template-columns: 1fr 1fr;
-gap: 10px 0;
-    width: 100%;
-}
+
+                @include lg {
+                    grid-template-columns: 1fr 1fr;
+                    gap: 10px 0;
+                    width: 100%;
+                }
+
                 .pizza {
                     display: flex;
                     align-items: center;
@@ -307,9 +336,11 @@ gap: 10px 0;
                     grid-template-columns: 1fr 1fr 1fr;
                     gap: 0 20px;
                     padding-top: 20px;
-@include lg{
-    grid-template-columns: 1fr;
-}
+
+                    @include lg {
+                        grid-template-columns: 1fr;
+                    }
+
                     .cards {
                         background: #f2f3f9;
                         transition: .8s;
@@ -475,11 +506,12 @@ gap: 10px 0;
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                     gap: 0 20px;
                     padding-top: 20px;
-                    @include lg{
+
+                    @include lg {
                         grid-template-columns: 1fr 1fr;
                         gap: 20px;
                     }
-                 
+
 
                     .cards {
                         display: flex;
@@ -532,7 +564,9 @@ gap: 10px 0;
         .right {
             margin-top: 1.4rem;
             padding-right: 45px;
-
+@include lg{
+    padding-right: 0;
+}
             .top {
                 display: flex;
                 justify-content: end;
@@ -540,7 +574,8 @@ gap: 10px 0;
 
                 button {
                     display: none;
-                    @include lg{
+
+                    @include lg {
                         display: block;
                     }
                 }
@@ -555,10 +590,12 @@ gap: 10px 0;
                     img {
                         width: 100%;
                     }
-                    i{
+
+                    i {
                         font-size: 18px;
                         display: none;
-                        @include lg{
+
+                        @include lg {
                             display: block;
                         }
                     }
@@ -613,9 +650,11 @@ gap: 10px 0;
 
                 .wallet-card {
                     padding-top: 20px;
-@include lg{
-    width: 100%;
-}
+
+                    @include lg {
+                        width: 100%;
+                    }
+
                     .wallet-icon {
                         display: flex;
                         background: #FF8369;
@@ -814,10 +853,11 @@ gap: 10px 0;
                         background: #ffffff;
                         box-shadow: 0 35px 23px -13px #ededed;
                     }
-                    .checkout{
-                       padding-top: 20px;
-                       
-                        input{
+
+                    .checkout {
+                        padding-top: 20px;
+
+                        input {
                             width: 100%;
                             border: none;
                             cursor: pointer;
@@ -829,7 +869,7 @@ gap: 10px 0;
                             border-radius: 25px;
                             font-size: 16px;
                             font-family: 'Poppins', sans-serif;
-                            
+
                         }
                     }
                 }
@@ -850,7 +890,7 @@ gap: 10px 0;
     /* START MEDIA QUERIES */
     /* TABLETS AND SMALL LAPTOPS */
     @media screen and (max-width: 1200px) {
-      
+
         aside .logo h2 {
             display: none;
         }
@@ -905,8 +945,8 @@ gap: 10px 0;
 
         aside {
             position: fixed;
-            left: 100%;
-           background: #1A1A1A;
+            left: -100%;
+            background: #1A1A1A;
             width: 18rem;
             z-index: 3;
             box-shadow: 1rem 3rem 4rem var(--color-light);
@@ -914,13 +954,22 @@ gap: 10px 0;
             padding-right: var(--card-padding);
             display: none;
             animation: showMenu 400ms ease forwards;
+            
         }
-
+        
+        @keyframes showMenu {
+            to {
+                left: -100%;
+            }
+        }
         @keyframes showMenu {
             to {
                 left: 0;
             }
         }
+        
+        
+       
 
         aside .logo {
             margin-left: 1rem;
@@ -1016,4 +1065,3 @@ gap: 10px 0;
 
 
 // EXTRA
-

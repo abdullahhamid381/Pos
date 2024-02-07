@@ -24,44 +24,49 @@
 
       <div class="aside-parent">
         <aside>
-       <div class="coloumn">
-        <div class="logo">
-          <img src="/images/Logo (1) 1.png" alt="">
-         </div>
-         <div class="nav-list">
-          <div class="list">
-            <i class="fa-solid fa-house"></i>
-            <h1>Dashboard</h1>
+      <div class="top">
+        <div class="coloumn">
+          <div class="logo">
+            <img src="/images/Logo (1) 1.png" alt="">
+           </div>
+           <div class="close" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
           </div>
-          <div class="list">
-            <i class="fa-solid fa-clipboard"></i>
-            <h1>Orders</h1>
-          </div>
-          <div class="list">
-            <i class="fa-solid fa-chart-simple"></i>
-            <h1>Resturants</h1>
-          </div>
-          <div class="list">
-            <i class="fa-regular fa-comments"></i>
-            <h1>Messaging</h1>
-          </div>
-          <div class="list">
-            <i class="fa-solid fa-chart-simple"></i>
-            <h1>Dining Reservation</h1>
-          </div>
-          <div class="list">
-            <i class="fa-solid fa-chart-simple"></i>
-            <h1>Subscription</h1>
-          </div>
-          <div class="list card">
-            <div class="items">
-              <div class="icon-cross">
-
+           <div class="nav-list">
+            <div class="list">
+              <i class="fa-solid fa-house"></i>
+              <h1>Dashboard</h1>
+            </div>
+            <div class="list">
+              <i class="fa-solid fa-clipboard"></i>
+              <h1>Orders</h1>
+            </div>
+            <div class="list">
+              <i class="fa-solid fa-chart-simple"></i>
+              <h1>Resturants</h1>
+            </div>
+            <div class="list">
+              <i class="fa-regular fa-comments"></i>
+              <h1>Messaging</h1>
+            </div>
+            <div class="list">
+              <i class="fa-solid fa-chart-simple"></i>
+              <h1>Dining Reservation</h1>
+            </div>
+            <div class="list">
+              <i class="fa-solid fa-chart-simple"></i>
+              <h1>Subscription</h1>
+            </div>
+            <div class="list card">
+              <div class="items">
+                <div class="icon-cross">
+  
+                </div>
               </div>
             </div>
-          </div>
+           </div>
          </div>
-       </div>
+      </div>
         </aside>
       </div>
 
@@ -528,14 +533,6 @@
 
 // FOR INCREMENT ORDER=========================
 
-document.addEventListener('DOMContentLoaded', function () {
-  const toggleSidebarButton = document.querySelector('.toggle-sidebar');
-  const body = document.querySelector('body');
-
-  toggleSidebarButton.addEventListener('click', function () {
-    body.classList.toggle('sidebar-hidden');
-  });
-});
 
 
 var currentNumbers = {
