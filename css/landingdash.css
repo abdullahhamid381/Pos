@@ -141,9 +141,20 @@ body {
   background: #1A1A1A;
   padding: 20px 0;
 }
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .aside-parent {
+    background: #1A1A1A;
+    padding: 0;
+  }
+}
 .landing-dashboard-parent .aside-parent aside .coloumn {
   width: 80%;
   margin: auto;
+}
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .aside-parent aside .coloumn .logo {
+    padding-top: 20px;
+  }
 }
 .landing-dashboard-parent .aside-parent aside .coloumn .logo img {
   width: 100%;
@@ -172,10 +183,15 @@ body {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
-.landing-dashboard-parent .aside-parent aside .coloumn .nav-list .list:hover {
+.landing-dashboard-parent .aside-parent aside .coloumn .nav-list .list:focus {
   background: #FF7B5F;
   padding: 10px;
   border-radius: 8px;
+}
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .main-section-mid-parent {
+    margin-top: -88px;
+  }
 }
 .landing-dashboard-parent .main-section-mid-parent main {
   padding-top: 25px;
@@ -192,6 +208,13 @@ body {
   width: 80%;
   padding-top: 40px;
   gap: 0 20px;
+}
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .main-section-mid-parent main .category {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 0;
+    width: 100%;
+  }
 }
 .landing-dashboard-parent .main-section-mid-parent main .category .pizza {
   display: flex;
@@ -240,6 +263,11 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0 20px;
   padding-top: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid {
+    grid-template-columns: 1fr;
+  }
 }
 .landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards {
   background: #f2f3f9;
@@ -372,6 +400,12 @@ body {
   gap: 0 20px;
   padding-top: 20px;
 }
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .main-section-mid-parent main .explore-category .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
 .landing-dashboard-parent .main-section-mid-parent main .explore-category .grid .cards {
   display: flex;
   flex-direction: column;
@@ -401,41 +435,18 @@ body {
   margin-top: 1.4rem;
   padding-right: 45px;
 }
-.landing-dashboard-parent .right-parent .right .right .top {
+.landing-dashboard-parent .right-parent .right .top {
   display: flex;
   justify-content: end;
   gap: 2rem;
 }
-.landing-dashboard-parent .right-parent .right .right .top button {
+.landing-dashboard-parent .right-parent .right .top button {
   display: none;
 }
-.landing-dashboard-parent .right-parent .right .right .theme-toggler {
-  background: var(--color-light);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 1.6rem;
-  width: 4.2rem;
-  cursor: pointer;
-  border-radius: var(--border-radius-1);
-}
-.landing-dashboard-parent .right-parent .right .right .theme-toggler span {
-  font-size: 1.2rem;
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.landing-dashboard-parent .right-parent .right .right .theme-toggler span.active {
-  background: var(--color-primary);
-  color: white;
-  border-radius: var(--border-radius-1);
-}
-.landing-dashboard-parent .right-parent .right .right .top .profile {
-  display: flex;
-  gap: 2rem;
-  text-align: right;
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .right-parent .right .top button {
+    display: block;
+  }
 }
 .landing-dashboard-parent .right-parent .right .users-login {
   display: flex;
@@ -444,6 +455,15 @@ body {
 }
 .landing-dashboard-parent .right-parent .right .users-login .cart img {
   width: 100%;
+}
+.landing-dashboard-parent .right-parent .right .users-login .cart i {
+  font-size: 18px;
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .right-parent .right .users-login .cart i {
+    display: block;
+  }
 }
 .landing-dashboard-parent .right-parent .right .users-login .login-button {
   display: flex;
@@ -483,6 +503,11 @@ body {
 }
 .landing-dashboard-parent .right-parent .right .user-wallet .wallet-card {
   padding-top: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .right-parent .right .user-wallet .wallet-card {
+    width: 100%;
+  }
 }
 .landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-icon {
   display: flex;
@@ -651,10 +676,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 @media screen and (max-width: 1200px) {
-  .landing-dashboard-parent .container {
-    width: 94%;
-    grid-template-columns: 7rem auto 23rem;
-  }
   .landing-dashboard-parent aside .logo h2 {
     display: none;
   }
@@ -691,15 +712,15 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .landing-dashboard-parent .container {
     width: 100%;
     grid-template-columns: 1fr;
   }
   .landing-dashboard-parent aside {
     position: fixed;
-    left: -100%;
-    background: var(--color-white);
+    left: 100%;
+    background: #1A1A1A;
     width: 18rem;
     z-index: 3;
     box-shadow: 1rem 3rem 4rem var(--color-light);
@@ -783,33 +804,4 @@ body {
   .landing-dashboard-parent .right .top button span {
     font-size: 2rem;
   }
-}
-
-/* ... your existing CSS code ... */
-/* CSS for the toggle button */
-.toggle-btn {
-  display: none;
-}
-
-/* CSS for the sidebar when it's hidden on smaller screens */
-@media screen and (max-width: 992px) {
-  .aside-parent {
-    display: none;
-  }
-  .toggle-btn {
-    display: block;
-    cursor: pointer;
-    position: fixed;
-    left: 1rem;
-    top: 1rem;
-    z-index: 4;
-  }
-  /* Optional transition for a smoother effect */
-  .aside-parent {
-    transition: transform 0.3s ease;
-  }
-  .aside-parent {
-    transform: translateX(0);
-  }
-}
-/* ... your existing CSS code ... *//*# sourceMappingURL=landingdash.css.map */
+}/*# sourceMappingURL=landingdash.css.map */

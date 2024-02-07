@@ -151,11 +151,18 @@ body {
     .aside-parent {
         background: #1A1A1A;
         padding: 20px 0;
+        @include lg{
+            background: #1A1A1A;
+            padding: 0;
+        }
 aside{
     .coloumn{
         width: 80%;
         margin: auto;
 .logo{
+    @include lg{
+        padding-top: 20px;
+    }
 img{
     width: 100%;
 }
@@ -185,7 +192,7 @@ img{
        }
     }
    
-    .list:hover{
+    .list:focus{
         background: #FF7B5F;
         padding: 10px;
         border-radius: 8px;
@@ -209,9 +216,12 @@ img{
 
     /* START MAIN */
     .main-section-mid-parent {
+        @include lg{
+            margin-top: -88px;
+
+        }
         main {
             padding-top: 25px;
-
 
             .title {
                 font-family: 'Poppins', sans-serif;
@@ -229,7 +239,11 @@ img{
                 width: 80%;
                 padding-top: 40px;
                 gap: 0 20px;
-
+@include lg{
+grid-template-columns: 1fr 1fr;
+gap: 10px 0;
+    width: 100%;
+}
                 .pizza {
                     display: flex;
                     align-items: center;
@@ -293,7 +307,9 @@ img{
                     grid-template-columns: 1fr 1fr 1fr;
                     gap: 0 20px;
                     padding-top: 20px;
-
+@include lg{
+    grid-template-columns: 1fr;
+}
                     .cards {
                         background: #f2f3f9;
                         transition: .8s;
@@ -459,6 +475,11 @@ img{
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                     gap: 0 20px;
                     padding-top: 20px;
+                    @include lg{
+                        grid-template-columns: 1fr 1fr;
+                        gap: 20px;
+                    }
+                 
 
                     .cards {
                         display: flex;
@@ -512,43 +533,18 @@ img{
             margin-top: 1.4rem;
             padding-right: 45px;
 
-            
-              .right .top {
+            .top {
                 display: flex;
                 justify-content: end;
                 gap: 2rem;
-              }
-              .right .top button {
-                display: none;
-              }
-              .right .theme-toggler {
-                background: var(--color-light);
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                height: 1.6rem;
-                width: 4.2rem;
-                cursor: pointer;
-                border-radius: var(--border-radius-1);
-              }
-              .right .theme-toggler span {
-                font-size: 1.2rem;
-                width: 50%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              }
-              .right .theme-toggler span.active {
-                background: var(--color-primary);
-                color: white;
-                border-radius: var(--border-radius-1);
-              }
-              .right .top .profile {
-                display: flex;
-                gap: 2rem;
-                text-align: right;
-              }
+
+                button {
+                    display: none;
+                    @include lg{
+                        display: block;
+                    }
+                }
+            }
 
             .users-login {
                 display: flex;
@@ -558,6 +554,13 @@ img{
                 .cart {
                     img {
                         width: 100%;
+                    }
+                    i{
+                        font-size: 18px;
+                        display: none;
+                        @include lg{
+                            display: block;
+                        }
                     }
                 }
 
@@ -610,7 +613,9 @@ img{
 
                 .wallet-card {
                     padding-top: 20px;
-
+@include lg{
+    width: 100%;
+}
                     .wallet-icon {
                         display: flex;
                         background: #FF8369;
@@ -845,11 +850,7 @@ img{
     /* START MEDIA QUERIES */
     /* TABLETS AND SMALL LAPTOPS */
     @media screen and (max-width: 1200px) {
-        .container {
-            width: 94%;
-            grid-template-columns: 7rem auto 23rem;
-        }
-
+      
         aside .logo h2 {
             display: none;
         }
@@ -896,7 +897,7 @@ img{
     }
 
     /* SMALL TABLETS AND MOBILE */
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
         .container {
             width: 100%;
             grid-template-columns: 1fr;
@@ -904,8 +905,8 @@ img{
 
         aside {
             position: fixed;
-            left: -100%;
-            background: var(--color-white);
+            left: 100%;
+           background: #1A1A1A;
             width: 18rem;
             z-index: 3;
             box-shadow: 1rem 3rem 4rem var(--color-light);
@@ -1011,36 +1012,8 @@ img{
 
 }
 
-/* ... your existing CSS code ... */
 
-/* CSS for the toggle button */
-.toggle-btn {
-    display: none;
-}
 
-/* CSS for the sidebar when it's hidden on smaller screens */
-@media screen and (max-width: 992px) {
-    .aside-parent {
-        display: none;
-    }
 
-    .toggle-btn {
-        display: block;
-        cursor: pointer;
-        position: fixed;
-        left: 1rem;
-        top: 1rem;
-        z-index: 4;
-    }
+// EXTRA
 
-    /* Optional transition for a smoother effect */
-    .aside-parent {
-        transition: transform 0.3s ease;
-    }
-
-    .aside-parent{
-        transform: translateX(0);
-    }
-}
-
-/* ... your existing CSS code ... */

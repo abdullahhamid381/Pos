@@ -70,7 +70,13 @@
 
       <div class="main-section-mid-parent">
         <main>
+         <div class="searc">
           <h1 class="title">Dashboard</h1>
+          <div class="search">
+            <input type="text" placeholder="Search">
+            <div class="img"></div>
+          </div>
+         </div>
 
           <!-- CATEGORY DIV====================== -->
 
@@ -285,7 +291,11 @@
       <div class="right-parent">
         <div class="right">
           <div class="top">
+            <button id="menu-btn">
+              <span class="material-icons-sharp"> menu </span>
+            </button>
             <div class="users-login">
+            
               <div class="cart">
                 <img src="/images/search (1).png" alt="">
               </div>
@@ -519,14 +529,13 @@
 // FOR INCREMENT ORDER=========================
 
 document.addEventListener('DOMContentLoaded', function () {
-    const toggleBtn = document.querySelector('.toggle-sidebar-btn');
-    const body = document.querySelector('body');
+  const toggleSidebarButton = document.querySelector('.toggle-sidebar');
+  const body = document.querySelector('body');
 
-    toggleBtn.addEventListener('click', function () {
-        body.classList.toggle('show-sidebar');
-    });
+  toggleSidebarButton.addEventListener('click', function () {
+    body.classList.toggle('sidebar-hidden');
+  });
 });
-
 
 
 var currentNumbers = {
