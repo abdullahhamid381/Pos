@@ -152,10 +152,7 @@ body {
         background: #1A1A1A;
         padding: 20px 0;
 
-        aside {
-            
-
-        }
+        aside {}
 
         aside .top {
             display: flex;
@@ -495,6 +492,7 @@ body {
 
             .explore-category {
                 padding: 40px 0;
+
                 .title {
                     display: flex;
                     justify-content: space-between;
@@ -535,25 +533,28 @@ body {
                         align-items: center;
                         background: #F2F3F9;
                         padding: 20px;
-border-radius: 12px;
+                        border-radius: 12px;
+
                         .img {
                             img {
                                 width: 100%;
 
                             }
                         }
-                        .text{
-                            h1{
+
+                        .text {
+                            h1 {
                                 font-family: 'Poppins', sans-serif;
-                            font-size: 16px;
-                            font-weight: 600;
-                            color: #182135;
-                            text-align: center;
-                            padding-top: 10px;
+                                font-size: 16px;
+                                font-weight: 600;
+                                color: #182135;
+                                text-align: center;
+                                padding-top: 10px;
                             }
-                            p{
+
+                            p {
                                 font-size: 12px;
-                                font-family: 'Poppins', sans-serif;  
+                                font-family: 'Poppins', sans-serif;
                                 color: #626264;
                             }
                         }
@@ -572,38 +573,43 @@ border-radius: 12px;
 
 
     /* START RIGHT SECTION */
-    .right-parent{
+    .right-parent {
         .right {
             margin-top: 1.4rem;
             padding-right: 45px;
+
             .top {
                 display: flex;
                 justify-content: end;
                 gap: 2rem;
+
                 button {
                     display: none;
                 }
             }
-            .users-login{
-               display: flex;
-               align-items: center;
-               gap: 0 10px;
-              
-                .cart{
-                    img{
+
+            .users-login {
+                display: flex;
+                align-items: center;
+                gap: 0 10px;
+
+                .cart {
+                    img {
                         width: 100%;
                     }
                 }
-                .login-button{
+
+                .login-button {
                     display: flex;
                     align-items: center;
                     background: #FAFAFA;
-                    padding:5px 20px;
+                    padding: 5px 20px;
                     border-radius: 80px;
                     gap: 0px;
                     cursor: pointer;
-                    .userimg{
-                       
+
+                    .userimg {
+
                         height: 20px;
                         width: 20px;
                         padding: 20px;
@@ -611,12 +617,13 @@ border-radius: 12px;
                         justify-content: center;
                         align-items: center;
                         border-radius: 80px;
-                        
-                        i{
+
+                        i {
                             font-size: 18px;
                         }
                     }
-                    input{
+
+                    input {
                         background: none;
                         font-size: 18px;
                         font-family: 'Poppins', sans-serif;
@@ -625,70 +632,82 @@ border-radius: 12px;
                     }
                 }
             }
+
             // WALET CSS ===============
-            .user-wallet{
+            .user-wallet {
                 padding-top: 40px;
-                .title{
-                    h1{
+
+                .title {
+                    h1 {
                         font-size: 18px;
                         font-weight: 700;
                         font-family: 'Poppins', sans-serif;
 
                     }
                 }
-                .wallet-card{
-                   padding-top: 20px;
-                    .wallet-icon{
+
+                .wallet-card {
+                    padding-top: 20px;
+
+                    .wallet-icon {
                         display: flex;
                         background: #FF8369;
                         justify-content: space-between;
-                        padding:20px;
+                        padding: 20px;
                         align-items: center;
-border-radius: 8px 8px 0 0;
-                        .img{
-                            img{
+                        border-radius: 8px 8px 0 0;
+
+                        .img {
+                            img {
                                 width: 100%;
                             }
                         }
                     }
-                    .wallet-detail{
-                        padding:0 20px;
+
+                    .wallet-detail {
+                        padding: 0 20px;
                         background: #323142;
                         border-radius: 0 0 8px 8px;
-                        .wallet-number{
+
+                        .wallet-number {
                             display: flex;
                             gap: 0 20px;
                             padding-top: 10px;
-                            span{
+
+                            span {
                                 font-size: 14px;
                                 font-weight: 600;
                                 font-family: 'Poppins', sans-serif;
 
-                                
+
                                 color: white;
                             }
                         }
-                        .card-holder{
+
+                        .card-holder {
                             display: flex;
                             justify-content: space-between;
                             padding: 30px 0 20px 0;
                             align-items: center;
-                            .name{
-                                p{
+
+                            .name {
+                                p {
                                     font-size: 14px;
                                     font-family: 'Poppins', sans-serif;
                                     font-weight: lighter;
                                     color: whitesmoke;
                                 }
-                                h1{
+
+                                h1 {
                                     font-size: 18px;
                                     font-family: 'Poppins', sans-serif;
                                     font-weight: 400;
                                     color: white;
                                 }
                             }
-                            .debit{
-                                img{
+
+                            .debit {
+                                img {
                                     width: 100%;
                                 }
                             }
@@ -700,7 +719,7 @@ border-radius: 8px 8px 0 0;
             // CART CSS============================
 
 
-            .cart-parent{
+            .cart-parent {
                 .title {
                     display: flex;
                     justify-content: space-between;
@@ -711,7 +730,7 @@ border-radius: 8px 8px 0 0;
                         font-size: 18px;
                         color: #323142;
                         font-family: 'Poppins', sans-serif;
-                        font-weight: 600;
+                        font-weight: 700;
                     }
 
                     a {
@@ -728,17 +747,136 @@ border-radius: 8px 8px 0 0;
                     }
                 }
 
+                .cards-all-order {
+                    .cart-card {
+                        display: flex;
+                        margin-top: 20px;
+                        gap: 0 10px;
+                        align-items: center;
+                        background: #F2F3F9;
+                        padding: 10px;
+                        border-radius: 12px;
+                        transition: .8s;
+                        cursor: pointer;
+
+                        .img {
+                            position: relative;
+
+                            img {
+                                width: 100%;
+                            }
+
+                            .del {
+                                img {
+                                    width: 30%;
+                                    position: absolute;
+                                    top: 0;
+                                }
+                            }
+                        }
+
+                        .detail {
+                            .name-price {
+                                display: flex;
+                                justify-content: space-between;
+                                gap: 0 20px;
+
+                                h1 {
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    font-family: 'Poppins', sans-serif;
+
+                                    span {
+                                        color: #FF7B5F;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+
+                            .increment {
+                                display: flex;
+                                align-items: center;
+                                gap: 0 10px;
+                                padding: 5px 0;
+
+                                button {
+                                    border: none;
+                                    background: white;
+                                    height: 10px;
+                                    width: 10px;
+                                    padding: 10px;
+                                    border-radius: 80px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+
+                                    i {
+                                        color: #8E97A6;
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                span {
+                                    color: #FF7B5F;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-weight: 500;
+
+                                }
+                            }
+
+                            .on-the-way {
+                                span {
+                                    font-size: 14px;
+                                    font-family: 'Poppins', sans-serif;
+                                    color: #ACADB9;
+                                }
+
+                                p {
+                                    font-size: 12px;
+                                    color: #323142;
+                                    font-family: 'Poppins', sans-serif;
+                                    color: #ACADB9;
+                                    padding-top: 2px;
+                                }
+                            }
+                        }
+                    }
+
+                    .cart-card:hover {
+                        background: #ffffff;
+                        box-shadow: 0 35px 23px -13px #ededed;
+                    }
+                    .checkout{
+                       padding-top: 20px;
+                       
+                        input{
+                            width: 100%;
+                            border: none;
+                            cursor: pointer;
+                            background: none;
+                            text-align: center;
+                            background: #FF7B5F;
+                            padding: 15px;
+                            color: white;
+                            border-radius: 25px;
+                            font-size: 16px;
+                            font-family: 'Poppins', sans-serif;
+                            
+                        }
+                    }
+                }
             }
         }
-    
-    
-    
-      
+
+
+
+
     }
-   
-    
-   
-    
+
+
+
+
     /* END SALES ANALYTICS */
     /* END RIGHT SECTION */
 
