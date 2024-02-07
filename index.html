@@ -24,45 +24,44 @@
 
       <div class="aside-parent">
         <aside>
-          <div class="top">
-            <div class="logo">
-              <img src="/images/Logo (1) 1.png" alt="Logo" />
+       <div class="coloumn">
+        <div class="logo">
+          <img src="/images/Logo (1) 1.png" alt="">
+         </div>
+         <div class="nav-list">
+          <div class="list">
+            <i class="fa-solid fa-house"></i>
+            <h1>Dashboard</h1>
+          </div>
+          <div class="list">
+            <i class="fa-solid fa-clipboard"></i>
+            <h1>Orders</h1>
+          </div>
+          <div class="list">
+            <i class="fa-solid fa-chart-simple"></i>
+            <h1>Resturants</h1>
+          </div>
+          <div class="list">
+            <i class="fa-regular fa-comments"></i>
+            <h1>Messaging</h1>
+          </div>
+          <div class="list">
+            <i class="fa-solid fa-chart-simple"></i>
+            <h1>Dining Reservation</h1>
+          </div>
+          <div class="list">
+            <i class="fa-solid fa-chart-simple"></i>
+            <h1>Subscription</h1>
+          </div>
+          <div class="list card">
+            <div class="items">
+              <div class="icon-cross">
 
-            </div>
-            <div class="close" id="close-btn">
-              <span class="material-icons-sharp"> close </span>
+              </div>
             </div>
           </div>
-
-          <div class="sidebar">
-            <a href="#" class="active">
-              <i class="fa-solid fa-house"></i>
-              <h3>Dashboard</h3>
-            </a>
-
-            <a href="#">
-              <span class="material-icons-sharp"> receipt_long </span>
-              <h3>Orders</h3>
-            </a>
-            <a href="#">
-              <i class="fa-solid fa-chart-simple"></i>
-              <h3>Resturants</h3>
-            </a>
-            <a href="#">
-              <i class="fa-regular fa-comments"></i>
-              <h3>Messaging</h3>
-
-            </a>
-            <a href="#">
-              <i class="fa-solid fa-chart-simple"></i>
-              <h3>Dining Reservation</h3>
-            </a>
-            <a href="#">
-              <i class="fa-solid fa-chart-simple"></i>
-              <h3>Subscription</h3>
-            </a>
-
-          </div>
+         </div>
+       </div>
         </aside>
       </div>
 
@@ -286,32 +285,29 @@
       <div class="right-parent">
         <div class="right">
           <div class="top">
-            <button id="menu-btn">
-              <span class="material-icons-sharp"> menu </span>
-            </button>
-
-
+            <div class="users-login">
+              <div class="cart">
+                <img src="/images/search (1).png" alt="">
+              </div>
+              <div class="cart">
+                <img src="/images/notifications.png" alt="">
+              </div>
+              <a href="/signin.html">
+                <div class="login-button">
+                  <div class="userimg">
+                    <i class="fa-regular fa-user"></i>
+                  </div>
+                  <input type="button" value="Login">
+                </div>
+              </a>
+            </div>
           </div>
+
 
           <!-- LOGIN SECTION ================ -->
 
 
-          <div class="users-login">
-            <div class="cart">
-              <img src="/images/search (1).png" alt="">
-            </div>
-            <div class="cart">
-              <img src="/images/notifications.png" alt="">
-            </div>
-            <a href="/signin.html">
-              <div class="login-button">
-                <div class="userimg">
-                  <i class="fa-regular fa-user"></i>
-                </div>
-                <input type="button" value="Login">
-              </div>
-            </a>
-          </div>
+        
 
 
           <!-- WALLET ====================== -->
@@ -374,11 +370,13 @@
                   <h1>Chicken Hell</h1>
                   <h1><span>$ </span>7.99</h1>
                 </div>
-                <div class="increment">
-                  <button onclick="decrement()"><i class="fa-solid fa-minus"></i></button>
-                  <span id="number">0</span>
-                  <button onclick="increment()"><i class="fa-solid fa-plus"></i></button>
+                <div class="increment" id="card1">
+                  <button onclick="decrement('card1')"><i class="fa-solid fa-minus"></i></button>
+                  <span id="number1">0</span>
+                  <button onclick="increment('card1')"><i class="fa-solid fa-plus"></i></button>
                 </div>
+
+
               <div class="on-the-way">
                 <span>July 12 : 3:09 PM</span>
                 <p>
@@ -403,10 +401,10 @@
                   <h1>Chicken Hell</h1>
                   <h1><span>$ </span>7.99</h1>
                 </div>
-                <div class="increment">
-                  <button onclick="decrement()"><i class="fa-solid fa-minus"></i></button>
-                  <span id="number">0</span>
-                  <button onclick="increment()"><i class="fa-solid fa-plus"></i></button>
+                <div class="increment" id="card2">
+                  <button onclick="decrement('card2')"><i class="fa-solid fa-minus"></i></button>
+                  <span id="number2">0</span>
+                  <button onclick="increment('card2')"><i class="fa-solid fa-plus"></i></button>
                 </div>
               <div class="on-the-way">
                 <span>July 12 : 3:09 PM</span>
@@ -452,10 +450,10 @@
                       <h1>Chicken Hell</h1>
                       <h1><span>$ </span>7.99</h1>
                     </div>
-                    <div class="increment">
-                      <button onclick="decrement()"><i class="fa-solid fa-minus"></i></button>
-                      <span id="number">0</span>
-                      <button onclick="increment()"><i class="fa-solid fa-plus"></i></button>
+                    <div class="increment" id="card3">
+                      <button onclick="decrement('card3')"><i class="fa-solid fa-minus"></i></button>
+                      <span id="number3">0</span>
+                      <button onclick="increment('card3')"><i class="fa-solid fa-plus"></i></button>
                     </div>
                   <div class="on-the-way">
                     <span>July 12 : 3:09 PM</span>
@@ -481,10 +479,10 @@
                       <h1>Chicken Hell</h1>
                       <h1><span>$ </span>7.99</h1>
                     </div>
-                    <div class="increment">
-                      <button onclick="decrement()"><i class="fa-solid fa-minus"></i></button>
-                      <span id="number">0</span>
-                      <button onclick="increment()"><i class="fa-solid fa-plus"></i></button>
+                    <div class="increment" id="card4">
+                      <button onclick="decrement('card4')"><i class="fa-solid fa-minus"></i></button>
+                      <span id="number4">0</span>
+                      <button onclick="increment('card4')"><i class="fa-solid fa-plus"></i></button>
                     </div>
                   <div class="on-the-way">
                     <span>July 12 : 3:09 PM</span>
@@ -517,24 +515,48 @@
 
   </script>
   <script>
-    var currentNumber = 0; // Initial value
 
-    function increment() {
-      currentNumber++;
-      updateNumber();
-    }
+// FOR INCREMENT ORDER=========================
 
-    function decrement() {
-      if (currentNumber > 0) {
-        currentNumber--;
-        updateNumber();
-      }
-    }
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.querySelector('.toggle-sidebar-btn');
+    const body = document.querySelector('body');
 
-    function updateNumber() {
-      var numberElement = document.getElementById("number");
-      numberElement.textContent = currentNumber;
+    toggleBtn.addEventListener('click', function () {
+        body.classList.toggle('show-sidebar');
+    });
+});
+
+
+
+var currentNumbers = {
+    card1: 0,
+    card2: 0,
+    card3: 0,
+    card4: 0,
+    // Add more cards as needed
+  };
+
+  function increment(id) {
+    currentNumbers[id]++;
+    updateNumber(id);
+  }
+
+  function decrement(id) {
+    if (currentNumbers[id] > 0) {
+      currentNumbers[id]--;
+      updateNumber(id);
     }
+  }
+
+  function updateNumber(id) {
+    var numberElement = document.getElementById('number' + id.slice(4)); // Extract number from the card ID
+    if (numberElement) {
+      numberElement.textContent = currentNumbers[id];
+    } else {
+      console.error("Element with ID " + id + " not found");
+    }
+  }
 
   </script>
 </body>

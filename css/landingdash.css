@@ -141,97 +141,44 @@ body {
   background: #1A1A1A;
   padding: 20px 0;
 }
-.landing-dashboard-parent .aside-parent aside .top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 1.4rem;
+.landing-dashboard-parent .aside-parent aside .coloumn {
+  width: 80%;
+  margin: auto;
 }
-.landing-dashboard-parent .aside-parent aside .logo {
-  display: flex;
-  gap: 0.8rem;
-}
-.landing-dashboard-parent .aside-parent aside .logo img {
+.landing-dashboard-parent .aside-parent aside .coloumn .logo img {
   width: 100%;
-  padding-left: 30px;
 }
-.landing-dashboard-parent .aside-parent aside .close {
-  display: none;
-}
-.landing-dashboard-parent .aside-parent aside .sidebar {
+.landing-dashboard-parent .aside-parent aside .coloumn .nav-list {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  gap: 10px 20px;
-  position: relative;
-  top: 3rem;
-  padding: 0 30px;
+  gap: 20px 0;
+  padding-top: 60px;
 }
-.landing-dashboard-parent .aside-parent aside h3 {
-  font-weight: 500;
-}
-.landing-dashboard-parent .aside-parent aside .sidebar a {
+.landing-dashboard-parent .aside-parent aside .coloumn .nav-list .list {
+  padding: 10px;
   display: flex;
-  color: white;
   align-items: center;
-  position: relative;
-  height: 3.7rem;
-  transition: all 300ms ease;
-  padding: 0 10px;
+  gap: 0 15px;
+  transition: 0.8s;
+  cursor: pointer;
 }
-.landing-dashboard-parent .aside-parent aside .sidebar a i {
-  font-size: 16px;
-}
-.landing-dashboard-parent .aside-parent aside .sidebar a span {
-  font-size: 16px;
-}
-.landing-dashboard-parent .aside-parent aside .sidebar a h3 {
-  font-size: 16px;
-  padding-left: 15px;
-}
-.landing-dashboard-parent .aside-parent aside .sidebar a span {
-  font-size: 1.6rem;
-  transition: all 300ms ease;
-}
-.landing-dashboard-parent .aside-parent aside .sidebar a:last-child {
-  position: absolute;
-  bottom: 2rem;
-  width: 100%;
-}
-.landing-dashboard-parent .aside-parent aside .sidebar a.active {
+.landing-dashboard-parent .aside-parent aside .coloumn .nav-list .list i {
   color: white;
-  margin-left: 0;
-  border-radius: 8px;
+  font-size: 20px;
 }
-.landing-dashboard-parent .aside-parent aside .sidebar a:focus {
-  border-radius: 8px;
+.landing-dashboard-parent .aside-parent aside .coloumn .nav-list .list h1 {
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.landing-dashboard-parent .aside-parent aside .coloumn .nav-list .list:hover {
   background: #FF7B5F;
-}
-.landing-dashboard-parent .aside-parent aside .sidebar a.active:before {
-  content: "";
-  width: 6px;
-  height: 100%;
-}
-.landing-dashboard-parent .aside-parent aside .sidebar a.active span {
-  color: var(--color-primary);
-  margin-left: calc(1rem - 6px);
-}
-.landing-dashboard-parent .aside-parent aside .sidebar a:hover {
-  background: #FF7B5F;
+  padding: 10px;
   border-radius: 8px;
-}
-.landing-dashboard-parent .aside-parent aside .sidebar a:hover span {
-  margin-left: 0;
-}
-.landing-dashboard-parent .aside-parent aside .sidebar .message-count {
-  background: var(--color-danger);
-  color: var(--color-white);
-  padding: 2px 10px;
-  font-size: 11px;
-  border-radius: var(--border-radius-1);
 }
 .landing-dashboard-parent .main-section-mid-parent main {
-  padding-top: 43px;
+  padding-top: 25px;
 }
 .landing-dashboard-parent .main-section-mid-parent main .title {
   font-family: "Poppins", sans-serif;
@@ -454,13 +401,41 @@ body {
   margin-top: 1.4rem;
   padding-right: 45px;
 }
-.landing-dashboard-parent .right-parent .right .top {
+.landing-dashboard-parent .right-parent .right .right .top {
   display: flex;
   justify-content: end;
   gap: 2rem;
 }
-.landing-dashboard-parent .right-parent .right .top button {
+.landing-dashboard-parent .right-parent .right .right .top button {
   display: none;
+}
+.landing-dashboard-parent .right-parent .right .right .theme-toggler {
+  background: var(--color-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.6rem;
+  width: 4.2rem;
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+}
+.landing-dashboard-parent .right-parent .right .right .theme-toggler span {
+  font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-dashboard-parent .right-parent .right .right .theme-toggler span.active {
+  background: var(--color-primary);
+  color: white;
+  border-radius: var(--border-radius-1);
+}
+.landing-dashboard-parent .right-parent .right .right .top .profile {
+  display: flex;
+  gap: 2rem;
+  text-align: right;
 }
 .landing-dashboard-parent .right-parent .right .users-login {
   display: flex;
@@ -808,4 +783,33 @@ body {
   .landing-dashboard-parent .right .top button span {
     font-size: 2rem;
   }
-}/*# sourceMappingURL=landingdash.css.map */
+}
+
+/* ... your existing CSS code ... */
+/* CSS for the toggle button */
+.toggle-btn {
+  display: none;
+}
+
+/* CSS for the sidebar when it's hidden on smaller screens */
+@media screen and (max-width: 992px) {
+  .aside-parent {
+    display: none;
+  }
+  .toggle-btn {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    z-index: 4;
+  }
+  /* Optional transition for a smoother effect */
+  .aside-parent {
+    transition: transform 0.3s ease;
+  }
+  .aside-parent {
+    transform: translateX(0);
+  }
+}
+/* ... your existing CSS code ... *//*# sourceMappingURL=landingdash.css.map */
