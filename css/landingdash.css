@@ -167,6 +167,7 @@ body {
 .landing-dashboard-parent .aside-parent aside .sidebar {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   gap: 10px 20px;
   position: relative;
   top: 3rem;
@@ -182,6 +183,7 @@ body {
   position: relative;
   height: 3.7rem;
   transition: all 300ms ease;
+  padding: 0 10px;
 }
 .landing-dashboard-parent .aside-parent aside .sidebar a i {
   font-size: 16px;
@@ -295,18 +297,25 @@ body {
 .landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 0 20px;
+  padding-top: 20px;
 }
 .landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards {
-  background: #f2f3f9;
+  background: #ffffff;
+  box-shadow: 0 7px 23px -13px;
+  border-radius: 0 0 14px 12px;
 }
 .landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .img img {
   width: 100%;
+}
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text {
+  padding: 10px 15px;
+  border-radius: 8px;
 }
 .landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .heart {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 10px 0 10px;
 }
 .landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .heart h1 {
   font-size: 18px;
@@ -314,7 +323,17 @@ body {
   font-weight: 600;
   color: #323142;
 }
-.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .heart i {
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .heart .div {
+  background: #f2f3f9;
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .heart .div i {
   color: #8E97A6;
   font-size: 18px;
 }
@@ -322,7 +341,9 @@ body {
   display: flex;
   align-items: center;
   gap: 0 10px;
-  padding: 20px 10px 0 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1098039216);
 }
 .landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .away p {
   font-family: "Poppins", sans-serif;
@@ -333,6 +354,30 @@ body {
 .landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .away i {
   color: #8E97A6;
   font-size: 18px;
+}
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating .stars {
+  display: flex;
+  gap: 0 5px;
+}
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating .stars i {
+  color: #FF7A28;
+  font-size: 14px;
+}
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating .stars .empty {
+  color: #8E97A6;
+  font-size: 14px;
+}
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating .reviews p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #8E97A6;
+  font-size: 14px;
 }
 .landing-dashboard-parent .right {
   margin-top: 1.4rem;
