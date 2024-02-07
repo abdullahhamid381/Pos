@@ -72,7 +72,7 @@ body {
         width: 100%;
         margin: 0 auto;
         gap: 2.8rem;
-        grid-template-columns: 18rem auto 23rem;
+        grid-template-columns: 18rem auto 24rem;
     }
 
     a {
@@ -572,158 +572,173 @@ border-radius: 12px;
 
 
     /* START RIGHT SECTION */
-    .right {
-        margin-top: 1.4rem;
-        padding-right: 45px;
+    .right-parent{
+        .right {
+            margin-top: 1.4rem;
+            padding-right: 45px;
+            .top {
+                display: flex;
+                justify-content: end;
+                gap: 2rem;
+                button {
+                    display: none;
+                }
+            }
+            .users-login{
+               display: flex;
+               align-items: center;
+               gap: 0 10px;
+              
+                .cart{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .login-button{
+                    display: flex;
+                    align-items: center;
+                    background: #FAFAFA;
+                    padding:5px 20px;
+                    border-radius: 80px;
+                    gap: 0px;
+                    cursor: pointer;
+                    .userimg{
+                       
+                        height: 20px;
+                        width: 20px;
+                        padding: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 80px;
+                        
+                        i{
+                            font-size: 18px;
+                        }
+                    }
+                    input{
+                        background: none;
+                        font-size: 18px;
+                        font-family: 'Poppins', sans-serif;
+                        color: #1A202C;
+                        font-weight: 600;
+                    }
+                }
+            }
+            // WALET CSS ===============
+            .user-wallet{
+                padding-top: 40px;
+                .title{
+                    h1{
+                        font-size: 18px;
+                        font-weight: 700;
+                        font-family: 'Poppins', sans-serif;
+
+                    }
+                }
+                .wallet-card{
+                   padding-top: 20px;
+                    .wallet-icon{
+                        display: flex;
+                        background: #FF8369;
+                        justify-content: space-between;
+                        padding:20px;
+                        align-items: center;
+border-radius: 8px 8px 0 0;
+                        .img{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .wallet-detail{
+                        padding:0 20px;
+                        background: #323142;
+                        border-radius: 0 0 8px 8px;
+                        .wallet-number{
+                            display: flex;
+                            gap: 0 20px;
+                            padding-top: 10px;
+                            span{
+                                font-size: 14px;
+                                font-weight: 600;
+                                font-family: 'Poppins', sans-serif;
+
+                                
+                                color: white;
+                            }
+                        }
+                        .card-holder{
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 30px 0 20px 0;
+                            align-items: center;
+                            .name{
+                                p{
+                                    font-size: 14px;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-weight: lighter;
+                                    color: whitesmoke;
+                                }
+                                h1{
+                                    font-size: 18px;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-weight: 400;
+                                    color: white;
+                                }
+                            }
+                            .debit{
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // CART CSS============================
+
+
+            .cart-parent{
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-top: 40px;
+
+                    h1 {
+                        font-size: 18px;
+                        color: #323142;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 600;
+                    }
+
+                    a {
+                        text-decoration: none;
+
+                        input {
+                            background: none;
+                            border: none;
+                            color: #ACADB9;
+                            cursor: pointer;
+                            font-size: 16px;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                    }
+                }
+
+            }
+        }
+    
+    
+    
+      
     }
-
-    .right .top {
-        display: flex;
-        justify-content: end;
-        gap: 2rem;
-    }
-
-    .right .top button {
-        display: none;
-    }
-
-    .right .theme-toggler {
-        background: var(--color-light);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 1.6rem;
-        width: 4.2rem;
-        cursor: pointer;
-        border-radius: var(--border-radius-1);
-    }
-
-    .right .theme-toggler span {
-        font-size: 1.2rem;
-        width: 50%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .right .theme-toggler span.active {
-        background: var(--color-primary);
-        color: white;
-        border-radius: var(--border-radius-1);
-    }
-
-    .right .top .profile {
-        display: flex;
-        gap: 2rem;
-        text-align: right;
-    }
-
-    /* START RECENT UPDATES */
-    .right .recent-updates {
-        margin-top: 1rem;
-    }
-
-    .right .recent-updates h2 {
-        margin-bottom: 0.8rem;
-    }
-
-    .right .recent-updates .updates {
-        background: var(--color-white);
-        padding: var(--card-padding);
-        border-radius: var(--card-border-radius);
-        box-shadow: var(--box-shadow);
-        transition: all 300ms ease;
-    }
-
-    .right .recent-updates .updates:hover {
-        cursor: pointer;
-        box-shadow: none;
-    }
-
-    .right .recent-updates .updates .update {
-        display: grid;
-        grid-template-columns: 2.6rem auto;
-        gap: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    /* END RECENT UPDATES */
-
-    /* START SALES ANALYTICS */
-    .right .sales-analytics {
-        margin-top: 2rem;
-    }
-
-    .right .sales-analytics h2 {
-        margin-bottom: 0.8rem;
-    }
-
-    .right .sales-analytics .item {
-        background: var(--color-white);
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        margin-bottom: 0.7rem;
-        padding: 1.4rem var(--card-padding);
-        border-radius: var(--border-radius-3);
-        box-shadow: var(--box-shadow);
-        transition: all 300ms ease;
-    }
-
-    .right .sales-analytics .item:hover {
-        cursor: pointer;
-        box-shadow: none;
-    }
-
-    .right .sales-analytics .item .right {
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        margin: 0;
-        width: 100%;
-    }
-
-    .right .sales-analytics .item .icon {
-        padding: 0.6rem;
-        color: var(--color-white);
-        border-radius: 50%;
-        background: var(--color-primary);
-        display: flex;
-    }
-
-    .right .sales-analytics .item.offline .icon {
-        background: var(--color-danger);
-    }
-
-    .right .sales-analytics .item.customers .icon {
-        background: var(--color-success);
-    }
-
-    .right .sales-analytics .add-product {
-        background: transparent;
-        border: 2px dashed var(--color-primary);
-        color: var(--color-primary);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .right .sales-analytics .add-product:hover {
-        background: var(--color-primary);
-        color: white;
-    }
-
-    .right .sales-analytics .add-product div {
-        display: flex;
-        align-items: center;
-        gap: 0.6rem;
-    }
-
-    .right .sales-analytics .add-product h3 {
-        font-weight: 600;
-    }
-
+   
+    
+   
+    
     /* END SALES ANALYTICS */
     /* END RIGHT SECTION */
 

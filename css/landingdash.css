@@ -70,9 +70,6 @@ body {
   /* END ASIDE */
   /* START MAIN */
   /* START RIGHT SECTION */
-  /* START RECENT UPDATES */
-  /* END RECENT UPDATES */
-  /* START SALES ANALYTICS */
   /* END SALES ANALYTICS */
   /* END RIGHT SECTION */
   /* START MEDIA QUERIES */
@@ -85,7 +82,7 @@ body {
   width: 100%;
   margin: 0 auto;
   gap: 2.8rem;
-  grid-template-columns: 18rem auto 23rem;
+  grid-template-columns: 18rem auto 24rem;
 }
 .landing-dashboard-parent a {
   color: var(--color-dark);
@@ -453,129 +450,135 @@ body {
   font-family: "Poppins", sans-serif;
   color: #626264;
 }
-.landing-dashboard-parent .right {
+.landing-dashboard-parent .right-parent .right {
   margin-top: 1.4rem;
   padding-right: 45px;
 }
-.landing-dashboard-parent .right .top {
+.landing-dashboard-parent .right-parent .right .top {
   display: flex;
   justify-content: end;
   gap: 2rem;
 }
-.landing-dashboard-parent .right .top button {
+.landing-dashboard-parent .right-parent .right .top button {
   display: none;
 }
-.landing-dashboard-parent .right .theme-toggler {
-  background: var(--color-light);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 1.6rem;
-  width: 4.2rem;
-  cursor: pointer;
-  border-radius: var(--border-radius-1);
-}
-.landing-dashboard-parent .right .theme-toggler span {
-  font-size: 1.2rem;
-  width: 50%;
-  height: 100%;
+.landing-dashboard-parent .right-parent .right .users-login {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 0 10px;
 }
-.landing-dashboard-parent .right .theme-toggler span.active {
-  background: var(--color-primary);
-  color: white;
-  border-radius: var(--border-radius-1);
-}
-.landing-dashboard-parent .right .top .profile {
-  display: flex;
-  gap: 2rem;
-  text-align: right;
-}
-.landing-dashboard-parent .right .recent-updates {
-  margin-top: 1rem;
-}
-.landing-dashboard-parent .right .recent-updates h2 {
-  margin-bottom: 0.8rem;
-}
-.landing-dashboard-parent .right .recent-updates .updates {
-  background: var(--color-white);
-  padding: var(--card-padding);
-  border-radius: var(--card-border-radius);
-  box-shadow: var(--box-shadow);
-  transition: all 300ms ease;
-}
-.landing-dashboard-parent .right .recent-updates .updates:hover {
-  cursor: pointer;
-  box-shadow: none;
-}
-.landing-dashboard-parent .right .recent-updates .updates .update {
-  display: grid;
-  grid-template-columns: 2.6rem auto;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-.landing-dashboard-parent .right .sales-analytics {
-  margin-top: 2rem;
-}
-.landing-dashboard-parent .right .sales-analytics h2 {
-  margin-bottom: 0.8rem;
-}
-.landing-dashboard-parent .right .sales-analytics .item {
-  background: var(--color-white);
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.7rem;
-  padding: 1.4rem var(--card-padding);
-  border-radius: var(--border-radius-3);
-  box-shadow: var(--box-shadow);
-  transition: all 300ms ease;
-}
-.landing-dashboard-parent .right .sales-analytics .item:hover {
-  cursor: pointer;
-  box-shadow: none;
-}
-.landing-dashboard-parent .right .sales-analytics .item .right {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  margin: 0;
+.landing-dashboard-parent .right-parent .right .users-login .cart img {
   width: 100%;
 }
-.landing-dashboard-parent .right .sales-analytics .item .icon {
-  padding: 0.6rem;
-  color: var(--color-white);
-  border-radius: 50%;
-  background: var(--color-primary);
-  display: flex;
-}
-.landing-dashboard-parent .right .sales-analytics .item.offline .icon {
-  background: var(--color-danger);
-}
-.landing-dashboard-parent .right .sales-analytics .item.customers .icon {
-  background: var(--color-success);
-}
-.landing-dashboard-parent .right .sales-analytics .add-product {
-  background: transparent;
-  border: 2px dashed var(--color-primary);
-  color: var(--color-primary);
+.landing-dashboard-parent .right-parent .right .users-login .login-button {
   display: flex;
   align-items: center;
-  justify-content: center;
+  background: #FAFAFA;
+  padding: 5px 20px;
+  border-radius: 80px;
+  gap: 0px;
+  cursor: pointer;
 }
-.landing-dashboard-parent .right .sales-analytics .add-product:hover {
-  background: var(--color-primary);
+.landing-dashboard-parent .right-parent .right .users-login .login-button .userimg {
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+.landing-dashboard-parent .right-parent .right .users-login .login-button .userimg i {
+  font-size: 18px;
+}
+.landing-dashboard-parent .right-parent .right .users-login .login-button input {
+  background: none;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #1A202C;
+  font-weight: 600;
+}
+.landing-dashboard-parent .right-parent .right .user-wallet {
+  padding-top: 40px;
+}
+.landing-dashboard-parent .right-parent .right .user-wallet .title h1 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card {
+  padding-top: 20px;
+}
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-icon {
+  display: flex;
+  background: #FF8369;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+}
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-icon .img img {
+  width: 100%;
+}
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail {
+  padding: 0 20px;
+  background: #323142;
+  border-radius: 0 0 8px 8px;
+}
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .wallet-number {
+  display: flex;
+  gap: 0 20px;
+  padding-top: 10px;
+}
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .wallet-number span {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
   color: white;
 }
-.landing-dashboard-parent .right .sales-analytics .add-product div {
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .card-holder {
   display: flex;
+  justify-content: space-between;
+  padding: 30px 0 20px 0;
   align-items: center;
-  gap: 0.6rem;
 }
-.landing-dashboard-parent .right .sales-analytics .add-product h3 {
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .card-holder .name p {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  color: whitesmoke;
+}
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .card-holder .name h1 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .card-holder .debit img {
+  width: 100%;
+}
+.landing-dashboard-parent .right-parent .right .cart-parent .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+.landing-dashboard-parent .right-parent .right .cart-parent .title h1 {
+  font-size: 18px;
+  color: #323142;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
+}
+.landing-dashboard-parent .right-parent .right .cart-parent .title a {
+  text-decoration: none;
+}
+.landing-dashboard-parent .right-parent .right .cart-parent .title a input {
+  background: none;
+  border: none;
+  color: #ACADB9;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 @media screen and (max-width: 1200px) {
   .landing-dashboard-parent .container {
