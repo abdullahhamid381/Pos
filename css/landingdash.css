@@ -290,6 +290,12 @@ body {
   gap: 0 30px;
   align-items: center;
 }
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .main-section-mid-parent main .search {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+}
 .landing-dashboard-parent .main-section-mid-parent main .search .title {
   font-family: "Poppins", sans-serif;
   color: #1A202C;
@@ -300,6 +306,11 @@ body {
   display: flex;
   width: 60%;
   gap: 0 10px;
+}
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .main-section-mid-parent main .search .search-bar {
+    width: 100%;
+  }
 }
 .landing-dashboard-parent .main-section-mid-parent main .search .search-bar input {
   width: 100%;
