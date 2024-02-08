@@ -225,6 +225,7 @@ body {
   background: #FF7B5F;
   border-radius: 12px;
   gap: 0 10px;
+  transition: 0.8s;
 }
 .landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card .items .order-button input {
   background: none;
@@ -238,7 +239,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card .items .order-button:hover {
-  background: #FF7B5F;
+  background: rgba(255, 122, 95, 0.862745098);
 }
 .landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card .items .cross {
   position: absolute;
@@ -758,6 +759,10 @@ body {
   border-radius: 25px;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+  transition: 0.8s;
+}
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order input:hover {
+  background: rgba(255, 122, 95, 0.862745098);
 }
 @media screen and (max-width: 1200px) {
   .landing-dashboard-parent aside .logo h2 {

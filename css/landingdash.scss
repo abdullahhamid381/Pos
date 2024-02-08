@@ -245,6 +245,7 @@ body {
     background: #FF7B5F;
     border-radius: 12px;
 gap: 0 10px;
+transition: .8s;
    input{
  background: none;
  cursor: pointer;
@@ -258,7 +259,7 @@ gap: 0 10px;
    }
 }
 .order-button:hover{
-    background: #FF7B5F;
+    background: #ff7a5fdc;
 }
 .cross{
     position: absolute;
@@ -940,8 +941,12 @@ gap: 0 10px;
                             border-radius: 25px;
                             font-size: 16px;
                             font-family: 'Poppins', sans-serif;
+                            transition: .8s;
 
                         }
+                    }
+                    input:hover{
+                        background: #ff7a5fdc;
                     }
                 }
             }
