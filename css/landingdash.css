@@ -285,11 +285,45 @@ body {
 .landing-dashboard-parent .main-section-mid-parent main {
   padding-top: 25px;
 }
-.landing-dashboard-parent .main-section-mid-parent main .title {
+.landing-dashboard-parent .main-section-mid-parent main .search {
+  display: flex;
+  gap: 0 30px;
+  align-items: center;
+}
+.landing-dashboard-parent .main-section-mid-parent main .search .title {
   font-family: "Poppins", sans-serif;
   color: #1A202C;
   font-weight: 600;
   font-size: 24px;
+}
+.landing-dashboard-parent .main-section-mid-parent main .search .search-bar {
+  display: flex;
+  width: 60%;
+  gap: 0 10px;
+}
+.landing-dashboard-parent .main-section-mid-parent main .search .search-bar input {
+  width: 100%;
+  background: #F5F5F5;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  color: #ACADB9;
+}
+.landing-dashboard-parent .main-section-mid-parent main .search .search-bar input::-moz-placeholder {
+  color: #ACADB9;
+}
+.landing-dashboard-parent .main-section-mid-parent main .search .search-bar input::placeholder {
+  color: #ACADB9;
+}
+.landing-dashboard-parent .main-section-mid-parent main .search .search-bar .img {
+  display: flex;
+  align-items: center;
+  background: #FF7B5F;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.landing-dashboard-parent .main-section-mid-parent main .search .search-bar .img img {
+  width: 100%;
 }
 .landing-dashboard-parent .main-section-mid-parent main .category {
   display: grid;

@@ -343,14 +343,45 @@ border-radius: 12px;
 
         main {
             padding-top: 25px;
-
-            .title {
-                font-family: 'Poppins', sans-serif;
-                color: #1A202C;
-                font-weight: 600;
-                font-size: 24px;
+.search{
+    display: flex;
+    gap: 0 30px;
+    align-items: center;
+    .title {
+        font-family: 'Poppins', sans-serif;
+        color: #1A202C;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .search-bar{
+        display: flex;
+        width: 60%;
+        gap: 0 10px;
+        input{
+            width: 100%;
+            background: #F5F5F5;
+            padding:15px 20px;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+            color: #ACADB9;
+        }
+        input::placeholder{
+            color: #ACADB9;
+        }
+        .img{
+            display: flex;
+            align-items: center;
+            background: #FF7B5F;
+            padding: 10px 15px ;
+            border-radius: 8px;
+            img{
+                width: 100%;
             }
+        }
+    }
 
+}
+       
             // CATEGORY css ====================
 
 
