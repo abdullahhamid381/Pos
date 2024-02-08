@@ -166,12 +166,13 @@ body {
   padding-top: 60px;
 }
 .landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list {
-  padding: 10px;
+  padding: 15px;
   display: flex;
   align-items: center;
   gap: 0 15px;
   transition: 0.8s;
   cursor: pointer;
+  border-radius: 12px;
 }
 .landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list i {
   color: white;
@@ -182,6 +183,10 @@ body {
   color: #FFFFFF;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+}
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list:hover {
+  background: rgba(255, 122, 95, 0.862745098);
+  border-radius: 12px;
 }
 .landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card {
   background: white;
@@ -248,6 +253,9 @@ body {
 }
 .landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card .items .cross i {
   color: black;
+}
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card:hover {
+  background: white;
 }
 .landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list:focus {
   background: #FF7B5F;
