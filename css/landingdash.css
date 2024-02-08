@@ -256,6 +256,7 @@ body {
 }
 .landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card:hover {
   background: white;
+  border-radius: 27px;
 }
 .landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list:focus {
   background: #FF7B5F;
