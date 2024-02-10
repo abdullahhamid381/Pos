@@ -352,6 +352,12 @@ body {
   gap: 0 30px;
   padding-top: 40px;
 }
+@media only screen and (max-width: 992px) {
+  .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .full-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+}
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .full-detail-grid .full-detail {
   display: grid;
   grid-template-columns: 4fr 1fr;
@@ -482,6 +488,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+@media only screen and (max-width: 992px) {
+  .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tabs-header {
+    grid-template-columns: 1fr;
+  }
+}
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab {
   padding: 10px 15px;
   cursor: pointer;
@@ -500,6 +511,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 20px;
+}
+@media only screen and (max-width: 992px) {
+  .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content {
+    grid-template-columns: 1fr;
+  }
 }
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content .content .title h1 {
   font-size: 18px;

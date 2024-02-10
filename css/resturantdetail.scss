@@ -335,7 +335,7 @@ body {
 
 
 
-// MAIN SECTION START FROM HERE
+    // MAIN SECTION START FROM HERE
     .main-section-parent {
         display: grid;
         padding-right: 60px;
@@ -409,14 +409,17 @@ body {
 
                 }
 
-// RESTURANT GALLERY AND DETAIL
+                // RESTURANT GALLERY AND DETAIL
 
                 .full-detail-grid {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 0 30px;
                     padding-top: 40px;
-
+@include lg{
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+}
                     .full-detail {
                         display: grid;
                         grid-template-columns: 4fr 1fr;
@@ -425,6 +428,7 @@ body {
                         height: 100%;
                         margin: auto;
 
+                        // GALLERY START==============
                         #mainDiv {
                             text-align: center;
                             width: 100%;
@@ -443,6 +447,8 @@ body {
                             }
                         }
                     }
+
+                    // TEXT DETAIL RESTURANT=========
 
                     .text-detail {
                         .button {
@@ -524,6 +530,8 @@ body {
                             }
                         }
 
+                        // CATEGORY SECTION PIZZA DONOUT
+
                         .category {
                             display: grid;
                             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -566,6 +574,9 @@ body {
 
                 }
 
+
+                // MULTIPLE TABS MENU ABOUT REVIEW
+
                 .tabs-container {
                     width: 100%;
                 }
@@ -577,6 +588,9 @@ body {
                     justify-content: space-between;
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
+                    @include lg{
+                        grid-template-columns: 1fr;
+                    }
                 }
 
                 .tab {
@@ -602,7 +616,9 @@ body {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 0 20px;
-
+@include lg{
+    grid-template-columns: 1fr;
+}
                     .content {
                         .title {
                             h1 {
