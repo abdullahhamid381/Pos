@@ -343,6 +343,7 @@ body {
 
         @include lg {
             grid-template-columns: 1fr;
+            padding-right: 0;
         }
 
         /* START MAIN */
@@ -541,7 +542,7 @@ body {
 
                             @include lg {
                                 grid-template-columns: 1fr 1fr;
-                                gap: 10px 0;
+                                gap: 10px;
                                 width: 100%;
                             }
 
@@ -617,7 +618,7 @@ body {
                     grid-template-columns: 1fr 1fr;
                     gap: 0 20px;
 @include lg{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
 }
                     .content {
                         .title {

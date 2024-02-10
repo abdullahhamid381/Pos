@@ -285,6 +285,7 @@ body {
 @media only screen and (max-width: 992px) {
   .resturantdetail-dashboard-parent .main-section-parent {
     grid-template-columns: 1fr;
+    padding-right: 0;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -454,7 +455,7 @@ body {
 @media only screen and (max-width: 992px) {
   .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .full-detail-grid .text-detail .category {
     grid-template-columns: 1fr 1fr;
-    gap: 10px 0;
+    gap: 10px;
     width: 100%;
   }
 }
@@ -514,7 +515,7 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content .content .title h1 {
