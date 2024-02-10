@@ -336,295 +336,484 @@ body {
 
 
 
-   .main-section-parent{
-    display: grid;
-  
-    @include lg{
-        grid-template-columns: 1fr;
-    }
-     /* START MAIN */
-     .main-section-mid-parent {
-        @include lg {
-            margin-top: -88px;
+    .main-section-parent {
+        display: grid;
+        padding-right: 60px;
+        position: relative;
 
+        @include lg {
+            grid-template-columns: 1fr;
         }
 
-        main {
-            padding-top: 25px;
+        /* START MAIN */
+        .main-section-mid-parent {
+            @include lg {
+                margin-top: -88px;
 
-            .search {
-                display: flex;
-                gap: 0 30px;
-                align-items: center;
+            }
 
-                @include lg {
-                    flex-direction: column;
-                    gap: 20px 0;
-                }
+            main {
+                padding-top: 25px;
 
-                .title {
-                    font-family: 'Poppins', sans-serif;
-                    color: #1A202C;
-                    font-weight: 600;
-                    font-size: 24px;
-                }
-
-                .search-bar {
+                .search {
                     display: flex;
-                    width: 60%;
-                    gap: 0 10px;
+                    gap: 0 30px;
+                    align-items: center;
 
                     @include lg {
-                        width: 100%;
+                        flex-direction: column;
+                        gap: 20px 0;
                     }
 
-                    input {
-                        width: 100%;
-                        background: #F5F5F5;
-                        padding: 15px 20px;
-                        border-radius: 8px;
+                    .title {
                         font-family: 'Poppins', sans-serif;
-                        color: #ACADB9;
-                    }
-
-                    input::placeholder {
-                        color: #ACADB9;
-                    }
-
-                    .img {
-                        display: flex;
-                        align-items: center;
-                        background: #FF7B5F;
-                        padding: 10px 15px;
-                        border-radius: 8px;
-
-                        img {
-                            width: 100%;
-                        }
-                    }
-                }
-
-            }
-
-            .full-detail{
-                display: grid;
-                grid-template-columns: 4fr 1fr;
-                place-items: center;
-                #mainDiv {
-                    text-align: center;
-                    width: 100%;
-                }
-                #imageGallery{
-                    img{
-                        width: 100%;
-                    }
-                }
-            }
-
-            // CATEGORY css ====================
-
-
-            .category {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                width: 80%;
-                padding-top: 40px;
-                gap: 0 20px;
-
-                @include lg {
-                    grid-template-columns: 1fr 1fr;
-                    gap: 10px 0;
-                    width: 100%;
-                }
-
-                .pizza {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: #fcf5f3;
-                    padding: 10px;
-                    border-radius: 15px;
-                    gap: 0 10px;
-                    cursor: pointer;
-
-                    p {
-                        font-weight: 500;
-                        font-size: 16px;
-                        color: #D69900;
-                        font-family: 'Poppins', sans-serif;
-                    }
-
-                    .img {
-
-                        img {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-
-
-
-            // POPULAR RESTURANTS==================
-
-            .popular-resturants {
-                .title {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding-top: 40px;
-
-                    h1 {
-                        font-size: 25px;
-                        color: black;
-                        font-family: 'Poppins', sans-serif;
+                        color: #1A202C;
                         font-weight: 600;
+                        font-size: 24px;
                     }
 
-                    a {
-                        text-decoration: none;
+                    .search-bar {
+                        display: flex;
+                        width: 60%;
+                        gap: 0 10px;
+
+                        @include lg {
+                            width: 100%;
+                        }
 
                         input {
-                            background: none;
-                            border: none;
-                            color: #ACADB9;
-                            cursor: pointer;
-                            font-size: 16px;
+                            width: 100%;
+                            background: #F5F5F5;
+                            padding: 15px 20px;
+                            border-radius: 8px;
                             font-family: 'Poppins', sans-serif;
+                            color: #ACADB9;
                         }
-                    }
-                }
 
-                .grid {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    gap: 0 20px;
-                    padding-top: 20px;
-
-                    @include lg {
-                        grid-template-columns: 1fr;
-                    }
-
-                    .cards {
-                        background: #f2f3f9;
-                        transition: .8s;
-                        border-radius: 0 0 12px 12px;
+                        input::placeholder {
+                            color: #ACADB9;
+                        }
 
                         .img {
+                            display: flex;
+                            align-items: center;
+                            background: #FF7B5F;
+                            padding: 10px 15px;
+                            border-radius: 8px;
+
                             img {
                                 width: 100%;
                             }
                         }
+                    }
 
-                        .text {
-                            padding: 10px 15px;
+                }
+
+                .full-detail-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 0 30px;
+                    padding-top: 40px;
+
+                    .full-detail {
+                        display: grid;
+                        grid-template-columns: 4fr 1fr;
+                        gap: 0 10px;
+
+                        height: 100%;
+                        margin: auto;
+
+                        #mainDiv {
+                            text-align: center;
+                            width: 100%;
                             border-radius: 8px;
+                        }
 
-                            .heart {
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
+                        #imageGallery {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 4px 0;
 
-                                h1 {
-                                    font-size: 18px;
-                                    font-family: 'Poppins', sans-serif;
-                                    font-weight: 600;
-                                    color: #323142;
-                                }
+                            img {
+                                width: 100%;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
 
-                                .div {
-                                    background: #ffffff;
-                                    height: 20px;
-                                    width: 20px;
-                                    padding: 15px;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    border-radius: 80px;
+                    .text-detail {
+                        .button {
+                            display: flex;
+                            justify-content: space-between;
 
-                                    i {
-                                        color: #8E97A6;
-                                        font-size: 18px;
-                                    }
-                                }
-
+                            h1 {
+                                font-size: 26px;
+                                font-weight: 600;
+                                font-family: 'Poppins', sans-serif;
                             }
 
-                            .away {
+                            button {
+                                text-align: center;
+                                font-size: 18px;
+                                font-family: 'Poppins', sans-serif;
+                                font-weight: 500;
+                                padding: 10px 20px;
+                                border-radius: 8px;
+                                background: #FF7B5F;
+                                color: white;
+                            }
+                        }
+
+                        .para {
+                            p {
+                                padding-top: 10px;
+                                font-size: 16px;
+                                color: #8E97A6;
+                                font-family: 'Poppins', sans-serif;
+                            }
+
+                            span {
+                                margin-top: 30px;
+                                font-size: 16px;
+                                color: #000000;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                        }
+
+                        .location {
+                            display: flex;
+                            gap: 0 5px;
+                            align-items: center;
+                            padding-top: 30px;
+
+                            i {
+                                font-size: 16px;
+                            }
+
+                            span {
+                                font-size: 16px;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                        }
+
+                        .review {
+                            display: flex;
+                            gap: 0 10px;
+                            align-items: center;
+                            padding-top: 10px;
+
+                            .star {
                                 display: flex;
-                                align-items: center;
-                                gap: 0 10px;
-                                padding-top: 15px;
-                                padding-bottom: 10px;
-                                border-bottom: 1px solid #0000001c;
-
-                                p {
-
-                                    font-family: 'Poppins', sans-serif;
-                                    font-weight: 400;
-                                    color: #8E97A6;
-                                    font-size: 14px;
-                                }
+                                gap: 0 5px;
 
                                 i {
-                                    color: #8E97A6;
-                                    font-size: 18px;
+                                    color: #FF7A28;
                                 }
 
+                                .empty {
+                                    color: #c8c8c8;
+                                }
                             }
 
-                            .rating {
+                            span {
+                                color: #8E97A6;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                        }
+
+                        .category {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                            width: 100%;
+                            padding-top: 40px;
+                            gap: 0 20px;
+
+                            @include lg {
+                                grid-template-columns: 1fr 1fr;
+                                gap: 10px 0;
+                                width: 100%;
+                            }
+
+                            .pizza {
                                 display: flex;
                                 align-items: center;
-                                justify-content: space-between;
-                                padding-top: 10px;
+                                justify-content: center;
+                                background: #fcf5f3;
+                                padding: 10px;
+                                border-radius: 15px;
+                                gap: 0 10px;
+                                cursor: pointer;
 
-                                .stars {
-                                    display: flex;
-                                    gap: 0 5px;
-
-                                    i {
-                                        color: #FF7A28;
-                                        font-size: 14px;
-                                    }
-
-                                    .empty {
-                                        color: #8E97A6;
-                                        font-size: 14px;
-                                    }
+                                p {
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    color: #D69900;
+                                    font-family: 'Poppins', sans-serif;
                                 }
 
-                                .reviews {
+                                .img {
+
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                // CATEGORY css ====================
+
+
+
+
+
+
+                // POPULAR RESTURANTS==================
+
+                .popular-resturants {
+                    .title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-top: 40px;
+
+                        h1 {
+                            font-size: 25px;
+                            color: black;
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 600;
+                        }
+
+                        a {
+                            text-decoration: none;
+
+                            input {
+                                background: none;
+                                border: none;
+                                color: #ACADB9;
+                                cursor: pointer;
+                                font-size: 16px;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                        }
+                    }
+
+                    .grid {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        gap: 0 20px;
+                        padding-top: 20px;
+
+                        @include lg {
+                            grid-template-columns: 1fr;
+                        }
+
+                        .cards {
+                            background: #f2f3f9;
+                            transition: .8s;
+                            border-radius: 0 0 12px 12px;
+
+                            .img {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            .text {
+                                padding: 10px 15px;
+                                border-radius: 8px;
+
+                                .heart {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    h1 {
+                                        font-size: 18px;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-weight: 600;
+                                        color: #323142;
+                                    }
+
+                                    .div {
+                                        background: #ffffff;
+                                        height: 20px;
+                                        width: 20px;
+                                        padding: 15px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-radius: 80px;
+
+                                        i {
+                                            color: #8E97A6;
+                                            font-size: 18px;
+                                        }
+                                    }
+
+                                }
+
+                                .away {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0 10px;
+                                    padding-top: 15px;
+                                    padding-bottom: 10px;
+                                    border-bottom: 1px solid #0000001c;
+
                                     p {
+
                                         font-family: 'Poppins', sans-serif;
                                         font-weight: 400;
                                         color: #8E97A6;
                                         font-size: 14px;
                                     }
+
+                                    i {
+                                        color: #8E97A6;
+                                        font-size: 18px;
+                                    }
+
+                                }
+
+                                .rating {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding-top: 10px;
+
+                                    .stars {
+                                        display: flex;
+                                        gap: 0 5px;
+
+                                        i {
+                                            color: #FF7A28;
+                                            font-size: 14px;
+                                        }
+
+                                        .empty {
+                                            color: #8E97A6;
+                                            font-size: 14px;
+                                        }
+                                    }
+
+                                    .reviews {
+                                        p {
+                                            font-family: 'Poppins', sans-serif;
+                                            font-weight: 400;
+                                            color: #8E97A6;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .cards:hover {
+                            background: #ffffff;
+                            box-shadow: 0 35px 23px -13px #ededed;
+                            border-radius: 0 0 14px 12px;
+                            cursor: pointer;
+
+                            .div {
+                                background: #f2f3f9;
+                                height: 20px;
+                                width: 20px;
+                                padding: 15px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 80px;
+
+                                i {
+                                    color: #8E97A6;
+                                    font-size: 18px;
                                 }
                             }
                         }
                     }
+                }
 
-                    .cards:hover {
-                        background: #ffffff;
-                        box-shadow: 0 35px 23px -13px #ededed;
-                        border-radius: 0 0 14px 12px;
-                        cursor: pointer;
 
-                        .div {
-                            background: #f2f3f9;
-                            height: 20px;
-                            width: 20px;
-                            padding: 15px;
+
+                // EXPLORE CATEGORY==================
+
+                .explore-category {
+                    padding: 40px 0;
+
+                    .title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-top: 40px;
+
+                        h1 {
+                            font-size: 25px;
+                            color: black;
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 600;
+                        }
+
+                        a {
+                            text-decoration: none;
+
+                            input {
+                                background: none;
+                                border: none;
+                                color: #FF7B5F;
+                                cursor: pointer;
+                                font-size: 16px;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                        }
+                    }
+
+                    .grid {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                        gap: 0 20px;
+                        padding-top: 20px;
+
+                        @include lg {
+                            grid-template-columns: 1fr 1fr;
+                            gap: 20px;
+                        }
+
+
+                        .cards {
                             display: flex;
+                            flex-direction: column;
                             justify-content: center;
                             align-items: center;
-                            border-radius: 80px;
+                            background: #F2F3F9;
+                            padding: 20px;
+                            border-radius: 12px;
 
-                            i {
-                                color: #8E97A6;
-                                font-size: 18px;
+                            .img {
+                                img {
+                                    width: 100%;
+
+                                }
+                            }
+
+                            .text {
+                                h1 {
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    color: #182135;
+                                    text-align: center;
+                                    padding-top: 10px;
+                                }
+
+                                p {
+                                    font-size: 12px;
+                                    font-family: 'Poppins', sans-serif;
+                                    color: #626264;
+                                }
                             }
                         }
                     }
@@ -633,95 +822,12 @@ body {
 
 
 
-            // EXPLORE CATEGORY==================
-
-            .explore-category {
-                padding: 40px 0;
-
-                .title {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding-top: 40px;
-
-                    h1 {
-                        font-size: 25px;
-                        color: black;
-                        font-family: 'Poppins', sans-serif;
-                        font-weight: 600;
-                    }
-
-                    a {
-                        text-decoration: none;
-
-                        input {
-                            background: none;
-                            border: none;
-                            color: #FF7B5F;
-                            cursor: pointer;
-                            font-size: 16px;
-                            font-family: 'Poppins', sans-serif;
-                        }
-                    }
-                }
-
-                .grid {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                    gap: 0 20px;
-                    padding-top: 20px;
-
-                    @include lg {
-                        grid-template-columns: 1fr 1fr;
-                        gap: 20px;
-                    }
 
 
-                    .cards {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        background: #F2F3F9;
-                        padding: 20px;
-                        border-radius: 12px;
 
-                        .img {
-                            img {
-                                width: 50%;
-
-                            }
-                        }
-
-                        .text {
-                            h1 {
-                                font-family: 'Poppins', sans-serif;
-                                font-size: 16px;
-                                font-weight: 600;
-                                color: #182135;
-                                text-align: center;
-                                padding-top: 10px;
-                            }
-
-                            p {
-                                font-size: 12px;
-                                font-family: 'Poppins', sans-serif;
-                                color: #626264;
-                            }
-                        }
-                    }
-                }
-            }
         }
 
-
-
-
-
-
     }
-
-   }
 
 
     /* START RIGHT SECTION */
@@ -733,6 +839,7 @@ body {
             /* left: revert; */
             right: 0;
             top: 0;
+
             @include lg {
                 padding-right: 0;
             }
