@@ -210,13 +210,110 @@
 
 <div class="tabs-container">
   <div class="tabs-header" id="tabsHeader">
-    <div class="tab" onclick="changeTab(0)" id="tab0">Item One</div>
-    <div class="tab" onclick="changeTab(1)" id="tab1">Item Two</div>
-    <div class="tab" onclick="changeTab(2)" id="tab2">Item Three</div>
+    <div class="tab" onclick="changeTab(0)" id="tab0"><h1>Menu</h1></div>
+    <div class="tab" onclick="changeTab(1)" id="tab1"><h1>About</h1></div>
+    <div class="tab" onclick="changeTab(2)" id="tab2"><h1>Review</h1></div>
   </div>
-  <div class="tab-content" id="tabContent0">Item One Content</div>
-  <div class="tab-content" id="tabContent1" style="display: none;">Item Two Content</div>
-  <div class="tab-content" id="tabContent2" style="display: none;">Item Three Content</div>
+  <div class="tab-content" id="tabContent0">
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54357.47911860851!2d71.06610769999999!3d31.624472999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1707585545223!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="content">
+      <div class="title"><h1>Opening Time</h1></div>
+  
+    
+      <div class="table">
+        <span>Monday</span>
+        <span>07:30 AM - 11:59 PM</span>
+      </div>
+      <div class="table">
+        <span>Tuesday</span>
+        <span>07:30 AM - 11:59 PM</span>
+      </div>
+      <div class="table">
+        <span>Wednesday</span>
+        <span>07:30 AM - 11:59 PM</span>
+      </div>
+      <div class="table">
+        <span>Thursday</span>
+        <span>07:30 AM - 11:59 PM</span>
+      </div>
+      <div class="table">
+        <span>Friday</span>
+        <span>07:30 AM - 11:59 PM</span>
+      </div>
+      <div class="table">
+        <span>Saturda</span>
+        <span>07:30 AM - 11:59 PM</span>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content" id="tabContent1" style="display: none;">  
+      <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54357.47911860851!2d71.06610769999999!3d31.624472999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1707585545223!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="content">
+    <div class="title"><h1>About</h1></div>
+
+  
+    <div class="table">
+      <span>Monday</span>
+      <span>07:30 AM - 11:59 PM</span>
+    </div>
+    <div class="table">
+      <span>Tuesday</span>
+      <span>07:30 AM - 11:59 PM</span>
+    </div>
+    <div class="table">
+      <span>Wednesday</span>
+      <span>07:30 AM - 11:59 PM</span>
+    </div>
+    <div class="table">
+      <span>Thursday</span>
+      <span>07:30 AM - 11:59 PM</span>
+    </div>
+    <div class="table">
+      <span>Friday</span>
+      <span>07:30 AM - 11:59 PM</span>
+    </div>
+    <div class="table">
+      <span>Saturda</span>
+      <span>07:30 AM - 11:59 PM</span>
+    </div>
+  </div></div>
+  <div class="tab-content" id="tabContent2" style="display: none;">
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54357.47911860851!2d71.06610769999999!3d31.624472999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1707585545223!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="content">
+      <div class="title"><h1>Review</h1></div>
+  
+    
+      <div class="table">
+        <span>Monday</span>
+        <span>07:30 AM - 11:59 PM</span>
+      </div>
+      <div class="table">
+        <span>Tuesday</span>
+        <span>07:30 AM - 11:59 PM</span>
+      </div>
+      <div class="table">
+        <span>Wednesday</span>
+        <span>07:30 AM - 11:59 PM</span>
+      </div>
+      <div class="table">
+        <span>Thursday</span>
+        <span>07:30 AM - 11:59 PM</span>
+      </div>
+      <div class="table">
+        <span>Friday</span>
+        <span>07:30 AM - 11:59 PM</span>
+      </div>
+      <div class="table">
+        <span>Saturda</span>
+        <span>07:30 AM - 11:59 PM</span>
+      </div>
+    </div></div>
 </div>
 
           </main>
@@ -319,11 +416,11 @@
   function changeTab(index) {
     // Hide the current tab content
     document.getElementById(`tabContent${currentTab}`).style.display = 'none';
-    document.getElementById(`tab${currentTab}`).style.backgroundColor = '#f1f1f1';
+    document.getElementById(`tab${currentTab}`);
 
     // Show the selected tab content
     document.getElementById(`tabContent${index}`).style.display = 'block';
-    document.getElementById(`tab${index}`).style.backgroundColor = '#ddd';
+    document.getElementById(`tab${index}`);
 
     currentTab = index;
   }

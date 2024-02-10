@@ -471,201 +471,52 @@ body {
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .full-detail-grid .text-detail .category .pizza .img img {
   width: 100%;
 }
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tabs-container {
+  width: 100%;
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tabs-header {
+  border-bottom: 1px solid #ddd;
   padding-top: 40px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .title h1 {
-  font-size: 25px;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .title a {
-  text-decoration: none;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .title a input {
-  background: none;
-  border: none;
-  color: #ACADB9;
-  cursor: pointer;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid {
+  /* display: flex; */
+  justify-content: space-between;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 0 20px;
-  padding-top: 20px;
 }
-@media only screen and (max-width: 992px) {
-  .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid {
-    grid-template-columns: 1fr;
-  }
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards {
-  background: #f2f3f9;
-  transition: 0.8s;
-  border-radius: 0 0 12px 12px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards .img img {
-  width: 100%;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards .text {
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab {
   padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #FE724E;
+  border-bottom: none;
+  background: none;
+  text-align: center;
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab h1 {
+  font-size: 16px;
+  color: #878E9B;
+  font-weight: 400;
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content .content .title h1 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content .content .table {
+  margin-top: 20px;
+  border: 1px solid #fcedef;
+  padding: 15px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
   border-radius: 8px;
 }
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .heart {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .heart h1 {
-  font-size: 18px;
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content .content .table span {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: #323142;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .heart .div {
-  background: #ffffff;
-  height: 20px;
-  width: 20px;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 80px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .heart .div i {
-  color: #8E97A6;
-  font-size: 18px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .away {
-  display: flex;
-  align-items: center;
-  gap: 0 10px;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1098039216);
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .away p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  color: #8E97A6;
-  font-size: 14px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .away i {
-  color: #8E97A6;
-  font-size: 18px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 10px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating .stars {
-  display: flex;
-  gap: 0 5px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating .stars i {
-  color: #FF7A28;
-  font-size: 14px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating .stars .empty {
-  color: #8E97A6;
-  font-size: 14px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating .reviews p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  color: #8E97A6;
-  font-size: 14px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards:hover {
-  background: #ffffff;
-  box-shadow: 0 35px 23px -13px #ededed;
-  border-radius: 0 0 14px 12px;
-  cursor: pointer;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards:hover .div {
-  background: #f2f3f9;
-  height: 20px;
-  width: 20px;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 80px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .popular-resturants .grid .cards:hover .div i {
-  color: #8E97A6;
-  font-size: 18px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .explore-category {
-  padding: 40px 0;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .explore-category .title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 40px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .explore-category .title h1 {
-  font-size: 25px;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .explore-category .title a {
-  text-decoration: none;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .explore-category .title a input {
-  background: none;
-  border: none;
-  color: #FF7B5F;
-  cursor: pointer;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .explore-category .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0 20px;
-  padding-top: 20px;
-}
-@media only screen and (max-width: 992px) {
-  .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .explore-category .grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .explore-category .grid .cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #F2F3F9;
-  padding: 20px;
-  border-radius: 12px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .explore-category .grid .cards .img img {
-  width: 100%;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .explore-category .grid .cards .text h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: #182135;
-  text-align: center;
-  padding-top: 10px;
-}
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .explore-category .grid .cards .text p {
-  font-size: 12px;
-  font-family: "Poppins", sans-serif;
-  color: #626264;
 }
 .resturantdetail-dashboard-parent .right-parent .right {
   margin-top: 1.4rem;
