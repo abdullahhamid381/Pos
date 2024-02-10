@@ -64,7 +64,7 @@ body {
     color: var(--color-dark);
 }
 
-.resturant-dashboard-parent {
+.resturantdetail-dashboard-parent {
     /* ROOT VARIABLES */
 
     .container {
@@ -72,7 +72,7 @@ body {
         width: 100%;
         margin: 0 auto;
         gap: 2.8rem;
-        grid-template-columns: 18rem auto 24rem;
+        grid-template-columns: 18rem auto;
     }
 
     a {
@@ -187,7 +187,8 @@ body {
                             gap: 0 15px;
                             transition: .8s;
                             cursor: pointer;
-border-radius: 12px;
+                            border-radius: 12px;
+
                             i {
                                 color: white;
                                 font-size: 20px;
@@ -289,7 +290,8 @@ border-radius: 12px;
                                 }
                             }
                         }
-                        .card:hover{
+
+                        .card:hover {
                             background: white;
                             border-radius: 27px;
                         }
@@ -300,7 +302,7 @@ border-radius: 12px;
                             border-radius: 8px;
                         }
                     }
-                    
+
 
                     .close {
                         display: none;
@@ -334,8 +336,14 @@ border-radius: 12px;
 
 
 
-    /* START MAIN */
-    .main-section-mid-parent {
+   .main-section-parent{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    @include lg{
+        grid-template-columns: 1fr;
+    }
+     /* START MAIN */
+     .main-section-mid-parent {
         @include lg {
             margin-top: -88px;
 
@@ -343,52 +351,73 @@ border-radius: 12px;
 
         main {
             padding-top: 25px;
-.search{
-    display: flex;
-    gap: 0 30px;
-    align-items: center;
-    @include lg{
-        flex-direction: column;
-        gap: 20px 0;
-    }
-    .title {
-        font-family: 'Poppins', sans-serif;
-        color: #1A202C;
-        font-weight: 600;
-        font-size: 24px;
-    }
-    .search-bar{
-        display: flex;
-        width: 60%;
-        gap: 0 10px;
-       @include lg{
-        width: 100%;
-       }
-        input{
-            width: 100%;
-            background: #F5F5F5;
-            padding:15px 20px;
-            border-radius: 8px;
-            font-family: 'Poppins', sans-serif;
-            color: #ACADB9;
-        }
-        input::placeholder{
-            color: #ACADB9;
-        }
-        .img{
-            display: flex;
-            align-items: center;
-            background: #FF7B5F;
-            padding: 10px 15px ;
-            border-radius: 8px;
-            img{
-                width: 100%;
-            }
-        }
-    }
 
-}
-       
+            .search {
+                display: flex;
+                gap: 0 30px;
+                align-items: center;
+
+                @include lg {
+                    flex-direction: column;
+                    gap: 20px 0;
+                }
+
+                .title {
+                    font-family: 'Poppins', sans-serif;
+                    color: #1A202C;
+                    font-weight: 600;
+                    font-size: 24px;
+                }
+
+                .search-bar {
+                    display: flex;
+                    width: 60%;
+                    gap: 0 10px;
+
+                    @include lg {
+                        width: 100%;
+                    }
+
+                    input {
+                        width: 100%;
+                        background: #F5F5F5;
+                        padding: 15px 20px;
+                        border-radius: 8px;
+                        font-family: 'Poppins', sans-serif;
+                        color: #ACADB9;
+                    }
+
+                    input::placeholder {
+                        color: #ACADB9;
+                    }
+
+                    .img {
+                        display: flex;
+                        align-items: center;
+                        background: #FF7B5F;
+                        padding: 10px 15px;
+                        border-radius: 8px;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+            }
+
+            .full-detail{
+                #mainDiv {
+                    text-align: center;
+                }
+                #imageGallery img {
+                    width: 100px;
+                    height: 100px;
+                    margin: 5px;
+                    cursor: pointer;
+                }
+            }
+
             // CATEGORY css ====================
 
 
@@ -689,6 +718,7 @@ border-radius: 12px;
 
     }
 
+   }
 
 
     /* START RIGHT SECTION */
@@ -1089,7 +1119,7 @@ border-radius: 12px;
             width: 18rem;
             z-index: 3;
             box-shadow: 1rem 3rem 4rem var(--color-light);
-            
+
             padding-right: var(--card-padding);
             display: none;
             animation: showMenu 400ms ease forwards;
