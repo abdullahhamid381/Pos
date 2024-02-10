@@ -400,6 +400,18 @@ body {
   background: #FF7B5F;
   color: white;
 }
+@media only screen and (max-width: 450px) {
+  .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .full-detail-grid .text-detail .button button {
+    text-align: center;
+    font-size: 9px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #FF7B5F;
+    color: white;
+  }
+}
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .full-detail-grid .text-detail .para p {
   padding-top: 10px;
   font-size: 16px;
@@ -517,6 +529,9 @@ body {
   .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content {
     grid-template-columns: 1fr !important;
   }
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content .map iframe {
+  width: 100%;
 }
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content .content .title h1 {
   font-size: 18px;
