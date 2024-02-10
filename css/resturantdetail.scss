@@ -338,7 +338,7 @@ body {
 
    .main-section-parent{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+  
     @include lg{
         grid-template-columns: 1fr;
     }
@@ -688,7 +688,7 @@ body {
 
                         .img {
                             img {
-                                width: 100%;
+                                width: 50%;
 
                             }
                         }
@@ -729,7 +729,10 @@ body {
         .right {
             margin-top: 1.4rem;
             padding-right: 45px;
-
+            position: absolute;
+            /* left: revert; */
+            right: 0;
+            top: 0;
             @include lg {
                 padding-right: 0;
             }

@@ -278,7 +278,6 @@ body {
 }
 .resturantdetail-dashboard-parent .main-section-parent {
   display: grid;
-  grid-template-columns: 3fr 1fr;
   /* START MAIN */
 }
 @media only screen and (max-width: 992px) {
@@ -571,7 +570,7 @@ body {
   border-radius: 12px;
 }
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .explore-category .grid .cards .img img {
-  width: 100%;
+  width: 50%;
 }
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .explore-category .grid .cards .text h1 {
   font-family: "Poppins", sans-serif;
@@ -589,6 +588,10 @@ body {
 .resturantdetail-dashboard-parent .right-parent .right {
   margin-top: 1.4rem;
   padding-right: 45px;
+  position: absolute;
+  /* left: revert; */
+  right: 0;
+  top: 0;
 }
 @media only screen and (max-width: 992px) {
   .resturantdetail-dashboard-parent .right-parent .right {
