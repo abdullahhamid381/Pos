@@ -419,7 +419,8 @@
     document.getElementById(`tab${currentTab}`);
 
     // Show the selected tab content
-    document.getElementById(`tabContent${index}`).style.display = 'block';
+    document.getElementById(`tabContent${index}`).style.cssText = 'display: grid; grid-template-columns: 1fr 1fr;';
+
     document.getElementById(`tab${index}`);
 
     currentTab = index;
