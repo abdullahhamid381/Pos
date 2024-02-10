@@ -599,9 +599,7 @@ body {
                     justify-content: space-between;
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
-                    @include lg{
-                        grid-template-columns: 1fr;
-                    }
+                  
                 }
 
                 .tab {

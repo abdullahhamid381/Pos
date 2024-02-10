@@ -501,11 +501,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-@media only screen and (max-width: 992px) {
-  .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tabs-header {
-    grid-template-columns: 1fr;
-  }
-}
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab {
   padding: 10px 15px;
   cursor: pointer;
