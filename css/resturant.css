@@ -1,0 +1,1083 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* DECLARATIONS */
+:root {
+  --color-primary: #7380ec;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+/* DARK THEME VARIABLES */
+.dark-theme-variables {
+  --color-background: #181a1e;
+  --color-white: #202528;
+  --color-dark: #edeffd;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+/* STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: poppins, sans-serif;
+  font-size: 0.88rem;
+  background: white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  overflow-x: hidden;
+  color: var(--color-dark);
+}
+
+.landing-dashboard-parent {
+  /* ROOT VARIABLES */
+  /* START SIDEBAR============================= */
+  /* END SIDEBAR */
+  /* END ASIDE */
+  /* START MAIN */
+  /* START RIGHT SECTION */
+  /* END SALES ANALYTICS */
+  /* END RIGHT SECTION */
+  /* START MEDIA QUERIES */
+  /* TABLETS AND SMALL LAPTOPS */
+  /* SMALL TABLETS AND MOBILE */
+  /* END MEDIA QUERIES */
+}
+
+.landing-dashboard-parent .container {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  gap: 2.8rem;
+  grid-template-columns: 18rem auto 24rem;
+}
+
+.landing-dashboard-parent a {
+  color: var(--color-dark);
+}
+
+.landing-dashboard-parent img {
+  display: block;
+  width: 100%;
+}
+
+.landing-dashboard-parent h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.landing-dashboard-parent h2 {
+  font-size: 1.4rem;
+}
+
+.landing-dashboard-parent h3 {
+  font-size: 14px;
+}
+
+.landing-dashboard-parent h4 {
+  font-size: 0.8rem;
+}
+
+.landing-dashboard-parent h5 {
+  font-family: 0.77rem;
+}
+
+.landing-dashboard-parent small {
+  font-size: 0.75rem;
+}
+
+.landing-dashboard-parent .profile-photo {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.landing-dashboard-parent .text-muted {
+  color: var(--color-info-dark);
+}
+
+.landing-dashboard-parent p {
+  color: var(--color-dark-variant);
+}
+
+.landing-dashboard-parent b {
+  color: var(--color-dark);
+}
+
+.landing-dashboard-parent .primary {
+  color: var(--color-primary);
+}
+
+.landing-dashboard-parent .danger {
+  color: var(--color-danger);
+}
+
+.landing-dashboard-parent .success {
+  color: var(--color-success);
+}
+
+.landing-dashboard-parent .warning {
+  color: var(--color-warning);
+}
+
+.landing-dashboard-parent .aside-parent {
+  background: #1A1A1A;
+  padding: 20px 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .aside-parent {
+    background: #1A1A1A;
+    padding: 0;
+  }
+}
+.landing-dashboard-parent .aside-parent aside .top .coloumn {
+  width: 80%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .aside-parent aside .top .coloumn .logo {
+    padding-top: 20px;
+  }
+}
+.landing-dashboard-parent .aside-parent aside .top .coloumn .logo img {
+  width: 100%;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  padding-top: 60px;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+  transition: 0.8s;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list i {
+  color: white;
+  font-size: 20px;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list h1 {
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list:hover {
+  background: rgba(255, 122, 95, 0.862745098);
+  border-radius: 12px;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card {
+  background: white;
+  display: flex;
+  padding: 40px 10px;
+  margin-top: 80px;
+  border-radius: 27px;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0px 26px 0px -11px #f5f5f5, 0px 47px 0px -17px #f0f0f0;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card .items .icon-fire {
+  width: 50%;
+  margin: auto;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card .items .icon-fire img {
+  width: 100%;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card .items .text h1 {
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  padding-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card .items .text p {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  color: #8E97A6;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card .items .order-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background: #FF7B5F;
+  border-radius: 12px;
+  gap: 0 10px;
+  transition: 0.8s;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card .items .order-button input {
+  background: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  font-size: 16px;
+  padding: 15px 0;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card .items .order-button:hover {
+  background: rgba(255, 122, 95, 0.862745098);
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card .items .cross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card .items .cross i {
+  color: black;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .card:hover {
+  background: white;
+  border-radius: 27px;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list:focus {
+  background: #FF7B5F;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .close {
+  display: none;
+  position: absolute;
+  right: 13px;
+  top: 28px;
+}
+
+.landing-dashboard-parent .aside-parent aside .top .coloumn .close span {
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .aside-parent aside .top .coloumn .close {
+    display: block;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .main-section-mid-parent {
+    margin-top: -88px;
+  }
+}
+.landing-dashboard-parent .main-section-mid-parent main {
+  padding-top: 25px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .search {
+  display: flex;
+  gap: 0 30px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .main-section-mid-parent main .search {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+}
+.landing-dashboard-parent .main-section-mid-parent main .search .title {
+  font-family: "Poppins", sans-serif;
+  color: #1A202C;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .search .search-bar {
+  display: flex;
+  width: 60%;
+  gap: 0 10px;
+}
+
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .main-section-mid-parent main .search .search-bar {
+    width: 100%;
+  }
+}
+.landing-dashboard-parent .main-section-mid-parent main .search .search-bar input {
+  width: 100%;
+  background: #F5F5F5;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  color: #ACADB9;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .search .search-bar input::-moz-placeholder {
+  color: #ACADB9;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .search .search-bar input::placeholder {
+  color: #ACADB9;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .search .search-bar .img {
+  display: flex;
+  align-items: center;
+  background: #FF7B5F;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .search .search-bar .img img {
+  width: 100%;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .category {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 80%;
+  padding-top: 40px;
+  gap: 0 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .main-section-mid-parent main .category {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 0;
+    width: 100%;
+  }
+}
+.landing-dashboard-parent .main-section-mid-parent main .category .pizza {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fcf5f3;
+  padding: 10px;
+  border-radius: 15px;
+  gap: 0 10px;
+  cursor: pointer;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .category .pizza p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #D69900;
+  font-family: "Poppins", sans-serif;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .category .pizza .img img {
+  width: 100%;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .title h1 {
+  font-size: 25px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .title a {
+  text-decoration: none;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .title a input {
+  background: none;
+  border: none;
+  color: #ACADB9;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0 20px;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards {
+  background: #f2f3f9;
+  transition: 0.8s;
+  border-radius: 0 0 12px 12px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .img img {
+  width: 100%;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text {
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .heart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .heart h1 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #323142;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .heart .div {
+  background: #ffffff;
+  height: 20px;
+  width: 20px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .heart .div i {
+  color: #8E97A6;
+  font-size: 18px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .away {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1098039216);
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .away p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #8E97A6;
+  font-size: 14px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .away i {
+  color: #8E97A6;
+  font-size: 18px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating .stars {
+  display: flex;
+  gap: 0 5px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating .stars i {
+  color: #FF7A28;
+  font-size: 14px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating .stars .empty {
+  color: #8E97A6;
+  font-size: 14px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards .text .rating .reviews p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #8E97A6;
+  font-size: 14px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards:hover {
+  background: #ffffff;
+  box-shadow: 0 35px 23px -13px #ededed;
+  border-radius: 0 0 14px 12px;
+  cursor: pointer;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards:hover .div {
+  background: #f2f3f9;
+  height: 20px;
+  width: 20px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .popular-resturants .grid .cards:hover .div i {
+  color: #8E97A6;
+  font-size: 18px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .explore-category {
+  padding: 40px 0;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .explore-category .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .explore-category .title h1 {
+  font-size: 25px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .explore-category .title a {
+  text-decoration: none;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .explore-category .title a input {
+  background: none;
+  border: none;
+  color: #FF7B5F;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .explore-category .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0 20px;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .main-section-mid-parent main .explore-category .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+.landing-dashboard-parent .main-section-mid-parent main .explore-category .grid .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F2F3F9;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .explore-category .grid .cards .img img {
+  width: 100%;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .explore-category .grid .cards .text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #182135;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.landing-dashboard-parent .main-section-mid-parent main .explore-category .grid .cards .text p {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #626264;
+}
+
+.landing-dashboard-parent .right-parent .right {
+  margin-top: 1.4rem;
+  padding-right: 45px;
+}
+
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .right-parent .right {
+    padding-right: 0;
+  }
+}
+.landing-dashboard-parent .right-parent .right .top {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.landing-dashboard-parent .right-parent .right .top button {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .right-parent .right .top button {
+    display: block;
+  }
+}
+.landing-dashboard-parent .right-parent .right .users-login {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.landing-dashboard-parent .right-parent .right .users-login .cart img {
+  width: 100%;
+}
+
+.landing-dashboard-parent .right-parent .right .users-login .cart i {
+  font-size: 18px;
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .right-parent .right .users-login .cart i {
+    display: block;
+  }
+}
+.landing-dashboard-parent .right-parent .right .users-login .login-button {
+  display: flex;
+  align-items: center;
+  background: #FAFAFA;
+  padding: 5px 20px;
+  border-radius: 80px;
+  gap: 0px;
+  cursor: pointer;
+}
+
+.landing-dashboard-parent .right-parent .right .users-login .login-button .userimg {
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+
+.landing-dashboard-parent .right-parent .right .users-login .login-button .userimg i {
+  font-size: 18px;
+}
+
+.landing-dashboard-parent .right-parent .right .users-login .login-button input {
+  background: none;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #1A202C;
+  font-weight: 600;
+}
+
+.landing-dashboard-parent .right-parent .right .user-wallet {
+  padding-top: 40px;
+}
+
+.landing-dashboard-parent .right-parent .right .user-wallet .title h1 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card {
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .landing-dashboard-parent .right-parent .right .user-wallet .wallet-card {
+    width: 100%;
+  }
+}
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-icon {
+  display: flex;
+  background: #FF8369;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-icon .img img {
+  width: 100%;
+}
+
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail {
+  padding: 0 20px;
+  background: #323142;
+  border-radius: 0 0 8px 8px;
+}
+
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .wallet-number {
+  display: flex;
+  gap: 0 20px;
+  padding-top: 10px;
+}
+
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .wallet-number span {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .card-holder {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 20px 0;
+  align-items: center;
+}
+
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .card-holder .name p {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  color: whitesmoke;
+}
+
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .card-holder .name h1 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.landing-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .card-holder .debit img {
+  width: 100%;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .title h1 {
+  font-size: 18px;
+  color: #323142;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .title a {
+  text-decoration: none;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .title a input {
+  background: none;
+  border: none;
+  color: #ACADB9;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card {
+  display: flex;
+  margin-top: 20px;
+  gap: 0 10px;
+  align-items: center;
+  background: #F2F3F9;
+  padding: 10px;
+  border-radius: 12px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .img {
+  position: relative;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .img img {
+  width: 100%;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .img .del img {
+  width: 30%;
+  position: absolute;
+  top: 0;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .name-price {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .name-price h1 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .name-price h1 span {
+  color: #FF7B5F;
+  font-size: 14px;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .increment {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  padding: 5px 0;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .increment button {
+  border: none;
+  background: white;
+  height: 10px;
+  width: 10px;
+  padding: 10px;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .increment button i {
+  color: #8E97A6;
+  font-size: 14px;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .increment span {
+  color: #FF7B5F;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .on-the-way span {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #ACADB9;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .on-the-way p {
+  font-size: 12px;
+  color: #323142;
+  font-family: "Poppins", sans-serif;
+  color: #ACADB9;
+  padding-top: 2px;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card:hover {
+  background: #ffffff;
+  box-shadow: 0 35px 23px -13px #ededed;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .checkout {
+  padding-top: 20px;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order .checkout input {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background: none;
+  text-align: center;
+  background: #FF7B5F;
+  padding: 15px;
+  color: white;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.8s;
+}
+
+.landing-dashboard-parent .right-parent .right .cart-parent .cards-all-order input:hover {
+  background: rgba(255, 122, 95, 0.862745098);
+}
+
+@media screen and (max-width: 1200px) {
+  .landing-dashboard-parent aside .logo h2 {
+    display: none;
+  }
+  .landing-dashboard-parent aside .sidebar h3 {
+    display: none;
+  }
+  .landing-dashboard-parent aside .sidebar a {
+    width: 5.6rem;
+  }
+  .landing-dashboard-parent aside .sidebar a:last-child {
+    position: relative;
+    margin-top: 1.8rem;
+  }
+  .landing-dashboard-parent main .insights {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .landing-dashboard-parent main .recent-orders {
+    width: 94%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem 0 0 8.8rem;
+  }
+  .landing-dashboard-parent main .recent-orders table {
+    width: 83vw;
+  }
+  .landing-dashboard-parent main .recent-orders table thead tr th:first-child,
+  .landing-dashboard-parent main .recent-orders table thead tr th:last-child {
+    display: none;
+  }
+  .landing-dashboard-parent main .recent-orders table tbody tr td:first-child,
+  .landing-dashboard-parent main .recent-orders table tbody tr td:last-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .landing-dashboard-parent .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .landing-dashboard-parent aside {
+    position: fixed;
+    left: -100%;
+    background: #1A1A1A;
+    width: 18rem;
+    z-index: 3;
+    box-shadow: 1rem 3rem 4rem var(--color-light);
+    padding-right: var(--card-padding);
+    display: none;
+    animation: showMenu 400ms ease forwards;
+  }
+  @keyframes showMenu {
+    to {
+      left: -100%;
+    }
+  }
+  @keyframes showMenu {
+    to {
+      left: 0;
+    }
+  }
+  .landing-dashboard-parent aside .logo {
+    margin-left: 1rem;
+  }
+  .landing-dashboard-parent aside .logo h2 {
+    display: inline;
+  }
+  .landing-dashboard-parent aside .sidebar h3 {
+    display: inline;
+  }
+  .landing-dashboard-parent aside .sidebar a {
+    width: 100%;
+    height: 3.4rem;
+  }
+  .landing-dashboard-parent aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 5rem;
+  }
+  .landing-dashboard-parent aside .close {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .landing-dashboard-parent main {
+    margin-top: 8rem;
+    padding: 0 1rem;
+  }
+  .landing-dashboard-parent main .recent-orders {
+    position: relative;
+    margin: 3rem 0 0 0;
+    width: 100%;
+  }
+  .landing-dashboard-parent main .recent-orders table {
+    width: 100%;
+    margin: 0;
+  }
+  .landing-dashboard-parent .right {
+    width: 94%;
+    margin: 0 auto 4rem;
+  }
+  .landing-dashboard-parent .right .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    padding: 0 0.8rem;
+    height: 4.6rem;
+    background: var(--color-white);
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+    box-shadow: 0 1rem 1rem var(--color-light);
+  }
+  .landing-dashboard-parent .right .top .theme-toggler {
+    width: 4.4rem;
+    position: absolute;
+    left: 66%;
+  }
+  .landing-dashboard-parent .right .top .profile .info {
+    display: none;
+  }
+  .landing-dashboard-parent .right .top button {
+    display: inline-block;
+    background: transparent;
+    cursor: pointer;
+    color: var(--color-dark);
+    position: absolute;
+    left: 1rem;
+  }
+  .landing-dashboard-parent .right .top button span {
+    font-size: 2rem;
+  }
+} /*# sourceMappingURL=resturant.css.map */
