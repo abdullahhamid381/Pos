@@ -407,14 +407,17 @@ body {
             }
 
             .full-detail{
+                display: grid;
+                grid-template-columns: 4fr 1fr;
+                place-items: center;
                 #mainDiv {
                     text-align: center;
+                    width: 100%;
                 }
-                #imageGallery img {
-                    width: 100px;
-                    height: 100px;
-                    margin: 5px;
-                    cursor: pointer;
+                #imageGallery{
+                    img{
+                        width: 100%;
+                    }
                 }
             }
 

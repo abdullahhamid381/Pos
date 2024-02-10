@@ -345,14 +345,17 @@ body {
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .search .search-bar .img img {
   width: 100%;
 }
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .full-detail {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  place-items: center;
+}
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .full-detail #mainDiv {
   text-align: center;
+  width: 100%;
 }
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .full-detail #imageGallery img {
-  width: 100px;
-  height: 100px;
-  margin: 5px;
-  cursor: pointer;
+  width: 100%;
 }
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .category {
   display: grid;
