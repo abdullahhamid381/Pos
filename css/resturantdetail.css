@@ -545,6 +545,12 @@ body {
 .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content .content .table span {
   font-family: "Poppins", sans-serif;
 }
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent2 {
+  display: flex I !important;
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent2 .review-buttons {
+  display: flex;
+}
 .resturantdetail-dashboard-parent .right-parent .right {
   margin-top: 1.4rem;
   padding-right: 45px;

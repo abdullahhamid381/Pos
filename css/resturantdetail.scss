@@ -664,7 +664,10 @@ body {
                 }
 
 #tabContent2{
-    .
+    display: flex I !important;
+    .review-buttons{
+        display: flex;
+    }
 }
             }
 
