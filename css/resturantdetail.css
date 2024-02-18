@@ -514,26 +514,26 @@ body {
   color: #878E9B;
   font-weight: 400;
 }
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content {
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent0 {
   padding: 30px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 20px;
 }
 @media only screen and (max-width: 992px) {
-  .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content {
+  .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent0 {
     grid-template-columns: 1fr !important;
   }
 }
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content .map iframe {
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent0 .map iframe {
   width: 100%;
 }
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content .content .title h1 {
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent0 .content .title h1 {
   font-size: 18px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content .content .table {
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent0 .content .table {
   margin-top: 20px;
   border: 1px solid #fcedef;
   padding: 15px;
@@ -542,14 +542,62 @@ body {
   align-items: center;
   border-radius: 8px;
 }
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main .tab-content .content .table span {
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent0 .content .table span {
   font-family: "Poppins", sans-serif;
 }
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent2 {
-  display: flex I !important;
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent1 {
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
 }
-.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent2 .review-buttons {
+@media only screen and (max-width: 992px) {
+  .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent1 {
+    grid-template-columns: 1fr !important;
+  }
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent1 .map iframe {
+  width: 100%;
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent1 .content .title h1 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent1 .content .table {
+  margin-top: 20px;
+  border: 1px solid #fcedef;
+  padding: 15px;
+  justify-content: space-between;
   display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent1 .content .table span {
+  font-family: "Poppins", sans-serif;
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent2 .img {
+  padding: 20px 0;
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent2 .img img {
+  width: 70% !important;
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent2 .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent2 .card {
+    grid-template-columns: 1fr;
+  }
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent2 .card div {
+  box-shadow: 0px 0px 10px -8px rgba(0, 0, 0, 0.5607843137);
+}
+.resturantdetail-dashboard-parent .main-section-parent .main-section-mid-parent main #tabContent2 .card img {
+  width: 100%;
+  border-radius: 8px;
 }
 .resturantdetail-dashboard-parent .right-parent .right {
   margin-top: 1.4rem;

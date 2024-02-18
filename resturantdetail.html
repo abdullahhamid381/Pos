@@ -321,9 +321,24 @@
               <!-- TABS CONTENT THIRD -->
 
 
-              <div class="tab-content" id="tabContent2" style="display: none;">
-              <div class="review-buttons">
-              <div class="button">
+              <div class="tab-content" id="tabContent2" style="display: none;display: grid;grid-template-columns: 1fr !important;">
+
+                <div class="img">
+                  <img src="/images/review.png" alt="" >
+                </div>
+                <div class="card">
+                 <div >
+                  <img src="/images/card.png" alt="">
+                 </div>
+                 <div>
+                  <img src="/images/card.png" alt="">
+                 </div>
+                 <div>
+                  <img src="/images/card.png" alt="">
+                 </div>
+                </div>
+              <!-- <div class="review-buttons">
+              <div class="button all">
                 <input type="button" value="All (217)">
               </div>
               <div class="button">
@@ -388,7 +403,7 @@
                   <span>(10)</span>
                 </div>
               </div>
-              </div>
+              </div> -->
               </div>
             </div>
 
@@ -495,7 +510,7 @@
       document.getElementById(`tab${currentTab}`);
 
       // Show the selected tab content
-      document.getElementById(`tabContent${index}`).style.cssText = 'display: grid; grid-template-columns: 1fr 1fr;';
+      document.getElementById(`tabContent${index}`).style.cssText = 'display: grid; grid-template-columns:';
 
       document.getElementById(`tab${index}`);
 

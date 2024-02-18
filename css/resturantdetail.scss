@@ -620,7 +620,49 @@ body {
 
 
 
-                .tab-content {
+                #tabContent0 {
+                    padding: 30px 0;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 0 20px;
+@include lg{
+    grid-template-columns: 1fr !important;
+}
+
+.map{
+    iframe{
+        width: 100%;
+    }
+}
+                    .content {
+                        .title {
+                            h1 {
+                                font-size: 18px;
+                                font-weight: 600;
+                                font-family: 'Poppins', sans-serif;
+                            }
+
+                        }
+
+                        .table {
+                            margin-top: 20px;
+                            border: 1px solid #fcedef;
+                            padding: 15px;
+                            justify-content: space-between;
+                            display: flex;
+                            align-items: center;
+                            border-radius: 8px;
+
+                            span {
+                                font-family: 'Poppins', sans-serif;
+                            }
+                        }
+
+                    }
+
+
+                }
+                #tabContent1 {
                     padding: 30px 0;
                     display: grid;
                     grid-template-columns: 1fr 1fr;
@@ -664,9 +706,35 @@ body {
                 }
 
 #tabContent2{
-    display: flex I !important;
-    .review-buttons{
-        display: flex;
+ 
+
+    // .review-buttons{
+    //     display: flex;
+    //     .all{
+    //         background: #fcf0eb;
+    //     }
+    // }
+    .img{
+        padding: 20px 0;
+        img{
+            width: 70% !important;
+        }
+    }
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        @include lg{
+            grid-template-columns: 1fr;
+        }
+        div{
+            box-shadow: 0px 0px 10px -8px #0000008f;
+        }
+        img{
+            width: 100%;
+            border-radius: 8px;
+
+        }
     }
 }
             }
