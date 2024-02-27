@@ -679,7 +679,7 @@ body {
   border-top: none;
   display: none;
   background: white;
-  width: 60%;
+  width: 100%;
 }
 .booktable-dashboard-parent .main-section-parent .main-section-mid-parent main .calender-form .form .name .field .custom-select .options .option {
   padding: 10px;
