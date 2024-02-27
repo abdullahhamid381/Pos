@@ -496,6 +496,11 @@ body {
   padding: 40px 0;
   gap: 0 60px;
 }
+@media only screen and (max-width: 992px) {
+  .booktable-dashboard-parent .main-section-parent .main-section-mid-parent main .calender-form {
+    grid-template-columns: 1fr;
+  }
+}
 .booktable-dashboard-parent .main-section-parent .main-section-mid-parent main .calender-form .calender {
   width: 100%;
 }
