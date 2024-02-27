@@ -218,7 +218,7 @@
  <div class="calender">
 
     <!-- DAY DIV ====================== -->
-    <div class="day">
+    <div class="day" style="height: 160px;">
         <div class="title">
             <h1>What Day?</h1>
 
@@ -296,7 +296,7 @@
 
     <!-- TIME DIV==== -->
 
-    <div class="time">
+    <div class="day">
         <div class="title">
             <h1>What Time?</h1>
 
@@ -325,6 +325,89 @@
       
       </div>
     </div>
+
+
+
+    <!-- CHOICE SECTION -->
+
+    <div class="choice-parent">
+        <p>Select Available Table Of Your Choice</p>
+
+        <div class="custom-select" id="customSelect1">
+            <div class="select-box">
+                <div class="icon">
+                    <img src="/assets/img/location.png" alt="" width="100%">
+                </div>
+               <div class="flex">
+                <span class="placeholder">Select</span>
+                <i class="fas fa-chevron-down"></i>
+               </div>
+            </div>
+            <div class="options">
+                <div class="option" data-value="option1">
+                    <span>United States</span>
+                </div>
+                <div class="option" data-value="option2">
+                    <span>United Arab</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+ <!-- FORM SECTION -->
+ <div class="form">
+    <form action="">
+        <div class="name">
+            <h1>Name</h1>
+            <div class="field">
+                <input type="text" placeholder="Enter name">
+            </div>
+        </div>
+        <div class="name">
+            <h1>Phone number</h1>
+            <div class="field">
+                <input type="text" placeholder="Enter phone number">
+            </div>
+        </div>
+        <div class="name">
+            <h1>Email</h1>
+            <div class="field">
+                <input type="email" placeholder="Enter Email">
+            </div>
+        </div>
+        <div class="name">
+            <h1>Occasion</h1>
+            <div class="field">
+                <div class="custom-select" id="customSelect2">
+                    <div class="select-box">
+                        <div class="icon">
+                            <img src="/assets/img/location.png" alt="" width="100%">
+                        </div>
+                       <div class="flex">
+                        <span class="placeholder">Select</span>
+                        <i class="fas fa-chevron-down"></i>
+                       </div>
+                    </div>
+                    <div class="options">
+                        <div class="option" data-value="option1">
+                            <span>United States</span>
+                        </div>
+                        <div class="option" data-value="option2">
+                            <span>United Arab</span>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="submit">
+            <input type="button" value="Confirm Your Booking">
+        </div>
+    </form>
  </div>
 </div>
 
@@ -384,6 +467,55 @@
 
 
   </script>
+
+
+<!-- FOR MULTIPLE SELECT=========== -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        initializeCustomSelect('customSelect1');
+        initializeCustomSelect('customSelect2');
+        initializeCustomSelect('customSelect3');
+        initializeCustomSelect('customSelect4');
+        initializeCustomSelect('customSelect5');
+        initializeCustomSelect('customSelect6');
+        initializeCustomSelect('customSelect7');
+        initializeCustomSelect('customSelect8');
+    });
+
+    function initializeCustomSelect(customSelectId) {
+        const customSelect = document.getElementById(customSelectId);
+        const selectBox = customSelect.querySelector('.select-box');
+        const optionsContainer = customSelect.querySelector('.options');
+
+        selectBox.addEventListener('click', function () {
+            optionsContainer.style.display = optionsContainer.style.display === 'block' ? 'none' : 'block';
+        });
+
+        optionsContainer.addEventListener('click', function (e) {
+            const selectedOption = e.target.closest('.option');
+            if (selectedOption) {
+                const selectedValue = selectedOption.getAttribute('data-value');
+                selectBox.querySelector('.placeholder').innerText = selectedOption.innerText;
+                optionsContainer.style.display = 'none';
+
+                // Add your logic here to handle the selected value
+                console.log('Selected Value for', customSelectId, ':', selectedValue);
+            }
+        });
+
+        document.addEventListener('click', function (e) {
+            if (!customSelect.contains(e.target)) {
+                optionsContainer.style.display = 'none';
+            }
+        });
+    }
+
+
+
+
+
+
+</script>
   <script>
 
     // FOR IMAGE GALLERY=========================

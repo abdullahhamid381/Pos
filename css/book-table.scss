@@ -591,12 +591,14 @@ body {
         .calender-form{
             display: grid;
             grid-template-columns: 1fr 1fr;
+            padding: 40px 0;
+            gap: 0 60px;
             .calender{
                 width: 100%;
 
                 // DAY CSSS=======================
                 .day{
-                    margin-top: 20px;
+                    margin-bottom: 40px;
                     background: white;
                     box-shadow: 0px 9px 18px 0px rgba(70, 70, 70, 0.1019607843);
                     border-radius: 8px;
@@ -642,54 +644,195 @@ body {
                     }
                  }
                 }
+                .choice-parent{
+                    padding-top: 60px;
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #1F2937;
+                        font-family: 'Poppins', sans-serif;
+                    }
+                       .custom-select {
+                                        position: relative;
+                                        width: 100%;
+                                        margin-top: 10px;
+    
+                                        .select-box {
+                                            width: 60%;
+                                          
+                                            padding: 15px 20px;
+                                            background: white;
+                                            cursor: pointer;
+                                            border: 0.4px solid whitesmoke;
+                                            border-radius: 8px;
+    
+                                            .icon {
+                                                img {
+                                                    width: 100%;
+                                                }
+                                            }
+                                            .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+                                            }
+    
+                                            span {
+                                                font-family: 'ABeeZee', sans-serif;
+                                                font-size: 16px;
+                                            }
+    
+                                            i {
+                                                font-size: 14px;
+    
+                                            }
+                                        }
+    
+                                        .options {
+                                            position: absolute;
+                                            top: 100%;
+                                            left: 0;
+                                            width: 100%;
+                                            border-top: 1px solid #ccc;
+                                            padding: 0px 5px;
+                                            border-top: none;
+                                            display: none;
+                                            background: white;
+    width: 60%;
+                                            .option {
+                                                padding: 10px;
+                                                cursor: pointer;
+                                                display: flex;
+                                                align-items: center;
+    
+                                                span {
+                                                    font-family: 'ABeeZee', sans-serif;
+                                                    font-size: 16px;
+                                                }
+    
+                                                &:hover {
+                                                    background-color: #f0f0f0;
+                                                }
+                                            }
+                                        }
+                                    }
+                }
+          
+            }
+           
 
-                // TIME CSS=============================
-                .time{
-                    margin-top: 20px;
-                    background: white;
-                    box-shadow: 0px 9px 18px 0px rgba(70, 70, 70, 0.1019607843);
-                    border-radius: 8px;
-                    padding: 20px;
-                    height: 140px;
-                    .title{
-                        h1{
-                            font-family: 'Poppins', sans-serif;
-                            font-weight: 600;
-                            font-size: 18px;
-                            color: black;
+            // FORM CSSS=========
+
+            .form{
+                .name{
+                    padding-top: 30px;
+                    h1{
+                        font-weight: 500;
+                        font-size: 12px;
+                        font-family: 'Poppins', sans-serif;
+                        
+                        color: #828487;
+                    }
+               .field{
+                padding-top: 10px;
+                input{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    border: 1px solid #E4E4E4;
+                    border-radius: 50px;
+                    width: 100%;
+                    padding:20px;
+                    font-family: 'Poppins', sans-serif;
+                    &::placeholder{
+                        color: #C2C2C2;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                }
+                .custom-select {
+                    position: relative;
+                    width: 100%;
+                    
+
+                    .select-box {
+                        font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    border: 1px solid #E4E4E4;
+                    border-radius: 50px;
+                    width: 100%;
+                    padding:20px;
+                    font-family: 'Poppins', sans-serif;
+
+                        .icon {
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .flex{
+display: flex;
+justify-content: space-between;
+align-items: center;
+                        }
+
+                        span {
+                            font-weight: 400;
+                            font-size: 16px;
+                        }
+
+                        i {
+                    
+                            font-size: 16px;
+
                         }
                     }
-                 .number-flex{
+
+                    .options {
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 100%;
+                        border-top: 1px solid #ccc;
+                        padding: 0px 5px;
+                        border-top: none;
+                        display: none;
+                        background: white;
+width: 60%;
+                        .option {
+                            padding: 10px;
+                            cursor: pointer;
+                            display: flex;
+                            align-items: center;
+
+                            span {
+                                font-family: 'ABeeZee', sans-serif;
+                                font-size: 16px;
+                            }
+
+                            &:hover {
+                                background-color: #f0f0f0;
+                            }
+                        }
+                    }
+                }
+               }
+                }
+                .submit{
                     display: flex;
-                    padding-top: 20px;
-               gap:0  20px;
-                    .number{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        padding: 10px 20px;
+                    justify-content: end;
+                    padding-top: 40px;
+                    input{
+                        background: #FF7B5F;
+                        font-weight: 500;
+                        font-size: 16px;
+                        cursor: pointer;
+                        font-family: 'Poppins', sans-serif;
+                        color: white;
+                        padding: 15px;
                         border-radius: 8px;
-                        border: 1px solid whitesmoke;
-                        transition: .8s;
-                        &:hover{
-                            background: #FCF0EB;
-                            border: none;
-                            transition: .8s;
-                        }
-                        h1{
-                            font-size: 14px;
-                            font-weight: 500;
-                            font-family: 'Poppins', sans-serif;
-                            color: #AFB7C3;
-                        }
-                        p{
-                            font-size: 15px;
-                            color: black;
-                            font-weight: 500;
-                            font-family: 'Poppins', sans-serif;
-                        }
                     }
-                 }
                 }
             }
         }
