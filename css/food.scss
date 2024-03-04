@@ -509,8 +509,10 @@ border-radius: 12px;
     #tabContent0 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 20px;
     .cards {
-                        background: #f2f3f9;
+           box-shadow: 0 35px 23px -13px #ededed;
+                        background: #ffffff;
                         transition: .8s;
                         border-radius: 0 0 12px 12px;
 
@@ -555,7 +557,7 @@ border-radius: 12px;
                             }
 
                             .away {
-                                display: flex;
+                                
                                 align-items: center;
                                 gap: 0 10px;
                                 padding-top: 15px;
@@ -570,10 +572,27 @@ border-radius: 12px;
                                     font-size: 14px;
                                 }
 
-                                i {
-                                    color: #8E97A6;
-                                    font-size: 18px;
-                                }
+                       .price{
+
+                       display: flex;
+                       justify-content: space-between;
+                       .button{
+                       display: flex;
+                        padding: 10px 15px;
+                       background: #FF7B5F;
+                       align-items: center;
+                       gap: 0 20px;
+                       justify-content: space-between;
+                       i{
+                       color: white;
+                       }
+                       input{
+                       background: none;
+                             color: white;
+                       }
+                       }
+                       }
+
 
                             }
 

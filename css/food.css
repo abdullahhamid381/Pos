@@ -426,9 +426,11 @@ body {
 .food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 20px;
 }
 .food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards {
-  background: #f2f3f9;
+  box-shadow: 0 35px 23px -13px #ededed;
+  background: #ffffff;
   transition: 0.8s;
   border-radius: 0 0 12px 12px;
 }
@@ -465,7 +467,6 @@ body {
   font-size: 18px;
 }
 .food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .away {
-  display: flex;
   align-items: center;
   gap: 0 10px;
   padding-top: 15px;
@@ -478,9 +479,24 @@ body {
   color: #8E97A6;
   font-size: 14px;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .away i {
-  color: #8E97A6;
-  font-size: 18px;
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .away .price {
+  display: flex;
+  justify-content: space-between;
+}
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .away .price .button {
+  display: flex;
+  padding: 10px 15px;
+  background: #FF7B5F;
+  align-items: center;
+  gap: 0 20px;
+  justify-content: space-between;
+}
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .away .price .button i {
+  color: white;
+}
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .away .price .button input {
+  background: none;
+  color: white;
 }
 .food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .rating {
   display: flex;
