@@ -478,7 +478,7 @@ border-radius: 12px;
         /* display: flex; */
         justify-content: space-between;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       
     }
 
@@ -490,11 +490,14 @@ border-radius: 12px;
         border-bottom: none;
         background: none;
         text-align: center;
+        border: 1px solid #F2F3F9;
 
         h1 {
             font-size: 16px;
-            color: #878E9B;
-            font-weight: 400;
+            color: #8E97A6;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
         }
     }
 
@@ -1119,7 +1122,7 @@ color: #FF7B5F;
                 button {
                     display: none;
 
-                    @include lg {
+                    @include laptop {
                         display: block;
                     }
                 }
@@ -1486,7 +1489,7 @@ color: #FF7B5F;
     }
 
     /* SMALL TABLETS AND MOBILE */
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1060px) {
         .container {
             width: 100%;
             grid-template-columns: 1fr;

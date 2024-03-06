@@ -409,7 +409,7 @@ body {
   /* display: flex; */
   justify-content: space-between;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab {
   padding: 10px 15px;
@@ -418,11 +418,14 @@ body {
   border-bottom: none;
   background: none;
   text-align: center;
+  border: 1px solid #F2F3F9;
 }
 .food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab h1 {
   font-size: 16px;
-  color: #878E9B;
-  font-weight: 400;
+  color: #8E97A6;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
 }
 .food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 {
   display: grid;
@@ -906,7 +909,7 @@ body {
 .food-dashboard-parent .right-parent .right .top button {
   display: none;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1060px) {
   .food-dashboard-parent .right-parent .right .top button {
     display: block;
   }
@@ -1179,7 +1182,7 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1060px) {
   .food-dashboard-parent .container {
     width: 100%;
     grid-template-columns: 1fr;
