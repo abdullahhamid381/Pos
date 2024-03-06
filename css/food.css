@@ -427,43 +427,54 @@ body {
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content {
   padding-top: 20px;
   padding-bottom: 40px;
+}
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .title {
+  padding-bottom: 20px;
+}
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .title h1 {
+  font-size: 25px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid {
+  display: grid;
   gap: 30px 20px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 @media only screen and (max-width: 992px) {
-  .food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 {
+  .food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid {
     grid-template-columns: 1fr;
   }
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards {
   box-shadow: 0 35px 23px -13px #ededed;
   background: #ffffff;
   transition: 0.8s;
   border-radius: 0 0 12px 12px;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .img img {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .img img {
   width: 100%;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text {
   padding: 10px 15px;
   border-radius: 8px;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .heart {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .heart {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .heart h1 {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .heart h1 {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #323142;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .heart .div {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .heart .div {
   background: #ffffff;
   height: 20px;
   width: 20px;
@@ -473,34 +484,34 @@ body {
   align-items: center;
   border-radius: 80px;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .heart .div i {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .heart .div i {
   color: #8E97A6;
   font-size: 18px;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .away {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .away {
   align-items: center;
   gap: 0 10px;
   padding-top: 15px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1098039216);
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .away p {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .away p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #8E97A6;
   font-size: 14px;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .away .price {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .away .price {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .away .price p {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .away .price p {
   font-size: 16px;
   font-weight: 600;
   color: #323142;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .away .price .button {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .away .price .button {
   display: flex;
   padding: 10px 15px;
   background: #FF7B5F;
@@ -509,46 +520,46 @@ body {
   border-radius: 4px;
   justify-content: space-between;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .away .price .button i {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .away .price .button i {
   color: white;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .away .price .button input {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .away .price .button input {
   background: none;
   color: white;
   font-weight: 500;
   font-size: 14px;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .rating {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .rating {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 10px;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .rating .stars {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .rating .stars {
   display: flex;
   gap: 0 5px;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .rating .stars i {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .rating .stars i {
   color: #FF7A28;
   font-size: 14px;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .rating .stars .empty {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .rating .stars .empty {
   color: #8E97A6;
   font-size: 14px;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards .text .rating .reviews p {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards .text .rating .reviews p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #8E97A6;
   font-size: 14px;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards:hover {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards:hover {
   background: #ffffff;
   box-shadow: 0 35px 23px -13px #ededed;
   border-radius: 0 0 14px 12px;
   cursor: pointer;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards:hover .div {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards:hover .div {
   background: #f2f3f9;
   height: 20px;
   width: 20px;
@@ -558,63 +569,9 @@ body {
   align-items: center;
   border-radius: 80px;
 }
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent0 .cards:hover .div i {
+.food-dashboard-parent .main-section-mid-parent main .tabs-parent .tab-content .cards-grid .cards:hover .div i {
   color: #8E97A6;
   font-size: 18px;
-}
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent1 {
-  padding: 30px 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 20px;
-}
-@media only screen and (max-width: 992px) {
-  .food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent1 {
-    grid-template-columns: 1fr !important;
-  }
-}
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent1 .map iframe {
-  width: 100%;
-}
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent1 .content .title h1 {
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-}
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent1 .content .table {
-  margin-top: 20px;
-  border: 1px solid #fcedef;
-  padding: 15px;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-  border-radius: 8px;
-}
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent1 .content .table span {
-  font-family: "Poppins", sans-serif;
-}
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent2 .img {
-  padding: 20px 0;
-}
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent2 .img img {
-  width: 70% !important;
-}
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent2 .card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
-@media only screen and (max-width: 992px) {
-  .food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent2 .card {
-    grid-template-columns: 1fr;
-  }
-}
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent2 .card div {
-  box-shadow: 0px 0px 10px -8px rgba(0, 0, 0, 0.5607843137);
-}
-.food-dashboard-parent .main-section-mid-parent main .tabs-parent #tabContent2 .card img {
-  width: 100%;
-  border-radius: 8px;
 }
 .food-dashboard-parent .main-section-mid-parent main .featured-resturants .title h1 {
   font-weight: 600;
