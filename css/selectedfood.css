@@ -369,6 +369,27 @@ body {
   width: 100%;
   border-radius: 8px;
 }
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review .title h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #323142;
+  font-family: "Poppins", sans-serif;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review .star i {
+  color: #FF7A28;
+  font-size: 16px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review .review {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8E97A6;
+  font-family: "Poppins", sans-serif;
+}
 .selectedfood-dashboard-parent .right-parent .right {
   margin-top: 1.4rem;
   padding-right: 45px;

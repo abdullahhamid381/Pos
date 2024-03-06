@@ -442,6 +442,37 @@ gap: 20px 0;
   
 
 }
+
+
+.dish-detail{
+    .title-review{
+        display: flex;
+        align-items: center;
+        gap: 0 40px;
+    .title{
+        h1{
+            font-size: 25px;
+            font-weight: 600;
+            color: #323142;
+            font-family: 'Poppins', sans-serif;
+
+
+        }
+    }
+    .star{
+        i{
+            color: #FF7A28;
+            font-size: 16px;
+        }
+    }
+    .review{
+        font-weight: 400;
+        font-size: 16px;
+        color: #8E97A6;
+        font-family: 'Poppins', sans-serif;
+    }
+    }
+}
         }
 
 
