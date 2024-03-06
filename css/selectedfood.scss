@@ -447,9 +447,13 @@ gap: 20px 0;
 .dish-detail{
     .title-review{
         display: flex;
-        align-items: center;
-        gap: 0 40px;
+   align-items: center;
         padding-top: 20px;
+        justify-content: space-between;
+   .flex{
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
     .title{
         h1{
             font-size: 25px;
@@ -472,6 +476,39 @@ gap: 20px 0;
         color: #8E97A6;
         font-family: 'Poppins', sans-serif;
     }
+   }
+
+   .increment {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    padding: 5px 0;
+
+    button {
+        border: none;
+        background: white;
+        height: 10px;
+        width: 10px;
+        padding: 10px;
+        border-radius: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        i {
+            color: #8E97A6;
+            font-size: 14px;
+        }
+    }
+
+    span {
+        color: #FF7B5F;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+
+    }
+}
     }
     .description{
         .title{
@@ -491,6 +528,54 @@ gap: 20px 0;
                 
 
             }
+            .img{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+             .pic{
+                padding-top: 10px;
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+             }
+             .buttons{
+                display: flex;
+                gap: 0 20px;
+                .size{
+                    padding: 10px 20px;
+                    background: #C2C3CB;
+                    border-radius: 8px;
+                    transition: .8s;
+                    span{
+                        font-weight: 500;
+                        font-size: 20px;
+                        transition: .8s;
+                        font-family: 'Poppins', sans-serif;
+                
+                    }
+                    &:hover{
+                        background: #FF7B5F;
+                        span{
+                            color: white;
+                        }
+                    }
+                }
+
+             }
+            }
+        }
+    }
+    .add-cart{
+        padding-top: 40px;
+        input{
+            padding: 10px 20px;
+            background: #FF7B5F;
+            color: #FFFFFF;
+            font-weight: 500;
+            border-radius: 4px;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
         }
     }
 }

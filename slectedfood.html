@@ -141,6 +141,7 @@
 
                     <div class="dish-detail">
                         <div class="title-review">
+                        <div class="flex">
                             <div class="title">
                                 <h1>The Chicken King</h1>
 
@@ -157,6 +158,12 @@
                                 <span>(421 Reviews)</span>
                             </div>
                         </div>
+                        <div class="increment" id="card1">
+                            <button onclick="decrement('card1')"><i class="fa-solid fa-minus"></i></button>
+                            <span id="number1">0</span>
+                            <button onclick="increment('card1')"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        </div>
                         <div class="description">
                             <div class="title">
                                 <h1>
@@ -168,10 +175,29 @@
                             <div class="title">
                                 <h1>
                                     Ingrediants </h1>
-                                <p>Chicken Hell Is The Healthies Chicken For Gym Guys And Girls. It Promote Healthy Life
-                                    Style And Make Your Energy Booster.</p>
+                              <div class="img">
+                               <div class="pic">
+                                <img src="images/ingrr.png" alt="">
+                               </div>
+                               <div class="buttons">
+                                <div class="size">
+                                    <span>S</span>
+                                </div>
+                                <div class="size">
+                                    <span>S</span>
+                                </div>
+                                <div class="size">
+                                    <span>S</span>
+                                </div>
+                               </div>
+                              </div>
                             </div>
 
+                        </div>
+
+
+                        <div class="add-cart">
+                            <input type="button" value="Add To Cart">
                         </div>
                     </div>
 
@@ -274,10 +300,10 @@
                                         <h1>Chicken Hell</h1>
                                         <h1><span>$ </span>7.99</h1>
                                     </div>
-                                    <div class="increment" id="card1">
-                                        <button onclick="decrement('card1')"><i class="fa-solid fa-minus"></i></button>
-                                        <span id="number1">0</span>
-                                        <button onclick="increment('card1')"><i class="fa-solid fa-plus"></i></button>
+                                    <div class="increment" id="card4">
+                                        <button onclick="decrement('card4')"><i class="fa-solid fa-minus"></i></button>
+                                        <span id="number4">0</span>
+                                        <button onclick="increment('card4')"><i class="fa-solid fa-plus"></i></button>
                                     </div>
 
 
@@ -486,6 +512,7 @@
             card2: 0,
             card3: 0,
             card4: 0,
+            card5: 0,
             // Add more cards as needed
         };
 

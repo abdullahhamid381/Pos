@@ -372,24 +372,56 @@ body {
 .selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review {
   display: flex;
   align-items: center;
-  gap: 0 40px;
   padding-top: 20px;
+  justify-content: space-between;
 }
-.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review .title h1 {
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review .flex {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review .flex .title h1 {
   font-size: 25px;
   font-weight: 600;
   color: #323142;
   font-family: "Poppins", sans-serif;
 }
-.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review .star i {
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review .flex .star i {
   color: #FF7A28;
   font-size: 16px;
 }
-.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review .review {
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review .flex .review {
   font-weight: 400;
   font-size: 16px;
   color: #8E97A6;
   font-family: "Poppins", sans-serif;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review .increment {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  padding: 5px 0;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review .increment button {
+  border: none;
+  background: white;
+  height: 10px;
+  width: 10px;
+  padding: 10px;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review .increment button i {
+  color: #8E97A6;
+  font-size: 14px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review .increment span {
+  color: #FF7B5F;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 .selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .description .title {
   padding-top: 20px;
@@ -406,6 +438,52 @@ body {
   color: #ACADB9;
   font-size: 18px;
   padding-top: 10px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .description .title .img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .description .title .img .pic {
+  padding-top: 10px;
+  width: 50%;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .description .title .img .pic img {
+  width: 100%;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .description .title .img .buttons {
+  display: flex;
+  gap: 0 20px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .description .title .img .buttons .size {
+  padding: 10px 20px;
+  background: #C2C3CB;
+  border-radius: 8px;
+  transition: 0.8s;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .description .title .img .buttons .size span {
+  font-weight: 500;
+  font-size: 20px;
+  transition: 0.8s;
+  font-family: "Poppins", sans-serif;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .description .title .img .buttons .size:hover {
+  background: #FF7B5F;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .description .title .img .buttons .size:hover span {
+  color: white;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .add-cart {
+  padding-top: 40px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .add-cart input {
+  padding: 10px 20px;
+  background: #FF7B5F;
+  color: #FFFFFF;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 .selectedfood-dashboard-parent .right-parent .right {
   margin-top: 1.4rem;
