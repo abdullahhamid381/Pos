@@ -449,6 +449,7 @@ gap: 20px 0;
         display: flex;
         align-items: center;
         gap: 0 40px;
+        padding-top: 20px;
     .title{
         h1{
             font-size: 25px;
@@ -471,6 +472,26 @@ gap: 20px 0;
         color: #8E97A6;
         font-family: 'Poppins', sans-serif;
     }
+    }
+    .description{
+        .title{
+            padding-top: 20px;
+            h1{
+                font-size: 500;
+                font-size: 17px;
+                color: #323142;
+                font-family: 'Poppins', sans-serif;
+            }
+            p{
+                font-weight: 400;
+                font-family: 'Poppins', sans-serif;
+                color: #ACADB9;
+                font-size: 18px;
+                padding-top: 10px;
+                
+
+            }
+        }
     }
 }
         }
