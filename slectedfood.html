@@ -197,7 +197,128 @@
 
 
                         <div class="add-cart">
-                            <input type="button" value="Add To Cart">
+                            <input type="button" value="Add To Cart" id="addToCartBtn">
+                        </div>
+                        <div class="sidebar">
+                         
+                        <div class="title">
+                            <h1>My cart <span>(2 items)</span></h1>
+                            <span class="close-btn" onclick="closeSidebar()">&times;</span>
+                        </div>
+                        <div class="deliver">
+                            <div class="title-deliver">
+                                <span>Deliver to </span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="para">
+                                <p>300 Post Street San Francisco, CA </p>
+                            </div>
+                        </div>
+
+                        <div class="cart-parent">
+                            <div class="title">
+    
+                                <h1>Items</h1>
+                                <!-- <a href="#"><input type="button" value="View All"></a> -->
+                            </div>
+                            <!-- CARDS ALL ORDER============== -->
+                            <div class="cards-all-order">
+                                <div class="cart-card">
+                                    <div class="img">
+                                        <img src="/images/Food Image.png" alt="">
+                                        <div class="del">
+                                            <img src="/images/Frame 1410088116.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="detail">
+                                        <div class="name-price">
+                                            <h1>Chicken Hell</h1>
+                                            <h1><span>$ </span>7.99</h1>
+                                        </div>
+                                        <div class="increment" id="card3">
+                                            <button onclick="decrement('card3')"><i class="fa-solid fa-minus"></i></button>
+                                            <span id="number3">0</span>
+                                            <button onclick="increment('card3')"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <div class="on-the-way">
+                                            <span>July 12 : 3:09 PM</span>
+                                            <p>
+                                                One Step Away
+                                            </p>
+    
+                                        </div>
+                                    </div>
+                                </div>
+    
+    
+                                <div class="cart-card">
+                                    <div class="img">
+                                        <img src="/images/Food Image.png" alt="">
+                                        <div class="del">
+                                            <img src="/images/Frame 1410088116.png" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="detail">
+                                        <div class="name-price">
+                                            <h1>Chicken Hell</h1>
+                                            <h1><span>$ </span>7.99</h1>
+                                        </div>
+                                        <div class="increment" id="card4">
+                                            <button onclick="decrement('card4')"><i class="fa-solid fa-minus"></i></button>
+                                            <span id="number4">0</span>
+                                            <button onclick="increment('card4')"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <div class="on-the-way">
+                                            <span>July 12 : 3:09 PM</span>
+                                            <p>
+                                                One Step Away
+                                            </p>
+    
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+    <div class="add-more">
+        <i class="fa-solid fa-plus"></i>
+        <p>Add more items</p>
+    </div>
+
+
+    <div class="deleiver-promo">
+      <div class="dleivery">
+        <div class="img">
+            <img src="images/delivery-img.png" alt="">
+          
+        </div>
+        <div class="text">
+            <h1>Delivery</h1>
+            <p>$0</p>
+        </div>
+      </div>
+      <div class="dleivery promo">
+        <div class="img">
+            <img src="images/promo.png" alt="" style="border-radius: 20px;">
+          
+        </div>
+        <div class="text add-text">
+           <div>
+            <h1>Promo code</h1>
+            <p>$0</p>
+           </div>
+
+        </div>
+      </div>
+    </div>
+                            </div>
+                        </div>
+
+
+                        <div class="checkout">
+                            <input type="button" value="checkout">
+                        </div>
                         </div>
                     </div>
 
@@ -444,6 +565,28 @@
 
 
     </script>
+
+
+<!-- RIGHT SIDEBAR============= -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const addToCartButton = document.getElementById('addToCartBtn');
+        const sidebar = document.querySelector('.sidebar');
+
+        if (addToCartButton) {
+            addToCartButton.addEventListener('click', function () {
+                // Toggle the "open" class to show/hide the sidebar
+                sidebar.classList.toggle('open');
+            });
+        }
+    });
+
+    function closeSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.classList.remove('open');
+    }
+</script>
 
     <script>
 

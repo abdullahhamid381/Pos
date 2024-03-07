@@ -90,7 +90,6 @@ body {
 .selectedfood-dashboard-parent img {
   display: block;
   width: 100%;
-  border-radius: 0px 0px 35px 35px;
 }
 .selectedfood-dashboard-parent h1 {
   font-weight: 800;
@@ -369,6 +368,9 @@ body {
   width: 100%;
   border-radius: 8px;
 }
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail {
+  /* Style for the close button */
+}
 .selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .title-review {
   display: flex;
   align-items: center;
@@ -484,6 +486,271 @@ body {
   border-radius: 4px;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar {
+  position: fixed;
+  padding: 20px 30px;
+  overflow: scroll;
+  top: 0;
+  right: -400px;
+  /* Initial position off-screen */
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+  /* Set your desired background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  /* Transition for smooth sliding effect */
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .title h1 {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .title h1 span {
+  color: #626264;
+  font-weight: 400;
+  font-size: 12px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .title .close-btn {
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 8px;
+  background: #F7F7F7;
+  font-size: 24px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .deliver {
+  padding-top: 30px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .deliver .title-deliver {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .deliver .title-deliver span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #FB6D3A;
+  font-family: "Poppins", sans-serif;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .deliver .para p {
+  padding-top: 5px;
+  font-size: 16px;
+  color: #182135;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .title h1 {
+  font-size: 18px;
+  color: #323142;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .title a {
+  text-decoration: none;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .title a input {
+  background: none;
+  border: none;
+  color: #ACADB9;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .cart-card {
+  display: flex;
+  margin-top: 20px;
+  gap: 0 10px;
+  align-items: center;
+  background: #F2F3F9;
+  padding: 10px;
+  border-radius: 12px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .cart-card .img {
+  position: relative;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .cart-card .img img {
+  width: 100%;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .cart-card .img .del img {
+  width: 30%;
+  position: absolute;
+  top: 0;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .cart-card .detail .name-price {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .cart-card .detail .name-price h1 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .cart-card .detail .name-price h1 span {
+  color: #FF7B5F;
+  font-size: 14px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .cart-card .detail .increment {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  padding: 5px 0;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .cart-card .detail .increment button {
+  border: none;
+  background: white;
+  height: 10px;
+  width: 10px;
+  padding: 10px;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .cart-card .detail .increment button i {
+  color: #8E97A6;
+  font-size: 14px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .cart-card .detail .increment span {
+  color: #FF7B5F;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .cart-card .detail .on-the-way span {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #ACADB9;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .cart-card .detail .on-the-way p {
+  font-size: 12px;
+  color: #323142;
+  font-family: "Poppins", sans-serif;
+  color: #ACADB9;
+  padding-top: 2px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .cart-card:hover {
+  background: #ffffff;
+  box-shadow: 0 35px 23px -13px #ededed;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .checkout {
+  padding-top: 20px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .checkout input {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background: none;
+  text-align: center;
+  background: #FF7B5F;
+  padding: 15px;
+  color: white;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.8s;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order input:hover {
+  background: rgba(255, 122, 95, 0.862745098);
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .add-more {
+  padding-top: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .add-more i {
+  font-size: 16px;
+  cursor: pointer;
+  color: #FF7B5F;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .add-more p {
+  font-size: 600;
+  font-size: 16px;
+  color: #FF7B5F;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .deleiver-promo {
+  padding-top: 40px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .deleiver-promo .dleivery {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0 10px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .deleiver-promo .dleivery .img {
+  width: 50%;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .deleiver-promo .dleivery .img img {
+  width: 100%;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .deleiver-promo .dleivery .text h1 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #182135;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .deleiver-promo .dleivery .text p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #626264;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .deleiver-promo .dleivery .add-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .deleiver-promo .dleivery .add-text h1 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #182135;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .cart-parent .cards-all-order .deleiver-promo .dleivery .add-text p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #626264;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .checkout {
+  padding-top: 40px;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .checkout input {
+  padding: 15px;
+  background: #FF7B5F;
+  color: white;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar.open {
+  right: 0;
+  /* Display the sidebar when the "open" class is added */
+  z-index: 8788888;
 }
 .selectedfood-dashboard-parent .right-parent .right {
   margin-top: 1.4rem;
