@@ -495,6 +495,7 @@ body {
   overflow: scroll;
   top: 0;
   right: -400px;
+  z-index: 99999;
   /* Initial position off-screen */
   width: 400px;
   height: 100%;
