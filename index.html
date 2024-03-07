@@ -322,13 +322,151 @@
               <span class="material-icons-sharp"> menu </span>
             </button>
             <div class="users-login">
-            
+              <div class="cart">
+                <img src="/images/notifications.png" alt="">
+            </div>
               <div class="cart">
                 <img src="/images/search (1).png" alt="">
               </div>
-              <div class="cart">
-                <img src="/images/notifications.png" alt="">
-              </div>
+         
+        
+            <!-- Modal Box -->
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                 <div class="tabs-div">
+                  <div class="heading">
+                    <h1>Notifications</h1>
+                    <h1 class="mark">Mark all as read  <span class="close-btn" onclick="closeModal()">&times;</span></h1>
+                  </div>
+                  <div class="tabs-parent">
+                    <div class="tabs-container">
+        
+        
+                        <!-- TBAS BUTTON====== -->
+                        <div class="tabs-header" id="tabsHeader">
+                          <div class="tab first" onclick="changeTab(0)" id="tab0">
+                            <h1>Delivery</h1>
+                          </div>
+                          <div class="tab" onclick="changeTab(1)" id="tab1">
+                            <h1>News & Updates</h1>
+                          </div>
+                        
+                        </div>
+          
+                        <!-- TABS CONTENT first====== -->
+          
+                        <div class="tab-content" id="tabContent0">
+                          <div class="cart-card">
+                            <div class="img">
+                              <img src="/images/Food Image.png" alt="">
+                           
+                            </div>
+              
+                            <div class="detail">
+                              <div class="name-price">
+                                <h1>Chicken Hell</h1>
+                          
+                              </div>
+                           
+                            <div class="on-the-way">
+                             
+                              <p>
+                                One Step Away
+                              </p>
+              
+                            </div>
+                            <div class="time">
+                              <p>3:09 PM</p>
+                            </div>
+                            </div>
+                           
+                          </div>
+                        </div>
+          
+          
+                        <!-- TABS CONTENT SECOND -->
+          
+                        <div class="tab-content" id="tabContent1" >
+                   <div class="title">
+                    <h1>Points</h1>
+                   </div>
+
+                   <div class="cart-card" style="display: block;">
+                    
+      
+                    <div class="detail">
+                      <div class="name-price">
+                        <h1>You Earned 70 Points</h1>
+                  
+                      </div>
+                   
+                    <div class="on-the-way">
+                     
+                      <p>
+                        Earn 100 Points And  Get 50% Off Under $100 Items.
+                      </p>
+      
+                    </div>
+                  
+                    </div>
+                   
+                  </div>
+
+
+
+                  <!-- UPDATES -->
+                  <div class="title" style="padding-top: 20px;">
+                    <h1>Updates</h1>
+                   </div>
+
+                   <div class="cart-card" style="display: block;">
+                    
+      
+                    <div class="detail">
+                      <div class="name-price">
+                        <h1>Your App Is Fully Updated</h1>
+                  
+                      </div>
+                   
+                    <div class="on-the-way">
+                     
+                      <p>
+                        Eatly App Version 7.89v Updated Successfully.
+                      </p>
+      
+                    </div>
+                  
+                    </div>
+                   
+                  </div>
+                        </div>
+          
+                        <!-- TABS CONTENT THIRD -->
+          
+          
+                  
+        
+        
+        
+        
+        
+                      
+        
+        
+        
+        
+                      </div>
+                  </div>
+
+                  <div class="heading" style="border-top: 1px solid whitesmoke; border-bottom: none;padding-top: 10px;">
+
+                    <h1 class="mark">See all notifications </h1>
+                    <i class="fa-solid fa-gear" style="font-size: 16px;"></i>
+                  </div>
+                  
+                 </div>
+                </div>
+            </div>
               <a href="/signin.html">
                 <div class="login-button">
                   <div class="userimg">
@@ -506,28 +644,23 @@
                 <div class="cart-card">
                   <div class="img">
                     <img src="/images/Food Image.png" alt="">
-                    <div class="del">
-                      <img src="/images/Frame 1410088116.png" alt="">
-                    </div>
+                 
                   </div>
     
                   <div class="detail">
                     <div class="name-price">
                       <h1>Chicken Hell</h1>
-                      <h1><span>$ </span>7.99</h1>
+                   
                     </div>
-                    <div class="increment" id="card4">
-                      <button onclick="decrement('card4')"><i class="fa-solid fa-minus"></i></button>
-                      <span id="number4">0</span>
-                      <button onclick="increment('card4')"><i class="fa-solid fa-plus"></i></button>
-                    </div>
+            
                   <div class="on-the-way">
-                    <span>July 12 : 3:09 PM</span>
+                  
                     <p>
                       One Step Away
                     </p>
     
                   </div>
+                    <span>July 12 : 3:09 PM</span>
                   </div>
                  
                 </div>
@@ -551,6 +684,54 @@
 
 
   </script>
+
+
+
+<script>
+
+  // FOR TABS====================
+
+
+  let currentTab = 0;
+
+  function changeTab(index) {
+    // Hide the current tab content
+    document.getElementById(`tabContent${currentTab}`).style.display = 'none';
+    document.getElementById(`tab${currentTab}`);
+
+    // Show the selected tab content
+    document.getElementById(`tabContent${index}`).style.cssText = 'display: grid; grid-template-columns:';
+
+    document.getElementById(`tab${index}`);
+
+    currentTab = index;
+  }
+
+</script>
+
+
+<!-- MODAL BOX -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const cartNotifications = document.querySelector('.cart');
+
+    // Event listener for the notifications cart
+    if (cartNotifications) {
+        cartNotifications.addEventListener('click', function () {
+            // Show the modal box
+            const modal = document.getElementById('myModal');
+            modal.style.display = 'block';
+        });
+    }
+});
+
+function closeModal() {
+    const modal = document.getElementById('myModal');
+    modal.style.display = 'none';
+}
+
+</script>
   <script>
 
 // FOR INCREMENT ORDER=========================

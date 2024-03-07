@@ -322,8 +322,29 @@
                                 </div>
 
 
-                                <div class="checkout">
-                                    <input type="button" value="checkout">
+                                <div class="submit">
+                                    <div class="buttons">
+                                        <input type="button" value="Set Appointment" id="setAppointmentButton">
+                            
+                                     <div class="center">
+                                        <div class="modal" id="myModal">
+                                            <div class="modal-content">
+                                                <span class="close" id="closeModal">&times;</span>
+                                               <div class="img">
+                                                <img src="/images/Illustration.png" alt="">
+                                               </div>
+                                               <h1>Order Placed Successfullys</h1>
+                                               <p>Etiam cras nec metus laoreet. Faucibus iaculis cras ut posuere.</p>
+                                           <a href="">
+                                            <div class="button">
+                                                <input type="button" value="Track order">
+                                               </div>
+                                           </a>
+                                            </div>
+                                        </div>
+                                     </div>
+
+                                    </div>
                                 </div>
                             </div>
 
@@ -574,7 +595,26 @@
 
     </script>
 
+ <!-- FOR MODAL BOX -->
 
+ <script>
+    document.getElementById("setAppointmentButton").addEventListener("click", function() {
+    document.getElementById("myModal").style.display = "block";
+});
+
+document.getElementById("closeModal").addEventListener("click", function() {
+    document.getElementById("myModal").style.display = "none";
+});
+
+// Close the modal if the user clicks outside the modal content
+window.addEventListener("click", function(event) {
+    var modal = document.getElementById("myModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+});
+
+  </script>
     <!-- RIGHT SIDEBAR============= -->
 
     <script>

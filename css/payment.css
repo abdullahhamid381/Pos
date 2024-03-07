@@ -703,18 +703,88 @@ body {
   font-family: "Poppins", sans-serif;
   color: #626264;
 }
-.payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .checkout {
-  padding-top: 40px;
+.payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .submit {
+  padding-top: 150px;
 }
-.payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .checkout input {
-  padding: 15px;
-  background: #FF7B5F;
-  color: white;
+.payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .submit .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+.payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .submit .buttons input {
   width: 100%;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 12px;
   font-family: "Poppins", sans-serif;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  background: #FF7B5F;
+  cursor: pointer;
+}
+.payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .submit .buttons .center .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-bottom: 40px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .submit .buttons .center .modal-content {
+  background-color: #fefefe;
+  /* margin: 15% auto; */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+  border-radius: 8px;
+  margin: 10% auto;
+}
+@media only screen and (max-width: 992px) {
+  .payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .submit .buttons .center .modal-content {
+    background-color: #fefefe;
+    /* margin: 15% auto; */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    margin: 60% auto;
+  }
+}
+.payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .submit .buttons .center .modal-content h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #121933;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .submit .buttons .center .modal-content p {
+  font-size: 14px;
+  text-align: center;
+  color: #8C8E98;
+  line-height: 23px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  padding-top: 10px;
+}
+.payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .submit .buttons .center .modal-content .button {
+  margin-bottom: 40px;
+  display: flex;
+  justify-self: center;
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+}
+.payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .submit .buttons .center .modal-content .img img {
+  width: 100%;
+}
+.payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .submit .buttons .center .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .submit .buttons .center .close:hover, .payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar .submit .buttons .center .close:focus {
+  color: black;
 }
 .payment-dashboard-parent .main-section-mid-parent main .dish-detail .sidebar.open {
   right: 0;
