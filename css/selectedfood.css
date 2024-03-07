@@ -356,6 +356,8 @@ body {
 .selectedfood-dashboard-parent .main-section-mid-parent main .full-detail-grid .full-detail #mainDiv {
   text-align: center;
   width: 100%;
+}
+.selectedfood-dashboard-parent .main-section-mid-parent main .full-detail-grid .full-detail #mainDiv img {
   border-radius: 0px 0px 35px 35px;
 }
 .selectedfood-dashboard-parent .main-section-mid-parent main .full-detail-grid .full-detail #imageGallery {
