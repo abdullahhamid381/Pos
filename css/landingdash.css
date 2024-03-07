@@ -272,7 +272,7 @@ body {
 .landing-dashboard-parent .aside-parent aside .top .coloumn .close span {
   color: white;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1060px) {
   .landing-dashboard-parent .aside-parent aside .top .coloumn .close {
     display: block;
   }
@@ -582,7 +582,7 @@ body {
 .landing-dashboard-parent .right-parent .right .top button {
   display: none;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1060px) {
   .landing-dashboard-parent .right-parent .right .top button {
     display: block;
   }
@@ -1032,7 +1032,7 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1060px) {
   .landing-dashboard-parent .container {
     width: 100%;
     grid-template-columns: 1fr;

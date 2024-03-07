@@ -312,8 +312,9 @@ border-radius: 12px;
                             color: white;
                         }
 
-                        @include lg {
+                        @include laptop {
                             display: block;
+
                         }
                     }
                 }
@@ -709,7 +710,7 @@ border-radius: 12px;
                 button {
                     display: none;
 
-                    @include lg {
+                    @include laptop {
                         display: block;
                     }
                 }
@@ -1299,7 +1300,7 @@ border-radius: 12px;
     }
 
     /* SMALL TABLETS AND MOBILE */
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1060px) {
         .container {
             width: 100%;
             grid-template-columns: 1fr;
