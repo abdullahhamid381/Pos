@@ -445,6 +445,8 @@ body {
 
             }
 
+            // DISH DETAIL CSS=============
+
 
             .dish-detail {
                 .title-review {
@@ -484,6 +486,9 @@ body {
                         }
                     }
 
+
+                    // ICREMENT DCREMENT =======================
+
                     .increment {
                         display: flex;
                         align-items: center;
@@ -516,6 +521,8 @@ body {
                         }
                     }
                 }
+
+                // DESCRIPTION=============================
 
                 .description {
                     .title {
@@ -584,6 +591,8 @@ body {
                     }
                 }
 
+                // ADD TO CART BUTTON==================
+
                 .add-cart {
                     padding-top: 40px;
 
@@ -597,6 +606,9 @@ body {
                         font-family: 'Poppins', sans-serif;
                     }
                 }
+
+
+                // SIDEBAR CHECKOUT CSS=================
 
                 .sidebar {
                     position: fixed;
@@ -861,17 +873,19 @@ body {
 
                                     .img {
                                         width: 50%;
+
                                         img {
                                             width: 100%;
                                         }
 
-                                       
 
 
-                                   
+
+
                                     }
+
                                     .text {
-                                      
+
                                         h1 {
                                             font-size: 18px;
                                             font-weight: 700;
@@ -887,10 +901,12 @@ body {
                                             color: #626264;
                                         }
                                     }
+
                                     .add-text {
-                                      display: flex;
-                                      justify-content: space-between;
-                                      align-items: center;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+
                                         h1 {
                                             font-size: 18px;
                                             font-weight: 700;
@@ -911,12 +927,13 @@ body {
                         }
 
 
-                       
+
                     }
 
-                    .checkout{
+                    .checkout {
                         padding-top: 40px;
-                        input{
+
+                        input {
                             padding: 15px;
                             background: #FF7B5F;
                             color: white;
