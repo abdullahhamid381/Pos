@@ -22,71 +22,78 @@
 
       <!-- SIDE BAR DASHBOARD=============================== -->
 
+ 
       <div class="aside-parent">
         <aside>
-          <div class="top">
-            <div class="coloumn">
-              <div class="logo">
-                <img src="/images/Logo (1) 1.png" alt="">
-              </div>
-              <div class="close" id="close-btn">
-                <span class="material-icons-sharp"> close </span>
-              </div>
-              <div class="nav-list">
-                <a href="/index.html">
-                  <div class="list">
-                    <i class="fa-solid fa-house"></i>
-                    <h1>Dashboard</h1>
-                  </div>
-                </a>
-                <div class="list">
-                  <i class="fa-solid fa-clipboard"></i>
-                  <h1>Orders</h1>
+      <div class="top">
+        <div class="coloumn">
+          <div class="logo">
+            <img src="/images/Logo (1) 1.png" alt="">
+           </div>
+           <div class="close" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
+           <div class="nav-list">
+            <a href="/index.html">
+            <div class="list">
+              <i class="fa-solid fa-house"></i>
+       <a href="index.html">    <h1>Dashboard</h1></a>
+            </div>
+          </a>
+            <div class="list">
+              <i class="fa-solid fa-clipboard"></i>
+              <a href="track.html"><h1>Orders</h1></a>
+              
+            </div>
+            <a href="/resturant.html">
+            <div class="list">
+              <i class="fa-solid fa-chart-simple"></i>
+         <a href="resturant.html"> <h1>Resturants</h1></a>
+            </div>
+          </a>
+            <div class="list">
+              <i class="fa-regular fa-comments"></i>
+              <a href="chat.html"><h1>Messaging</h1></a>
+            </div>
+            <div class="list">
+              <i class="fa-solid fa-chart-simple"></i>
+              <a href="book-table.html"><h1>Dining Reservation</h1></a>
+            </div>
+            <div class="list">
+              <i class="fa-solid fa-chart-simple"></i>
+             <a href="#"> <h1>Subscription</h1></a>
+            </div>
+            
+            <div class="list card">
+              <div class="items">
+                <div class="icon-fire">
+  <img src="/images/32px-icon-inside.png" alt="">
                 </div>
-                <a href="/resturant.html">
-                  <div class="list">
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <h1>Resturants</h1>
-                  </div>
-                </a>
-                <div class="list">
-                  <i class="fa-regular fa-comments"></i>
-                  <h1>Messaging</h1>
+                <div class="text">
+                  <h1>Free delivery on <br>
+                    all orders over $25</h1>
+                    <p>It is a limited time offer <br> that will expire soon.</p>
                 </div>
-                <div class="list">
-                  <i class="fa-solid fa-chart-simple"></i>
-                  <h1>Dining Reservation</h1>
+                <div class="order-button">
+                <input type="button" value="Order Now">
+                  <i class="fa-solid fa-arrow-right"></i>
                 </div>
-                <div class="list">
-                  <i class="fa-solid fa-chart-simple"></i>
-                  <h1>Subscription</h1>
-                </div>
-                <div class="list card">
-                  <div class="items">
-                    <div class="icon-fire">
-                      <img src="/images/32px-icon-inside.png" alt="">
-                    </div>
-                    <div class="text">
-                      <h1>Free delivery on <br>
-                        all orders over $25</h1>
-                      <p>It is a limited time offer <br> that will expire soon.</p>
-                    </div>
-                    <div class="order-button">
-                      <input type="button" value="Order Now">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                    <div class="cross">
-                      <i class="fa-solid fa-xmark"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="list" style="margin-top: 60px;">
-                  <i class="fa-solid fa-chart-simple"></i>
-                  <h1>Help Center</h1>
+                <div class="cross">
+                  <i class="fa-solid fa-xmark"></i>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="list" style="margin-top: 60px;">
+              <i class="fa-solid fa-chart-simple"></i>
+             <a href="#"> <h1>Help Center</h1></a>
+            </div>
+            <div class="list">
+              <i class="fa-solid fa-chart-simple"></i>
+             <a href="#"> <h1>Logout</h1></a>
+            </div>
+           </div>
+         </div>
+      </div>
         </aside>
       </div>
 
@@ -405,8 +412,8 @@
         </div>
 
         <div class="submit">
-            <input type="button" value="Confirm Your Booking" onclick="validateForm()">
-        </div>
+          <input type="button" value="Confirm Your Booking" onclick="validateForm()">
+      </div>
     </form>
  </div>
 </div>
@@ -424,13 +431,151 @@
                 <span class="material-icons-sharp"> menu </span>
               </button>
               <div class="users-login">
-
+                <div class="cart">
+                  <img src="/images/notifications.png" alt="">
+              </div>
                 <div class="cart">
                   <img src="/images/search (1).png" alt="">
                 </div>
-                <div class="cart">
-                  <img src="/images/notifications.png" alt="">
-                </div>
+           
+          
+              <!-- Modal Box -->
+              <div class="modal" id="myModal">
+                  <div class="modal-content">
+                   <div class="tabs-div">
+                    <div class="heading">
+                      <h1>Notifications</h1>
+                      <h1 class="mark">Mark all as read  <span class="close-btn" onclick="closeModal()">&times;</span></h1>
+                    </div>
+                    <div class="tabs-parent">
+                      <div class="tabs-container">
+          
+          
+                          <!-- TBAS BUTTON====== -->
+                          <div class="tabs-header" id="tabsHeader">
+                            <div class="tab first" onclick="changeTab(0)" id="tab0">
+                              <h1>Delivery</h1>
+                            </div>
+                            <div class="tab" onclick="changeTab(1)" id="tab1">
+                              <h1>News & Updates</h1>
+                            </div>
+                          
+                          </div>
+            
+                          <!-- TABS CONTENT first====== -->
+            
+                          <div class="tab-content" id="tabContent0">
+                            <div class="cart-card">
+                              <div class="img">
+                                <img src="/images/Food Image.png" alt="">
+                             
+                              </div>
+                
+                              <div class="detail">
+                                <div class="name-price">
+                                  <h1>Chicken Hell</h1>
+                            
+                                </div>
+                             
+                              <div class="on-the-way">
+                               
+                                <p>
+                                  One Step Away
+                                </p>
+                
+                              </div>
+                              <div class="time">
+                                <p>3:09 PM</p>
+                              </div>
+                              </div>
+                             
+                            </div>
+                          </div>
+            
+            
+                          <!-- TABS CONTENT SECOND -->
+            
+                          <div class="tab-content" id="tabContent1" >
+                     <div class="title">
+                      <h1>Points</h1>
+                     </div>
+  
+                     <div class="cart-card" style="display: block;">
+                      
+        
+                      <div class="detail">
+                        <div class="name-price">
+                          <h1>You Earned 70 Points</h1>
+                    
+                        </div>
+                     
+                      <div class="on-the-way">
+                       
+                        <p>
+                          Earn 100 Points And  Get 50% Off Under $100 Items.
+                        </p>
+        
+                      </div>
+                    
+                      </div>
+                     
+                    </div>
+  
+  
+  
+                    <!-- UPDATES -->
+                    <div class="title" style="padding-top: 20px;">
+                      <h1>Updates</h1>
+                     </div>
+  
+                     <div class="cart-card" style="display: block;">
+                      
+        
+                      <div class="detail">
+                        <div class="name-price">
+                          <h1>Your App Is Fully Updated</h1>
+                    
+                        </div>
+                     
+                      <div class="on-the-way">
+                       
+                        <p>
+                          Eatly App Version 7.89v Updated Successfully.
+                        </p>
+        
+                      </div>
+                    
+                      </div>
+                     
+                    </div>
+                          </div>
+            
+                          <!-- TABS CONTENT THIRD -->
+            
+            
+                    
+          
+          
+          
+          
+          
+                        
+          
+          
+          
+          
+                        </div>
+                    </div>
+  
+                    <div class="heading" style="border-top: 1px solid whitesmoke; border-bottom: none;padding-top: 10px;">
+  
+                      <h1 class="mark">See all notifications </h1>
+                      <i class="fa-solid fa-gear" style="font-size: 16px;"></i>
+                    </div>
+                    
+                   </div>
+                  </div>
+              </div>
                 <a href="/signin.html">
                   <div class="login-button">
                     <div class="userimg">
@@ -468,27 +613,72 @@
 
   </script>
 
+
+
+
+
+<!-- MODAL BOX -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const cartNotifications = document.querySelector('.cart');
+
+    // Event listener for the notifications cart
+    if (cartNotifications) {
+        cartNotifications.addEventListener('click', function () {
+            // Show the modal box
+            const modal = document.getElementById('myModal');
+            modal.style.display = 'block';
+        });
+    }
+});
+
+function closeModal() {
+    const modal = document.getElementById('myModal');
+    modal.style.display = 'none';
+}
+
+</script>
 <!-- FORM VALIDATION========= -->
 
 <script>
-    function validateForm() {
-        var name = document.getElementById('name').value;
-        var phoneNumber = document.getElementById('phoneNumber').value;
-        var email = document.getElementById('email').value;
+  function validateForm() {
+      const nameField = document.getElementById('name');
+      const phoneNumberField = document.getElementById('phoneNumber');
+      const emailField = document.getElementById('email');
+      // Removed checks for the occasion field as it's not required to be filled.
 
-        if (name === "") {
-            alert("Please enter your name.");
-        } else if (phoneNumber === "") {
-            alert("Please enter your phone number.");
-        } else if (email === "") {
-            alert("Please enter your email.");
-        } else {
-            // Form is valid, you can submit it or perform other actions
-            alert("Form submitted successfully!");
-            // document.getElementById('myForm').submit(); // Uncomment to submit the form
-        }
-    }
+      let fieldsFilled = true;
+
+      // Check if name field is filled
+      if (nameField.value.trim() === '') {
+          alert('Please fill in the name field.');
+          fieldsFilled = false;
+      }
+
+      // Check if phone number field is filled
+      if (phoneNumberField.value.trim() === '') {
+          alert('Please fill in the phone number field.');
+          fieldsFilled = false;
+      }
+
+      // Check if email field is filled
+      if (emailField.value.trim() === '') {
+          alert('Please fill in the email field.');
+          fieldsFilled = false;
+      }
+
+      // If all required fields are filled, redirect to the next page.
+      if (fieldsFilled) {
+          window.location.href = 'preparefood.html';
+      }
+  }
 </script>
+
+
+
+
+
 <!-- FOR MULTIPLE SELECT=========== -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
