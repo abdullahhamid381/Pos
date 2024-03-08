@@ -416,6 +416,7 @@ body {
                         font-weight: 600;
                         font-family: 'Poppins', sans-serif;
                         color: #182135;
+                        
                     }
                 }
 
@@ -504,340 +505,172 @@ body {
 
 .sidebar {
     position: fixed;
-    padding: 20px 30px;
+
     overflow: scroll;
     top: 0;
-    right: -400px;
+    right: -700px;
     z-index: 99999;
     /* Initial position off-screen */
-    width: 400px;
+    width: 45%;
     height: 100%;
     background-color: #fff;
     /* Set your desired background color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease;
-
-    /* Transition for smooth sliding effect */
-    .title {
+    @include lg{
+        width: 100%;
+    }
+    .map{
+        position: relative;
+        span{
+            position: absolute;
+                right:20px;
+                background: white;
+                padding: 0px 10px;
+                border-radius: 4px;
+                top: 10px;
+                font-size: 24px;
+                color: black;
+        }
+    }
+.detail{
+    padding: 20px 40px;
+   .distance-time{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+    padding: 20px 0;
+    .time {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        gap: 0 10px;
 
-        h1 {
-            font-size: 24px;
-            display: flex;
-            align-items: center;
-            gap: 0 10px;
-            font-weight: 700;
-            font-family: 'Poppins', sans-serif;
-
-            span {
-                color: #626264;
-                font-weight: 400;
-                font-size: 12px;
-
-            }
-
-
-        }
-
-        .close-btn {
-
-            cursor: pointer;
-            padding: 5px 15px;
-            border-radius: 8px;
-            background: #F7F7F7;
-            font-size: 24px;
-        }
-    }
-
-    .deliver {
-        padding-top: 30px;
-
-        .title-deliver {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            span {
-                font-weight: 500;
-                font-size: 12px;
+        .icon {
+            i {
+                font-size: 18px;
                 color: #FB6D3A;
-                font-family: 'Poppins', sans-serif;
-
             }
         }
 
-        .para {
-            p {
-                padding-top: 5px;
-                font-size: 16px;
-                color: #182135;
+        .text {
+            span {
+                font-weight: 400;
+                font-size: 14px;
+                color: #626264;
                 font-family: 'Poppins', sans-serif;
-                font-weight: 500;
-            }
-        }
-    }
+                padding: 0;
 
-    .cart-parent {
-        .title {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 40px;
+            }
 
             h1 {
-                font-size: 18px;
-                color: #323142;
-                font-family: 'Poppins', sans-serif;
                 font-weight: 700;
+                margin: 0;
+                font-size: 24px;
+                color: #182135;
+                font-family: 'Poppins', sans-serif;
             }
-
-            a {
-                text-decoration: none;
-
-                input {
-                    background: none;
-                    border: none;
-                    color: #ACADB9;
-                    cursor: pointer;
-                    font-size: 16px;
-                    font-family: 'Poppins', sans-serif;
-                }
-            }
-        }
-
-        .cards-all-order {
-            .cart-card {
-                display: flex;
-                margin-top: 20px;
-                gap: 0 10px;
-                align-items: center;
-                background: #F2F3F9;
-                padding: 10px;
-                border-radius: 12px;
-                transition: .8s;
-                cursor: pointer;
-
-                .img {
-                    position: relative;
-
-                    img {
-                        width: 100%;
-                    }
-
-                    .del {
-                        img {
-                            width: 30%;
-                            position: absolute;
-                            top: 0;
-                        }
-                    }
-                }
-
-                .detail {
-                    .name-price {
-                        display: flex;
-                        justify-content: space-between;
-                        gap: 0 20px;
-
-                        h1 {
-                            font-size: 16px;
-                            font-weight: 600;
-                            font-family: 'Poppins', sans-serif;
-
-                            span {
-                                color: #FF7B5F;
-                                font-size: 14px;
-                            }
-                        }
-                    }
-
-                    .increment {
-                        display: flex;
-                        align-items: center;
-                        gap: 0 10px;
-                        padding: 5px 0;
-
-                        button {
-                            border: none;
-                            background: white;
-                            height: 10px;
-                            width: 10px;
-                            padding: 10px;
-                            border-radius: 80px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            cursor: pointer;
-
-                            i {
-                                color: #8E97A6;
-                                font-size: 14px;
-                            }
-                        }
-
-                        span {
-                            color: #FF7B5F;
-                            font-family: 'Poppins', sans-serif;
-                            font-weight: 500;
-
-                        }
-                    }
-
-                    .on-the-way {
-                        span {
-                            font-size: 14px;
-                            font-family: 'Poppins', sans-serif;
-                            color: #ACADB9;
-                        }
-
-                        p {
-                            font-size: 12px;
-                            color: #323142;
-                            font-family: 'Poppins', sans-serif;
-                            color: #ACADB9;
-                            padding-top: 2px;
-                        }
-                    }
-                }
-            }
-
-            .cart-card:hover {
-                background: #ffffff;
-                box-shadow: 0 35px 23px -13px #ededed;
-            }
-
-            .checkout {
-                padding-top: 20px;
-
-                input {
-                    width: 100%;
-                    border: none;
-                    cursor: pointer;
-                    background: none;
-                    text-align: center;
-                    background: #FF7B5F;
-                    padding: 15px;
-                    color: white;
-                    border-radius: 25px;
-                    font-size: 16px;
-                    font-family: 'Poppins', sans-serif;
-                    transition: .8s;
-
-                }
-            }
-
-            input:hover {
-                background: #ff7a5fdc;
-            }
-
-            .add-more {
-                padding-top: 20px;
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-                gap: 0 10px;
-
-                i {
-                    font-size: 16px;
-                    cursor: pointer;
-                    color: #FF7B5F;
-                }
-
-                p {
-                    font-size: 600;
-                    font-size: 16px;
-                    color: #FF7B5F;
-                    cursor: pointer;
-                    font-family: 'Poppins', sans-serif;
-                }
-            }
-
-            .deleiver-promo {
-                padding-top: 40px;
-
-                .dleivery {
-                    padding-top: 20px;
-                    display: flex;
-                    align-items: center;
-                    width: 100%;
-                    gap: 0 10px;
-
-                    .img {
-                        width: 50%;
-
-                        img {
-                            width: 100%;
-                        }
-
-
-
-
-
-                    }
-
-                    .text {
-
-                        h1 {
-                            font-size: 18px;
-                            font-weight: 700;
-                            font-family: 'Poppins', sans-serif;
-                            color: #182135;
-
-                        }
-
-                        p {
-                            font-size: 14px;
-                            font-weight: 400;
-                            font-family: 'Poppins', sans-serif;
-                            color: #626264;
-                        }
-                    }
-
-                    .add-text {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-
-                        h1 {
-                            font-size: 18px;
-                            font-weight: 700;
-                            font-family: 'Poppins', sans-serif;
-                            color: #182135;
-
-                        }
-
-                        p {
-                            font-size: 14px;
-                            font-weight: 400;
-                            font-family: 'Poppins', sans-serif;
-                            color: #626264;
-                        }
-                    }
-                }
-            }
-        }
-
-
-
-    }
-
-    .checkout {
-        padding-top: 40px;
-
-        input {
-            padding: 15px;
-            background: #FF7B5F;
-            color: white;
-            width: 100%;
-            border-radius: 8px;
-            font-weight: 500;
-            font-size: 12px;
-            font-family: 'Poppins', sans-serif;
-
         }
     }
+   }
+    .precent {
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr;
+        gap: 0 10px;
+    
+        .first {
+            background: #A3A3A452;
+            border-radius: 80px;
+    
+            .percentage {
+                width: 100%;
+                padding: 5px;
+                border-radius: 80px;
+                background: #FB6D3A;
+            }
+        }
+    
+        .second {
+            background: #A3A3A452;
+            border-radius: 80px;
+    
+            .percentage {
+                width: 100%;
+                padding: 5px;
+                border-radius: 80px;
+                background: #FB6D3A;
+            }
+        }
+    
+        .third {
+            background: #A3A3A452;
+            border-radius: 80px;
+    
+            .percentage {
+                width: 50%;
+                padding: 5px;
+                border-radius: 80px;
+                background: #FB6D3A;
+            }
+        }
+    }
+
+
+    .delivered{
+        padding: 20px 0;
+        .title{
+            display: flex;
+            align-items: center;
+            gap: 0 20px;
+            .icon{
+background: #F7F7F7;
+padding: 5px 10px;
+i{font-size: 18px;}
+            }
+            h1{
+                font-weight: 400;
+                font-size: 16px;
+                color: #626264;
+                font-family: 'Poppins', sans-serif;
+
+            }
+        }
+
+
+
+        .on-the-way{
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            .first{
+                display: flex;
+                align-items: center;
+                gap: 0 20px;
+                .icon{
+                    background: #FB6D3A1A;
+                    padding: 5px 10px;
+                    i{
+                        color: #FB6D3A;
+                        font-size: 18px;
+                    }
+                                }
+                                h1{
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    color:#182135;
+                                    font-family: 'Poppins', sans-serif;
+                    
+                                }
+                                span{
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    color: #626264;
+                                    
+                                }
+            }
+       
+        }
+    }
+}
 }
 
 .sidebar.open {
