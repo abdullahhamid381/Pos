@@ -82,7 +82,7 @@ body {
   width: 100%;
   margin: 0 auto;
   gap: 2.8rem;
-  grid-template-columns: 18rem auto 24rem;
+  grid-template-columns: 18rem auto 45rem;
 }
 .chat-dashboard-parent a {
   color: var(--color-dark);
@@ -336,108 +336,89 @@ body {
 .chat-dashboard-parent .main-section-mid-parent main .search .search-bar .img img {
   width: 100%;
 }
-.chat-dashboard-parent .main-section-mid-parent main .content-parent .message {
-  padding: 0 20px;
-  background: white;
-  height: 100vh;
+.chat-dashboard-parent .main-section-mid-parent main .message-chat {
+  padding-top: 40px;
 }
-@media only screen and (max-width: 992px) {
-  .chat-dashboard-parent .main-section-mid-parent main .content-parent .message .title h1 {
-    font-weight: 800;
-    font-size: 1.8rem;
-    margin-top: 30px;
-  }
-}
-.chat-dashboard-parent .main-section-mid-parent main .content-parent .message .search {
-  background: #FFFFFF;
-  position: relative;
-  padding: 30px 0;
-}
-@media only screen and (max-width: 992px) {
-  .chat-dashboard-parent .main-section-mid-parent main .content-parent .message .search {
-    background: #FFFFFF;
-    position: relative;
-    padding: 10px;
-    top: 25px;
-    width: 100%;
-    margin: auto;
-    border-radius: 8px;
-  }
-}
-.chat-dashboard-parent .main-section-mid-parent main .content-parent .message .search i {
-  color: #A4A7AD;
-  position: absolute;
-  top: 48px;
-  left: 15px;
-  font-size: 14px;
-}
-@media only screen and (max-width: 992px) {
-  .chat-dashboard-parent .main-section-mid-parent main .content-parent .message .search i {
-    display: none;
-  }
-}
-.chat-dashboard-parent .main-section-mid-parent main .content-parent .message .search input {
-  background: none;
-  padding: 15px 40px;
-  border: 1px solid #e5e5e5;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  color: #A4A7AD;
-  font-weight: 400;
-  width: 100%;
-  border-radius: 8px;
-}
-.chat-dashboard-parent .main-section-mid-parent main .content-parent .message .search input::-moz-placeholder {
-  background: none;
-  color: #A4A7AD;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-}
-.chat-dashboard-parent .main-section-mid-parent main .content-parent .message .search input::placeholder {
-  background: none;
-  color: #A4A7AD;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-}
-.chat-dashboard-parent .main-section-mid-parent main .content-parent .message .chats .recent p {
-  font-size: 16px;
-  font-weight: 500;
-  font-family: "Inter", sans-serif;
-  color: #4E5D78;
-}
-.chat-dashboard-parent .main-section-mid-parent main .content-parent .message .chats .user {
+.chat-dashboard-parent .main-section-mid-parent main .message-chat .title {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  transition: 0.8s;
-  margin-top: 20px;
-  padding: 10px;
-  border-radius: 8px;
 }
-.chat-dashboard-parent .main-section-mid-parent main .content-parent .message .chats .user:hover {
-  background: #D3EEFE;
-  transition: 0.8s;
+.chat-dashboard-parent .main-section-mid-parent main .message-chat .title h1 {
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  color: #182135;
 }
-.chat-dashboard-parent .main-section-mid-parent main .content-parent .message .chats .user .user-detail {
+.chat-dashboard-parent .main-section-mid-parent main .message-chat .title .filter {
   display: flex;
+  background: #F7F7F7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  align-items: center;
   gap: 0 10px;
 }
-.chat-dashboard-parent .main-section-mid-parent main .content-parent .message .chats .user .user-detail .img img {
+.chat-dashboard-parent .main-section-mid-parent main .message-chat .title .filter span {
+  font-size: 600;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #182135;
+}
+.chat-dashboard-parent .main-section-mid-parent main .message-chat .title .filter i {
+  font-size: 12px;
+}
+.chat-dashboard-parent .main-section-mid-parent main .message-chat .chat-user-list {
+  display: flex;
+  padding-top: 40px;
+  gap: 0 10px;
+}
+.chat-dashboard-parent .main-section-mid-parent main .message-chat .chat-user-list .img img {
   width: 100%;
 }
-.chat-dashboard-parent .main-section-mid-parent main .content-parent .message .chats .user .user-detail .content h1 {
-  font-weight: 500;
-  font-size: 14px;
-  font-family: "Inter", sans-serif;
-  color: #49505B;
+.chat-dashboard-parent .main-section-mid-parent main .message-chat .chat-user-list .detail {
+  border-bottom: 1px solid rgba(163, 163, 164, 0.1607843137);
+  padding-bottom: 40px;
 }
-.chat-dashboard-parent .main-section-mid-parent main .content-parent .message .chats .user .user-detail .content p {
+.chat-dashboard-parent .main-section-mid-parent main .message-chat .chat-user-list .detail .name .name-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat-dashboard-parent .main-section-mid-parent main .message-chat .chat-user-list .detail .name .name-time span {
   font-weight: 400;
-  font-size: 14px;
-  font-family: "Inter", sans-serif;
-  color: #5F666F;
-  padding-top: 2px;
+  font-size: 12px;
+  color: #626264;
+  font-family: "Poppins", sans-serif;
+}
+.chat-dashboard-parent .main-section-mid-parent main .message-chat .chat-user-list .detail .name h1 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #182135;
+  padding-top: 5px;
+  font-family: "Poppins", sans-serif;
+}
+.chat-dashboard-parent .main-section-mid-parent main .message-chat .chat-user-list .detail .name p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #626264;
+  font-family: "Poppins", sans-serif;
+  padding-top: 5px;
+}
+.chat-dashboard-parent .main-section-mid-parent main .message-chat .chat-user-list .detail .name .promotion {
+  display: flex;
+  width: 50%;
+  padding-top: 10px;
+  gap: 0 20px;
+}
+.chat-dashboard-parent .main-section-mid-parent main .message-chat .chat-user-list .detail .name .promotion input {
+  font-weight: 400;
+  font-size: 12px;
+  border-radius: 4px;
+  color: #FF7B5F;
+  background: #FFf2ef;
+  padding: 8px 15px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
 }
 .chat-dashboard-parent .right-parent .right {
   margin-top: 1.4rem;
@@ -683,191 +664,164 @@ body {
   color: #1A202C;
   font-weight: 600;
 }
-.chat-dashboard-parent .right-parent .right .user-wallet {
-  padding-top: 40px;
-}
-.chat-dashboard-parent .right-parent .right .user-wallet .title h1 {
-  font-size: 18px;
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
-}
-.chat-dashboard-parent .right-parent .right .user-wallet .wallet-card {
-  padding-top: 20px;
-}
-@media only screen and (max-width: 992px) {
-  .chat-dashboard-parent .right-parent .right .user-wallet .wallet-card {
-    width: 100%;
-  }
-}
-.chat-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-icon {
-  display: flex;
-  background: #FF8369;
-  justify-content: space-between;
+.chat-dashboard-parent .right-parent .right .chat-display {
+  margin-top: 40px;
+  background: #F2F3F9;
   padding: 20px;
-  align-items: center;
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px;
 }
-.chat-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-icon .img img {
+.chat-dashboard-parent .right-parent .right .chat-display .name-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .name-img .flex {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .name-img .flex .img img {
   width: 100%;
 }
-.chat-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail {
-  padding: 0 20px;
-  background: #323142;
-  border-radius: 0 0 8px 8px;
+.chat-dashboard-parent .right-parent .right .chat-display .name-img .flex .name-user h1 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #182135;
+  font-family: "Poppins", sans-serif;
 }
-.chat-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .wallet-number {
+.chat-dashboard-parent .right-parent .right .chat-display .name-img .flex .name-user p {
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #626264;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .name-img .icon i {
+  font-size: 12px;
+  color: #626264;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .time {
   display: flex;
-  gap: 0 20px;
+  align-items: center;
+  justify-content: center;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .time span {
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #FF7B5F;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .user-chat {
+  padding-top: 20px;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .user-chat .user-text {
+  width: 70%;
+  background: #FFFFFF;
+  padding: 15px;
+  border-radius: 8px 8px 8px 0;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .user-chat .user-text p {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #182135;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .user-chat .user-time {
   padding-top: 10px;
 }
-.chat-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .wallet-number span {
-  font-size: 14px;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: white;
-}
-.chat-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .card-holder {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 0 20px 0;
-  align-items: center;
-}
-.chat-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .card-holder .name p {
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  font-weight: lighter;
-  color: whitesmoke;
-}
-.chat-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .card-holder .name h1 {
-  font-size: 18px;
-  font-family: "Poppins", sans-serif;
+.chat-dashboard-parent .right-parent .right .chat-display .user-chat .user-time p {
   font-weight: 400;
-  color: white;
-}
-.chat-dashboard-parent .right-parent .right .user-wallet .wallet-card .wallet-detail .card-holder .debit img {
-  width: 100%;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 40px;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .title h1 {
-  font-size: 18px;
-  color: #323142;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .title a {
-  text-decoration: none;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .title a input {
-  background: none;
-  border: none;
-  color: #ACADB9;
-  cursor: pointer;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card {
-  display: flex;
-  margin-top: 20px;
-  gap: 0 10px;
-  align-items: center;
-  background: #F2F3F9;
-  padding: 10px;
-  border-radius: 12px;
-  transition: 0.8s;
-  cursor: pointer;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .img {
-  position: relative;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .img img {
-  width: 100%;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .img .del img {
-  width: 30%;
-  position: absolute;
-  top: 0;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .name-price {
-  display: flex;
-  justify-content: space-between;
-  gap: 0 20px;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .name-price h1 {
-  font-size: 16px;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .name-price h1 span {
-  color: #FF7B5F;
-  font-size: 14px;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .increment {
-  display: flex;
-  align-items: center;
-  gap: 0 10px;
-  padding: 5px 0;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .increment button {
-  border: none;
-  background: white;
-  height: 10px;
-  width: 10px;
-  padding: 10px;
-  border-radius: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .increment button i {
-  color: #8E97A6;
-  font-size: 14px;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .increment span {
-  color: #FF7B5F;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .on-the-way span {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
-  color: #ACADB9;
+  color: #626264;
 }
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card .detail .on-the-way p {
-  font-size: 12px;
-  color: #323142;
-  font-family: "Poppins", sans-serif;
-  color: #ACADB9;
-  padding-top: 2px;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .cart-card:hover {
-  background: #ffffff;
-  box-shadow: 0 35px 23px -13px #ededed;
-}
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .checkout {
+.chat-dashboard-parent .right-parent .right .chat-display .my-chat {
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order .checkout input {
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  background: none;
-  text-align: center;
+.chat-dashboard-parent .right-parent .right .chat-display .my-chat .user-text {
+  width: 70%;
   background: #FF7B5F;
   padding: 15px;
-  color: white;
-  border-radius: 25px;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  transition: 0.8s;
+  border-radius: 8px 8px 0px 8px;
 }
-.chat-dashboard-parent .right-parent .right .cart-parent .cards-all-order input:hover {
-  background: rgba(255, 122, 95, 0.862745098);
+.chat-dashboard-parent .right-parent .right .chat-display .my-chat .user-text p {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .my-chat .user-time {
+  padding-top: 10px;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .my-chat .user-time p {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #626264;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .sugesstion .promotion {
+  display: flex;
+  width: 50%;
+  padding-top: 10px;
+  gap: 0 20px;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .sugesstion .promotion input {
+  font-weight: 400;
+  font-size: 12px;
+  border-radius: 4px;
+  color: #FF7B5F;
+  background: #FFf2ef;
+  padding: 8px 15px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .message-type {
+  display: flex;
+  gap: 0 10px;
+  padding-top: 40px;
+  justify-content: space-between;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .message-type .send {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 15px 10px;
+  gap: 0 10px;
+  background: white;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .message-type .send i {
+  font-size: 14px;
+  color: #182135;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .message-type .send input {
+  font-weight: 400;
+  font-size: 14px;
+  color: #182135;
+  width: 100%;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .message-type .send input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  color: #182135;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .message-type .send input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  color: #182135;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .message-type .message-icon {
+  background: #FF7B5F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.chat-dashboard-parent .right-parent .right .chat-display .message-type .message-icon i {
+  font-size: 16px;
+  color: white;
 }
 @media screen and (max-width: 1200px) {
   .chat-dashboard-parent aside .logo h2 {
