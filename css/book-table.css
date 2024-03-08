@@ -271,7 +271,7 @@ body {
 .booktable-dashboard-parent .aside-parent aside .top .coloumn .close span {
   color: white;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1060px) {
   .booktable-dashboard-parent .aside-parent aside .top .coloumn .close {
     display: block;
   }
@@ -1185,7 +1185,7 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1060px) {
   .booktable-dashboard-parent .container {
     width: 100%;
     grid-template-columns: 1fr;

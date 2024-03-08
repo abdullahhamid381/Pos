@@ -314,7 +314,7 @@ body {
                             color: white;
                         }
 
-                        @include lg {
+                        @include laptop {
                             display: block;
                         }
                     }
@@ -1463,7 +1463,7 @@ width: 100%;
     }
 
     /* SMALL TABLETS AND MOBILE */
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1060px) {
         .container {
             width: 100%;
             grid-template-columns: 1fr;
