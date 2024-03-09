@@ -230,8 +230,119 @@
                                 </div>
                                 <div class="add">
                                     <i class="fa-solid fa-plus"></i>
-                                    <input type="button" value="Add New">
-                                </div>
+                                    <input type="button" value="Add New" id="openModal">
+                                  </div>
+                                  
+                                  <!-- Modal -->
+                                  <div id="myModal" class="modal">
+                                    <!-- Modal content -->
+                                    <div class="modal-content">
+                                    
+                                        <div class="form-parent">
+                                            <div class="form-section">
+                                                <div class="title">
+                                                    <h1>Add Staff</h1>
+                                                </div>
+                                                <div class="fields">
+                                                    <div class="name-input">
+                                                        <p>Employee Name</p>
+                                                        <input type="text" placeholder="Title here...">
+                                                    </div>
+                                                    <div class="name">
+                                                        <p>Role of Employee</p>
+                                                        <div class="field">
+                                                            <div class="custom-select">
+                                                                <div class="select-box">
+                                                                    <div class="icon">
+                                                                        <img src="/assets/img/location.png" alt="" width="100%">
+                                                                    </div>
+                                                                    <div class="flex">
+                                                                        <span class="placeholder">Select</span>
+                                                                        <i class="fas fa-chevron-down"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="options">
+                                                                    <div class="option" data-value="option1">
+                                                                        <span>Admin</span>
+                                                                    </div>
+                                                                    <div class="option" data-value="option2">
+                                                                        <span>Client</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                        
+                                        
+                                                         
+                                                          
+                                                        </div>
+                                                    </div>
+                                                    <div class="name-input">
+                                                        <p>Joining Date </p>
+                                                        <input type="text" placeholder="Add Date">
+                                                    </div>
+                                                    <div class="name-input">
+                                                        <p>Phone Number </p>
+                                                        <input type="text" placeholder="Enter Phone Number">
+                                                    </div>
+                                        
+
+                                                    <div class="name-input">
+                                                        <p>Email </p>
+                                                        <input type="email" placeholder="Enter Email@">
+                                                    </div>
+                                                    <div class="name-input">
+                                                        <p>Address </p>
+                                                        <input type="text" placeholder="Enter Full Address">
+                                                    </div>
+
+                                                    <div class="name-input">
+                                                        <p>NIN </p>
+                                                        <input type="email" placeholder="National Insurance Number">
+                                                    </div>
+                                                    <div class="name-input">
+                                                        <p>Access Code </p>
+                                                        <input type="text" placeholder="Generate Access Code">
+                                                    </div>
+
+
+                                                    <div class="name-input">
+                                                        <p>Comments </p>
+                                                        <textarea name="" id="" cols="30" rows="10" placeholder="Title here..."></textarea>
+                                                    </div>
+                                        
+                                                    <div class="name-input">
+                                                        <p>Attachment </p>
+                                                        <div class="box">
+                                                            <div class="img">
+                                                                <img src="/images/add-pic.png" alt="">
+                                                            </div>
+                                                            <div class="title">
+                                                                <span style="color: #FF7B5F;">Upload a file</span>
+                                                                <span>or drag and drop</span>
+                                                            </div>
+                                                            <div class="para">
+                                                                <p>PNG, JPG, GIF up to 10MB</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                      
+                             
+                                        
+                                       
+                                        
+                                                </div>
+                                        
+                                        
+                                                <div class="buttons">
+                                        
+                                                    <input type="button" value="Reset all fields" class="reset">
+                                                    <input type="button" value="Submit" class="submit">
+                                                </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  
                             </div>
                             <div class="table-parent">
 
@@ -736,6 +847,36 @@
 
 
 
+<!-- MODAL  BOX FORM -->
+
+<script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("openModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
 
 
 

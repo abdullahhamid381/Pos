@@ -414,6 +414,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
+  /* Modal Content */
+  /* The Close Button */
 }
 @media only screen and (max-width: 1060px) {
   .staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new {
@@ -490,6 +492,272 @@ body {
 .staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .add i {
   color: white;
   font-size: 16px;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content {
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section {
+  border-radius: 8px;
+  padding: 30px 40px;
+  background: white;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .title {
+  padding-bottom: 20px;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .title h1 {
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  color: #1A1A1A;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  gap: 30px;
+}
+@media only screen and (max-width: 1060px) {
+  .staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields {
+    grid-template-columns: 1fr;
+  }
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name-input p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #1F2937;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name-input input {
+  border: 1px solid #E5E7EB;
+  width: 100%;
+  border-radius: 8px;
+  padding: 15px;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  font-weight: 400;
+  font-size: 16px;
+  color: #8E97A6;
+  font-family: "Poppins", sans-serif;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name-input input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8E97A6;
+  font-family: "Poppins", sans-serif;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name-input input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8E97A6;
+  font-family: "Poppins", sans-serif;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name-input textarea {
+  border: 1px solid #E5E7EB;
+  width: 100%;
+  border-radius: 8px;
+  padding: 15px;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  font-weight: 400;
+  font-size: 16px;
+  color: #8E97A6;
+  font-family: "Poppins", sans-serif;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name-input textarea::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8E97A6;
+  font-family: "Poppins", sans-serif;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name-input textarea::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8E97A6;
+  font-family: "Poppins", sans-serif;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name-input .box {
+  border: 3px dashed #E5E7EB;
+  padding: 70px 40px;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name-input .box .img {
+  width: 20%;
+  margin: auto;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name-input .box .img img {
+  width: 100%;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name-input .box .title {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name-input .box .title span {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #1A1A1A;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name-input .box .para {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name-input .box .para p {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #6B7280;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #1F2937;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name .field input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  border: 1px solid #E4E4E4;
+  border-radius: 50px;
+  width: 100%;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name .field input::-moz-placeholder {
+  color: #C2C2C2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name .field input::placeholder {
+  color: #C2C2C2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name .field .custom-select {
+  position: relative;
+  width: 100%;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name .field .custom-select .select-box {
+  border: 1px solid #E5E7EB;
+  width: 100%;
+  border-radius: 8px;
+  padding: 15px;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  font-weight: 400;
+  font-size: 16px;
+  color: #1F2937;
+  font-family: "Poppins", sans-serif;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name .field .custom-select .select-box .icon img {
+  width: 100%;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name .field .custom-select .select-box .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name .field .custom-select .select-box span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8E97A6;
+  font-family: "Poppins", sans-serif;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name .field .custom-select .select-box i {
+  font-size: 16px;
+  color: #8E97A6;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name .field .custom-select .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  padding: 0px 5px;
+  border-top: none;
+  display: none;
+  background: white;
+  border-radius: 8px;
+  width: 100%;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name .field .custom-select .options .option {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name .field .custom-select .options .option span {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 16px;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .fields .name .field .custom-select .options .option:hover {
+  background-color: #f0f0f0;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .buttons {
+  display: flex;
+  justify-content: end;
+  padding-top: 40px;
+  gap: 0 20px;
+}
+@media only screen and (max-width: 992px) {
+  .staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .buttons {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .buttons .reset {
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  background: none;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #8E97A6;
+  font-family: "Poppins", sans-serif;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .modal-content .form-parent .form-section .buttons .submit {
+  border-radius: 8px;
+  background: #FF7B5F;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .close:hover,
+.staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .add-new .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 .staff-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent {
   padding-top: 20px;
