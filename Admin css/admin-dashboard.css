@@ -328,17 +328,17 @@ body {
 }
 .admin-dashboard-parent .main-section-parent .main-section-mid-parent main .search .search-bar input {
   width: 100%;
-  background: #F5F5F5;
+  background: #E5E7EB;
   padding: 15px 20px;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
-  color: #ACADB9;
+  color: #8E97A6;
 }
 .admin-dashboard-parent .main-section-parent .main-section-mid-parent main .search .search-bar input::-moz-placeholder {
-  color: #ACADB9;
+  color: #8E97A6;
 }
 .admin-dashboard-parent .main-section-parent .main-section-mid-parent main .search .search-bar input::placeholder {
-  color: #ACADB9;
+  color: #8E97A6;
 }
 .admin-dashboard-parent .main-section-parent .main-section-mid-parent main .search .search-bar .img {
   display: flex;
@@ -396,19 +396,19 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.14);
   font-weight: 400;
   font-size: 16px;
-  color: #1F2937;
+  color: #8E97A6;
   font-family: "Poppins", sans-serif;
 }
 .admin-dashboard-parent .main-section-parent .main-section-mid-parent main .form-parent .form-section .fields .name-input input::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
-  color: #1F2937;
+  color: #8E97A6;
   font-family: "Poppins", sans-serif;
 }
 .admin-dashboard-parent .main-section-parent .main-section-mid-parent main .form-parent .form-section .fields .name-input input::placeholder {
   font-weight: 400;
   font-size: 16px;
-  color: #1F2937;
+  color: #8E97A6;
   font-family: "Poppins", sans-serif;
 }
 .admin-dashboard-parent .main-section-parent .main-section-mid-parent main .form-parent .form-section .fields .name p {
@@ -467,9 +467,12 @@ body {
 .admin-dashboard-parent .main-section-parent .main-section-mid-parent main .form-parent .form-section .fields .name .field .custom-select .select-box span {
   font-weight: 400;
   font-size: 16px;
+  color: #8E97A6;
+  font-family: "Poppins", sans-serif;
 }
 .admin-dashboard-parent .main-section-parent .main-section-mid-parent main .form-parent .form-section .fields .name .field .custom-select .select-box i {
   font-size: 16px;
+  color: #8E97A6;
 }
 .admin-dashboard-parent .main-section-parent .main-section-mid-parent main .form-parent .form-section .fields .name .field .custom-select .options {
   position: absolute;
@@ -510,7 +513,7 @@ body {
   padding: 15px;
   font-weight: 400;
   font-size: 16px;
-  color: #1F2937;
+  color: #8E97A6;
   font-family: "Poppins", sans-serif;
 }
 .admin-dashboard-parent .main-section-parent .main-section-mid-parent main .form-parent .form-section .buttons .submit {

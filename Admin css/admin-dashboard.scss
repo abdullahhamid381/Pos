@@ -391,15 +391,15 @@ body {
 
                         input {
                             width: 100%;
-                            background: #F5F5F5;
+                            background: #E5E7EB;
                             padding: 15px 20px;
                             border-radius: 8px;
                             font-family: 'Poppins', sans-serif;
-                            color: #ACADB9;
+                            color: #8E97A6;
                         }
 
                         input::placeholder {
-                            color: #ACADB9;
+                            color: #8E97A6;
                         }
 
                         .img {
@@ -467,14 +467,14 @@ body {
 
                                 font-weight: 400;
                                 font-size: 16px;
-                                color: #1F2937;
+                                color: #8E97A6;
                              
                                 font-family: 'Poppins', sans-serif;
 
                                 &::placeholder{
                                     font-weight: 400;
                                     font-size: 16px;
-                                    color: #1F2937;
+                                    color: #8E97A6;
                                  
                                     font-family: 'Poppins', sans-serif;
                                 }
@@ -539,12 +539,14 @@ body {
                                     span {
                                         font-weight: 400;
                                         font-size: 16px;
+                                        color: #8E97A6;
+                                        font-family: "Poppins", sans-serif;
                                     }
             
                                     i {
                                 
                                         font-size: 16px;
-            
+                                        color: #8E97A6;
                                     }
                                 }
             
@@ -594,7 +596,7 @@ body {
                                 padding: 15px;
                                 font-weight: 400;
                                 font-size: 16px;
-                                color: #1F2937;
+                                color: #8E97A6;
                              
                                 font-family: 'Poppins', sans-serif;
                             }
