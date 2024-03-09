@@ -366,9 +366,21 @@ body {
 .order-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 40%;
   padding-top: 40px;
+  width: 40%;
   gap: 0 20px;
+}
+@media only screen and (max-width: 1060px) {
+  .order-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .buttons {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .order-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .buttons {
+    width: 100%;
+  }
 }
 .order-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .buttons .all {
   background: #FE724E;
@@ -389,6 +401,11 @@ body {
   font-weight: 12px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+}
+@media only screen and (max-width: 1060px) {
+  .order-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .buttons input {
+    width: 100%;
+  }
 }
 .order-management-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent {
   padding-top: 20px;
