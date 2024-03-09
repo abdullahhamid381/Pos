@@ -303,11 +303,11 @@ body {
   .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .search {
     justify-content: center;
     flex-direction: column;
-    padding: 30px 0;
-    width: 80%;
+    /* padding: 30px 0; */
+    width: 90%;
     margin: auto;
     border-radius: 8px;
-    gap: 20px 0;
+    background: none;
   }
 }
 .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .search .title {
@@ -315,6 +315,11 @@ body {
   color: #1A202C;
   font-weight: 600;
   font-size: 24px;
+}
+@media only screen and (max-width: 1060px) {
+  .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .search .title {
+    margin: 40px;
+  }
 }
 .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .search .search-bar {
   display: flex;
@@ -350,90 +355,13 @@ body {
 .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .search .search-bar .img img {
   width: 100%;
 }
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .cards-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 40px;
-  gap: 20px;
-}
-@media only screen and (max-width: 1060px) {
-  .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .cards-grid {
-    grid-template-columns: 1fr;
-  }
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .cards-grid .cards {
-  padding: 30px 30px;
-  border-radius: 8px;
-  background: white;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .cards-grid .cards .card {
-  display: flex;
-  align-items: center;
-  gap: 0 20px;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .cards-grid .cards .card .icon {
-  background: #FEF3F1;
-  display: flex;
-  justify-content: center;
-  height: 70px;
-  width: 70px;
-  border-radius: 80px;
-  align-items: center;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .cards-grid .cards .card .icon i {
-  color: #FF7B5F;
-  font-size: 22px;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .cards-grid .cards .card .text h1 {
-  font-weight: 700;
-  font-size: 22px;
-  color: #1A1A1A;
-  font-family: "Poppins", sans-serif;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .cards-grid .cards .card .text p {
-  font-weight: 400;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  color: #8E97A6;
-}
 .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res {
   padding: 0px 40px;
 }
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .title {
-  display: flex;
-  justify-content: space-between;
-}
 @media only screen and (max-width: 992px) {
-  .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .title {
-    flex-direction: column;
-    gap: 20px;
+  .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res {
+    padding: 0px 20px;
   }
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .title h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 25px;
-  color: #1A1A1A;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .title .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0 10px;
-  background: #FF7B5F;
-  padding: 10px 20px;
-  border-radius: 8px;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .title .button input {
-  background: none;
-  color: white;
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .title .button i {
-  font-size: 16px;
-  color: white;
 }
 .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent {
   padding-top: 40px;
@@ -446,7 +374,7 @@ body {
   display: grid;
   grid-template-columns: 2fr repeat(5, 2fr);
   place-content: center;
-  background: #F9FAFB;
+  background: #ffffff;
   gap: 0 20px;
   padding: 20px 0;
   gap: 2px;
@@ -475,7 +403,7 @@ body {
 .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .open .help {
   display: grid;
   grid-template-columns: 2fr repeat(5, 2fr);
-  background: #FFFFFF;
+  background: #F9FAFB;
   gap: 0 20px;
   place-content: center;
   padding: 20px;
@@ -486,6 +414,21 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0 10px;
+}
+.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .open .help .item .code {
+  margin-left: -43px;
+}
+.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .open .help .item .order {
+  background: rgba(62, 73, 84, 0.0588235294);
+  padding: 15px;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 992px) {
+  .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .open .help .item .order {
+    background: rgba(62, 73, 84, 0.0588235294);
+    padding: 5px;
+    border-radius: 8px;
+  }
 }
 .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .open .help .item h3 {
   font-size: 14px;
@@ -499,33 +442,14 @@ body {
     font-size: 9px;
   }
 }
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .open .help .item .img img {
-  width: 100%;
+.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .open .help .lasorder {
+  margin-right: -50px;
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
 }
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .open .help .item .text h1 {
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  color: #111827;
-  font-weight: 400;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .open .help .item .text p {
-  font-weight: 400;
-  font-size: 10px;
-  color: #6B7280;
-  font-family: "Poppins", sans-serif;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .open .help .open {
-  cursor: pointer;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .open .help .open h3 {
-  background: #D1FAE5;
-  color: #065F46;
-  padding: 5px 10px;
-  border-radius: 80px;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .open .help .edit h3 {
-  color: #FF7B5F;
-  margin-right: -35px;
+.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .open .help .lasorder i {
+  font-size: 18px;
 }
 .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .close {
   width: 100%;
@@ -534,7 +458,7 @@ body {
 .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .close .help {
   display: grid;
   grid-template-columns: 2fr repeat(5, 2fr);
-  background: #F9FAFB;
+  background: #ffffff;
   gap: 0 20px;
   place-content: center;
   padding: 20px;
@@ -545,6 +469,14 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0 10px;
+}
+.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .close .help .item .code {
+  margin-left: -43px;
+}
+.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .close .help .item .order {
+  background: rgba(62, 73, 84, 0.0588235294);
+  padding: 15px;
+  border-radius: 8px;
 }
 .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .close .help .item h3 {
   font-size: 14px;
@@ -558,39 +490,26 @@ body {
     font-size: 9px;
   }
 }
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .close .help .item .img img {
-  width: 100%;
+.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .close .help .lasorder {
+  margin-right: -50px;
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
 }
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .close .help .item .text h1 {
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  color: #111827;
-  font-weight: 400;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .close .help .item .text p {
-  font-weight: 400;
-  font-size: 10px;
-  color: #6B7280;
-  font-family: "Poppins", sans-serif;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .close .help .close {
-  cursor: pointer;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .close .help .close h3 {
-  background: #FF005C;
-  color: #ffffff;
-  padding: 5px 10px;
-  border-radius: 80px;
-}
-.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .close .help .edit h3 {
-  color: #FF7B5F;
-  margin-right: -35px;
+.resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .table-parent .close .help .lasorder i {
+  font-size: 18px;
 }
 .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .pagination-parent {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
+}
+@media only screen and (max-width: 992px) {
+  .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .pagination-parent {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 .resturant-management-page-two-parent .main-section-parent .main-section-mid-parent main .list-of-res .pagination-parent h1 {
   font-family: "Poppins", sans-serif;

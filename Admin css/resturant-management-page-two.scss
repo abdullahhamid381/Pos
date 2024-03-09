@@ -365,11 +365,12 @@ body {
                     @include laptop {
                         justify-content: center;
                         flex-direction: column;
-                        padding: 30px 0;
-                        width: 80%;
+                        /* padding: 30px 0; */
+                        width: 90%;
                         margin: auto;
                         border-radius: 8px;
-                        gap: 20px 0;
+                     
+                        background: none;
                     }
 
                     .title {
@@ -377,6 +378,9 @@ body {
                         color: #1A202C;
                         font-weight: 600;
                         font-size: 24px;
+                        @include laptop{
+                            margin: 40px;
+                        }
                     }
 
                     .search-bar {
@@ -418,106 +422,15 @@ body {
 
 
 
-                // CARD GRID==============
-
-
-                .cards-grid {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
-                    padding: 40px;
-                    gap: 20px;
-
-                    @include laptop {
-                        grid-template-columns: 1fr;
-                    }
-
-                    .cards {
-                        padding: 30px 30px;
-                        border-radius: 8px;
-                        background: white;
-
-                        .card {
-                            display: flex;
-                            align-items: center;
-                            gap: 0 20px;
-
-                            .icon {
-                                background: #FEF3F1;
-                                display: flex;
-                                justify-content: center;
-                                height: 70px;
-                                width: 70px;
-                                border-radius: 80px;
-                                align-items: center;
-
-                                i {
-                                    color: #FF7B5F;
-                                    font-size: 22px;
-
-                                }
-                            }
-
-                            .text {
-                                h1 {
-                                    font-weight: 700;
-                                    font-size: 22px;
-                                    color: #1A1A1A;
-                                    font-family: 'Poppins', sans-serif;
-                                }
-
-                                p {
-                                    font-weight: 400;
-                                    font-size: 14px;
-                                    font-family: 'Poppins', sans-serif;
-                                    color: #8E97A6;
-                                }
-                            }
-                        }
-                    }
-                }
-
 // LIST OF REst====================
 
              
 .list-of-res{
     padding: 0px 40px;
-    .title{
-        display: flex;
-        justify-content: space-between;
-
-        @include lg{
-            flex-direction: column;
-            gap: 20px;
-        }
-        h1{
-
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            font-size: 25px;
-            color: #1A1A1A;
-        }
-        .button{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0 10px;
-            background: #FF7B5F;
-            padding: 10px 20px;
-            border-radius: 8px;
-            input{
-            background: none;
-            color: white;
-            font-weight: 500;
-            font-family: 'Poppins', sans-serif;
-            font-size: 16px;
-            }
-            i{
-                font-size: 16px;
-                color: white;
-            }
-        }
-        
+    @include lg{
+        padding: 0px 20px;
     }
+   
 
     .table-parent {
 padding-top: 40px;
@@ -532,7 +445,7 @@ padding-top: 40px;
             display: grid;
             grid-template-columns: 2fr repeat(5,2fr);
             place-content: center;
-            background: #F9FAFB;
+            background: #ffffff;
             gap: 0 20px;
 padding: 20px 0;
             // @include lg {
@@ -575,7 +488,7 @@ padding: 20px 0;
           .help {
             display: grid;
             grid-template-columns: 2fr repeat(5,2fr);
-            background: #FFFFFF;
+            background: #F9FAFB;
             gap: 0 20px;
             place-content: center;
 padding: 20px;
@@ -594,7 +507,19 @@ padding: 20px;
               justify-content: center;
               align-items: center;
               gap: 0 10px;
-
+.code{
+    margin-left: -43px;
+}
+.order{
+    background: #3E49540F;
+    padding: 15px;
+    border-radius: 8px;
+    @include lg{
+        background: rgba(62, 73, 84, 0.0588235294);
+        padding: 5px;
+        border-radius: 8px;
+    }
+}
               h3 {
                 font-size: 14px;
                 font-family: 'ABeeZee', sans-serif;
@@ -606,44 +531,18 @@ padding: 20px;
                 }
                
               }
-              .img{
-                img{
-                    width: 100%;
+           
+            }
+            .lasorder{
+                margin-right: -50px;
+                display: flex;
+                align-items: center;
+                gap: 0 20px;
+                i{
+                    font-size: 18px;
                 }
             }
-            .text{
-                h1{
-                    font-size: 16px;
-                    font-family: 'Poppins', sans-serif;
-                  
-                    color: #111827;
-                    font-weight: 400;
-                }
-                p{
-                    font-weight: 400;
-                    font-size: 10px;
-                    color: #6B7280;
-                    font-family: 'Poppins', sans-serif;
-
-                }
-            }
-            }
-            .open{
-                cursor: pointer;
-              h3{
-                background: #D1FAE5;
-                color: #065F46;
-                padding: 5px 10px;
-
-                border-radius: 80px;
-              }
-            }
-            .edit{
-                h3{
-                    color: #FF7B5F;
-                    margin-right: -35px;
-                }
-            }
+         
           }
         }
 
@@ -655,7 +554,7 @@ padding: 20px;
             .help {
               display: grid;
               grid-template-columns: 2fr repeat(5,2fr);
-              background: #F9FAFB;
+              background: #ffffff;
               gap: 0 20px;
               place-content: center;
   padding: 20px;
@@ -674,7 +573,14 @@ padding: 20px;
                 justify-content: center;
                 align-items: center;
                 gap: 0 10px;
-  
+  .code{
+      margin-left: -43px;
+  }
+  .order{
+      background: #3E49540F;
+      padding: 15px;
+      border-radius: 8px;
+  }
                 h3 {
                   font-size: 14px;
                   font-family: 'ABeeZee', sans-serif;
@@ -686,44 +592,18 @@ padding: 20px;
                   }
                  
                 }
-                .img{
-                  img{
-                      width: 100%;
+             
+              }
+              .lasorder{
+                  margin-right: -50px;
+                  display: flex;
+                  align-items: center;
+                  gap: 0 20px;
+                  i{
+                      font-size: 18px;
                   }
               }
-              .text{
-                  h1{
-                      font-size: 16px;
-                      font-family: 'Poppins', sans-serif;
-                    
-                      color: #111827;
-                      font-weight: 400;
-                  }
-                  p{
-                      font-weight: 400;
-                      font-size: 10px;
-                      color: #6B7280;
-                      font-family: 'Poppins', sans-serif;
-  
-                  }
-              }
-              }
-              .close{
-                  cursor: pointer;
-                h3{
-                  background: #FF005C;
-                  color: #ffffff;
-                  padding: 5px 10px;
-  
-                  border-radius: 80px;
-                }
-              }
-              .edit{
-                  h3{
-                      color: #FF7B5F;
-                      margin-right: -35px;
-                  }
-              }
+           
             }
           }
   
@@ -735,6 +615,10 @@ padding: 20px;
         justify-content: space-between;
         align-items: center;
         padding-top: 40px;
+        @include lg{
+            flex-direction: column;
+            gap: 40px;
+        }
  h1{
     font-family: 'Poppins', sans-serif;
             font-weight: 600;
