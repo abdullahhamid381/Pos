@@ -80,7 +80,7 @@ body {
   display: grid;
   width: 100%;
   margin: 0 auto;
-  grid-template-columns: 24rem auto;
+  grid-template-columns: 18rem auto;
 }
 .admin-dashboard-parent a {
   color: var(--color-dark);
@@ -177,7 +177,7 @@ body {
   font-size: 20px;
 }
 .admin-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list h1 {
-  font-size: 18px;
+  font-size: 14px;
   color: #FFFFFF;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
