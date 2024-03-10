@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.ime-screen {
+  background: url(/images/Background.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.ime-screen .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 250px;
+}
+.ime-screen .center .tilte h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  text-align: center;
+}
+.ime-screen .center .tilte h2 span {
+  font-size: 30px;
+  font-weight: 200;
+}
+.ime-screen .center .tilte p {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+}
+.ime-screen .center .profile {
+  display: flex;
+  padding-top: 150px;
+  align-items: center;
+  gap: 0 20px;
+}
+.ime-screen .center .profile .img img {
+  width: 100%;
+}
+.ime-screen .center .profile .text h1 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+}
+.ime-screen .center .profile .text p {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+}/*# sourceMappingURL=time.css.map */
