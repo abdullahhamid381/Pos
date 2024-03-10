@@ -54,24 +54,35 @@
        
         </div>
 
+       <a href="dashboard-pos.html" style="text-decoration: none;cursor: pointer;">
         <div class="unlock">
-            <input type="button" name="" id="" value="unlock">
-        </div>
+          <input type="button" name="" id="" value="unlock">
+      </div>
+       </a>
       </div>
 </div>
 
-  <script >
-    const display = document.getElementById('display');
+<script>
+  const display = document.getElementById('display');
 
-function appendToDisplay(value) {
-  const currentValue = display.value;
-  display.value = currentValue === '0' ? value : currentValue + value;
-}
+  function appendToDisplay(value) {
+    const currentValue = display.value;
+    display.value = currentValue === 'Enter your PIN' ? value : currentValue + value;
+  }
 
-function clearDisplay() {
-  display.value = '0';
-}
+  function clearDisplay() {
+    display.value = 'Enter your PIN';
+  }
 
-  </script>
+  function unlock() {
+    const pin = display.value;
+    if (pin.length < 4) {
+      alert('Please enter at least 4 digits in the PIN.');
+    } else {
+      window.location.href = 'dashboard-pos.html'; // Redirect to the next page
+    }
+  }
+</script>
+
 </body>
 </html>
