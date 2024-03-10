@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../pos7 css/keypad.css">
+  <title>Keypad</title>
+</head>
+<body>
+<div class="key-pad-parent">
+
+
+    <div class="images">
+        <div class="div">
+            <div class="img">
+                <img src="/images/Oval.png" alt="">
+            </div>
+            <p>Nirmala Azalea</p>
+        </div>
+        <div class="div">
+            <div class="img">
+                <img src="/images/Oval.png" alt="">
+            </div>
+            <p>Nirmala Azalea</p>
+        </div>
+        <div class="div">
+            <div class="img">
+                <img src="/images/Oval.png" alt="">
+            </div>
+            <p>Nirmala Azalea</p>
+        </div>
+        <div class="div">
+            <div class="img">
+                <img src="/images/Oval.png" alt="">
+            </div>
+            <p>Nirmala Azalea</p>
+        </div>
+    </div>
+    <div class="calculator">
+        <input type="text" id="display" placeholder="Enter your PIN" readonly>
+        <div class="keypad">
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="appendToDisplay('0')">0</button>
+          <button onclick="clearDisplay()">Clear</button>
+       
+        </div>
+
+        <div class="unlock">
+            <input type="button" name="" id="" value="unlock">
+        </div>
+      </div>
+</div>
+
+  <script >
+    const display = document.getElementById('display');
+
+function appendToDisplay(value) {
+  const currentValue = display.value;
+  display.value = currentValue === '0' ? value : currentValue + value;
+}
+
+function clearDisplay() {
+  display.value = '0';
+}
+
+  </script>
+</body>
+</html>
