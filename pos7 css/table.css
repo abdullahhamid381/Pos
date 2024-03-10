@@ -1,0 +1,1039 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* DECLARATIONS */
+:root {
+  --color-primary: #7380ec;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+/* DARK THEME VARIABLES */
+.dark-theme-variables {
+  --color-background: #181a1e;
+  --color-white: #202528;
+  --color-dark: #edeffd;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+/* STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: poppins, sans-serif;
+  font-size: 0.88rem;
+  background: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  overflow-x: hidden;
+  color: var(--color-dark);
+}
+
+.table-pos-parent {
+  /* ROOT VARIABLES */
+  /* START SIDEBAR============================= */
+  /* END SIDEBAR */
+  /* END ASIDE */
+  /* START RIGHT SECTION */
+  /* END SALES ANALYTICS */
+  /* END RIGHT SECTION */
+  /* START MEDIA QUERIES */
+  /* TABLETS AND SMALL LAPTOPS */
+  /* SMALL TABLETS AND MOBILE */
+  /* END MEDIA QUERIES */
+}
+.table-pos-parent a {
+  color: var(--color-dark);
+}
+.table-pos-parent img {
+  display: block;
+  width: 100%;
+}
+.table-pos-parent h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+.table-pos-parent h2 {
+  font-size: 1.4rem;
+}
+.table-pos-parent h3 {
+  font-size: 14px;
+}
+.table-pos-parent h4 {
+  font-size: 0.8rem;
+}
+.table-pos-parent h5 {
+  font-family: 0.77rem;
+}
+.table-pos-parent small {
+  font-size: 0.75rem;
+}
+.table-pos-parent .profile-photo {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.table-pos-parent .text-muted {
+  color: var(--color-info-dark);
+}
+.table-pos-parent p {
+  color: var(--color-dark-variant);
+}
+.table-pos-parent b {
+  color: var(--color-dark);
+}
+.table-pos-parent .primary {
+  color: var(--color-primary);
+}
+.table-pos-parent .danger {
+  color: var(--color-danger);
+}
+.table-pos-parent .success {
+  color: var(--color-success);
+}
+.table-pos-parent .warning {
+  color: var(--color-warning);
+}
+@media only screen and (max-width: 992px) {
+  .table-pos-parent .aside-parent {
+    background: #1A1A1A;
+    padding: 0;
+  }
+}
+.table-pos-parent .aside-parent aside .top .coloumn {
+  width: 80%;
+  margin: auto;
+}
+@media only screen and (max-width: 992px) {
+  .table-pos-parent .aside-parent aside .top .coloumn .logo {
+    padding-top: 20px;
+  }
+}
+.table-pos-parent .aside-parent aside .top .coloumn .logo img {
+  width: 100%;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+  padding-top: 60px;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .list {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+  transition: 0.8s;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .list i {
+  color: white;
+  font-size: 20px;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .list h1 {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .list:hover {
+  background: rgba(255, 122, 95, 0.862745098);
+  border-radius: 12px;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .card {
+  background: white;
+  display: flex;
+  padding: 40px 10px;
+  margin-top: 80px;
+  border-radius: 27px;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0px 26px 0px -11px #f5f5f5, 0px 47px 0px -17px #f0f0f0;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .card .items .icon-fire {
+  width: 50%;
+  margin: auto;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .card .items .icon-fire img {
+  width: 100%;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .card .items .text h1 {
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  padding-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .card .items .text p {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  color: #8E97A6;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .card .items .order-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background: #FF7B5F;
+  border-radius: 12px;
+  gap: 0 10px;
+  transition: 0.8s;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .card .items .order-button input {
+  background: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  font-size: 16px;
+  padding: 15px 0;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .card .items .order-button:hover {
+  background: rgba(255, 122, 95, 0.862745098);
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .card .items .cross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .card .items .cross i {
+  color: black;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .card:hover {
+  background: white;
+  border-radius: 27px;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .nav-list .list:focus {
+  background: #FF7B5F;
+  padding: 10px;
+  border-radius: 8px;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .close {
+  display: none;
+  position: absolute;
+  right: 13px;
+  top: 28px;
+}
+.table-pos-parent .aside-parent aside .top .coloumn .close span {
+  color: white;
+}
+@media only screen and (max-width: 1060px) {
+  .table-pos-parent .aside-parent aside .top .coloumn .close {
+    display: block;
+  }
+}
+.table-pos-parent .main-section-parent {
+  /* START MAIN */
+}
+@media only screen and (max-width: 992px) {
+  .table-pos-parent .main-section-parent .main-section-mid-parent {
+    margin-top: -88px;
+  }
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .search {
+  display: flex;
+  background: white;
+  padding: 20px 30px;
+  gap: 0 30px;
+  align-items: center;
+}
+@media only screen and (max-width: 1060px) {
+  .table-pos-parent .main-section-parent .main-section-mid-parent main .search {
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 0;
+    width: 80%;
+    margin: auto;
+    border-radius: 8px;
+    gap: 20px 0;
+  }
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .search .title {
+  font-family: "Poppins", sans-serif;
+  color: #1A202C;
+  font-weight: 600;
+  font-size: 24px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .search .search-bar {
+  display: flex;
+  width: 60%;
+  gap: 0 10px;
+}
+@media only screen and (max-width: 992px) {
+  .table-pos-parent .main-section-parent .main-section-mid-parent main .search .search-bar {
+    width: 100%;
+  }
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .search .search-bar input {
+  width: 100%;
+  background: #E5E7EB;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  color: #8E97A6;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .search .search-bar input::-moz-placeholder {
+  color: #8E97A6;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .search .search-bar input::placeholder {
+  color: #8E97A6;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .search .search-bar .img {
+  display: flex;
+  align-items: center;
+  background: #FF7B5F;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .search .search-bar .img img {
+  width: 100%;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+@media only screen and (max-width: 992px) {
+  .table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container {
+  padding: 30px;
+  padding: 30px;
+  border-top: 1px solid #E4E4E4;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .buttons {
+  display: flex;
+  gap: 0 10px;
+  width: 30%;
+  padding: 10px;
+  border-radius: 80px;
+  background: #F8F9FD;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .buttons .btn {
+  background: white;
+  padding: 20px 40px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 80px;
+  justify-content: center;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .buttons .btn a {
+  text-align: center;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .buttons .btntwo {
+  background: none;
+  padding: 20px 40px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 80px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .buttons .btntwo a {
+  text-align: center;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-icon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 40px 0;
+  gap: 20px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-icon .icon {
+  background: #F2F3F9;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  align-items: center;
+  padding: 40px;
+  flex-direction: column;
+  transition: 0.8s;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-icon .icon:hover {
+  background: linear-gradient(120deg, #FFAB18, #FF2197);
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-icon .icon:hover i {
+  color: white;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-icon .icon:hover h1 {
+  color: white;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-icon .icon i {
+  font-size: 18px;
+  transition: 0.8s;
+  color: #828487;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-icon .icon h1 {
+  transition: 0.8s;
+  font-size: 14px;
+  color: #828487;
+  font-weight: 500;
+  padding-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-dish {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0 20px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-dish .card {
+  box-shadow: 0px 21px 16px -7px whitesmoke;
+  border-radius: 0px 0px 10px 10px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-dish .card .img img {
+  width: 100%;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-dish .card .text h1 {
+  text-align: center;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #323142;
+  padding: 10px 0;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-dish .card .text p {
+  text-align: center;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-dish .card .text .price {
+  display: flex;
+  justify-content: center;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-dish .card .text .price span {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 10px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information {
+  border-left: 1px solid #E4E4E4;
+  border-top: 1px solid #E4E4E4;
+  padding: 40px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .title h1 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .butn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 0;
+  gap: 20px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .butn .field {
+  border: 1px solid #E4E4E4;
+  padding: 15px;
+  border-radius: 80px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #C2C2C2;
+  background: none;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .butn .field::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #C2C2C2;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .butn .field::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  color: #C2C2C2;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .butn input {
+  color: #FF5C00;
+  background: #FFF5EE;
+  padding: 15px;
+  border-radius: 80px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .title h1 {
+  font-size: 18px;
+  color: #323142;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .title a {
+  text-decoration: none;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .title a input {
+  background: none;
+  border: none;
+  color: #ACADB9;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .cart-card {
+  display: flex;
+  margin-top: 20px;
+  gap: 0 10px;
+  align-items: center;
+  background: #F2F3F9;
+  padding: 10px;
+  border-radius: 12px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .cart-card .img {
+  position: relative;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .cart-card .img img {
+  width: 100%;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .cart-card .img .del img {
+  width: 30%;
+  position: absolute;
+  top: 0;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .cart-card .detail .name-price {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .cart-card .detail .name-price h1 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .cart-card .detail .name-price h1 span {
+  color: #FF7B5F;
+  font-size: 14px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .cart-card .detail .increment {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  padding: 5px 0;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .cart-card .detail .increment button {
+  border: none;
+  background: white;
+  height: 10px;
+  width: 10px;
+  padding: 10px;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .cart-card .detail .increment button i {
+  color: #8E97A6;
+  font-size: 14px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .cart-card .detail .increment span {
+  color: #FF7B5F;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .cart-card .detail .on-the-way span {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #ACADB9;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .cart-card .detail .on-the-way p {
+  font-size: 12px;
+  color: #FF5C00;
+  font-family: "Poppins", sans-serif;
+  color: #ACADB9;
+  padding-top: 2px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .cart-card:hover {
+  background: #ffffff;
+  box-shadow: 0 35px 23px -13px #ededed;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .checkout {
+  padding-top: 20px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order .checkout input {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background: none;
+  text-align: center;
+  background: #FF7B5F;
+  padding: 15px;
+  color: white;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.8s;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .cart-parent .cards-all-order input:hover {
+  background: rgba(255, 122, 95, 0.862745098);
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .total {
+  padding-top: 20px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .total .sub-total {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .total .sub-total p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #828487;
+  font-family: "Poppins", sans-serif;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .total .sub-total h1 {
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #19191C;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .total .button-pay {
+  display: flex;
+  padding-top: 40px;
+  gap: 0 20px;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .total .button-pay input {
+  width: 100%;
+  background: #FF5C00;
+  padding: 15px;
+  border-radius: 80px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+.table-pos-parent .right-parent .right {
+  margin-top: 1.4rem;
+  padding-right: 45px;
+  position: absolute;
+  /* left: revert; */
+  right: 0;
+  top: 0;
+}
+@media only screen and (max-width: 992px) {
+  .table-pos-parent .right-parent .right {
+    padding-right: 0;
+  }
+}
+.table-pos-parent .right-parent .right .top {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+.table-pos-parent .right-parent .right .top button {
+  display: none;
+}
+@media only screen and (max-width: 1060px) {
+  .table-pos-parent .right-parent .right .top button {
+    display: block;
+  }
+}
+.table-pos-parent .right-parent .right .users-login {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  /* Modal Styles */
+}
+.table-pos-parent .right-parent .right .users-login .cart img {
+  width: 100%;
+}
+.table-pos-parent .right-parent .right .users-login .cart i {
+  font-size: 18px;
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .table-pos-parent .right-parent .right .users-login .cart i {
+    display: block;
+  }
+}
+.table-pos-parent .right-parent .right .users-login .modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  box-shadow: 0px 0px 38px 0px rgba(44, 43, 43, 0.5568627451);
+}
+.table-pos-parent .right-parent .right .users-login .modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  border-radius: 8px;
+  margin: auto;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .heading {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 10px;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .heading h1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1A202C;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .heading .mark {
+  color: #FF7B5F;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent {
+  padding-top: 20px;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tabs-container {
+  width: 100%;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tabs-header {
+  border: 1px solid #FF7B5F;
+  border-radius: 8px;
+  /* display: flex; */
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent #tab0 {
+  background: #FF7B5F;
+  border-radius: 7px;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent #tab0 h1 {
+  color: white;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #FE724E;
+  border-bottom: none;
+  background: none;
+  text-align: center;
+  transition: 0.8s;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab h1 {
+  font-size: 16px;
+  color: #8E97A6;
+  transition: 0.8s;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .title h1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #323142;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card {
+  display: flex;
+  margin-top: 20px;
+  gap: 0 10px;
+  align-items: center;
+  background: #FFFFFF;
+  padding: 10px;
+  border-radius: 12px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card .img {
+  position: relative;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card .img img {
+  width: 100%;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card .img .del img {
+  width: 30%;
+  position: absolute;
+  top: 0;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card .detail .name-price {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card .detail .name-price h1 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card .detail .name-price h1 span {
+  color: #FF7B5F;
+  font-size: 14px;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card .detail .increment {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  padding: 5px 0;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card .detail .increment button {
+  border: none;
+  background: white;
+  height: 10px;
+  width: 10px;
+  padding: 10px;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card .detail .increment button i {
+  color: #8E97A6;
+  font-size: 14px;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card .detail .increment span {
+  color: #FF7B5F;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card .detail .on-the-way span {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card .detail .on-the-way p {
+  font-size: 12px;
+  color: #323142;
+  font-family: "Poppins", sans-serif;
+  color: #ACADB9;
+  padding-top: 2px;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card .detail .time {
+  display: flex;
+  justify-content: end;
+  margin-right: -40px;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card .detail .time p {
+  color: #ACADB9;
+  font-size: 12px;
+  margin-right: -60px;
+  font-family: "Poppins", sans-serif;
+  color: #ACADB9;
+  padding-top: 2px;
+}
+.table-pos-parent .right-parent .right .users-login .modal-content .tabs-div .tabs-parent .tab-content .cart-card:hover {
+  background: #ffffff;
+  box-shadow: 0 35px 23px -13px #ededed;
+}
+.table-pos-parent .right-parent .right .users-login .close-btn {
+  cursor: pointer;
+  font-size: 20px;
+}
+.table-pos-parent .right-parent .right .users-login .login-button {
+  display: flex;
+  align-items: center;
+  background: #FAFAFA;
+  padding: 5px 20px;
+  border-radius: 80px;
+  gap: 0px;
+  cursor: pointer;
+}
+.table-pos-parent .right-parent .right .users-login .login-button .userimg {
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+.table-pos-parent .right-parent .right .users-login .login-button .userimg i {
+  font-size: 18px;
+}
+.table-pos-parent .right-parent .right .users-login .login-button input {
+  background: none;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #1A202C;
+  font-weight: 600;
+}
+@media screen and (max-width: 1200px) {
+  .table-pos-parent aside .logo h2 {
+    display: none;
+  }
+  .table-pos-parent aside .sidebar h3 {
+    display: none;
+  }
+  .table-pos-parent aside .sidebar a {
+    width: 5.6rem;
+  }
+  .table-pos-parent aside .sidebar a:last-child {
+    position: relative;
+    margin-top: 1.8rem;
+  }
+  .table-pos-parent main .insights {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .table-pos-parent main .recent-orders {
+    width: 94%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem 0 0 8.8rem;
+  }
+  .table-pos-parent main .recent-orders table {
+    width: 83vw;
+  }
+  .table-pos-parent main .recent-orders table thead tr th:first-child,
+  .table-pos-parent main .recent-orders table thead tr th:last-child {
+    display: none;
+  }
+  .table-pos-parent main .recent-orders table tbody tr td:first-child,
+  .table-pos-parent main .recent-orders table tbody tr td:last-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .table-pos-parent .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .table-pos-parent aside {
+    position: fixed;
+    left: -100%;
+    background: #1A1A1A;
+    width: 18rem;
+    z-index: 3;
+    box-shadow: 1rem 3rem 4rem var(--color-light);
+    padding-right: var(--card-padding);
+    display: none;
+    animation: showMenu 400ms ease forwards;
+  }
+  @keyframes showMenu {
+    to {
+      left: -100%;
+    }
+  }
+  @keyframes showMenu {
+    to {
+      left: 0;
+    }
+  }
+  .table-pos-parent aside .logo {
+    margin-left: 1rem;
+  }
+  .table-pos-parent aside .logo h2 {
+    display: inline;
+  }
+  .table-pos-parent aside .sidebar h3 {
+    display: inline;
+  }
+  .table-pos-parent aside .sidebar a {
+    width: 100%;
+    height: 3.4rem;
+  }
+  .table-pos-parent aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 5rem;
+  }
+  .table-pos-parent aside .close {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .table-pos-parent main {
+    margin-top: 8rem;
+    padding: 0 1rem;
+  }
+  .table-pos-parent main .recent-orders {
+    position: relative;
+    margin: 3rem 0 0 0;
+    width: 100%;
+  }
+  .table-pos-parent main .recent-orders table {
+    width: 100%;
+    margin: 0;
+  }
+  .table-pos-parent .right {
+    width: 94%;
+    margin: 0 auto 4rem;
+  }
+  .table-pos-parent .right .top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    padding: 0 0.8rem;
+    height: 4.6rem;
+    background: var(--color-white);
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+    box-shadow: 0 1rem 1rem var(--color-light);
+  }
+  .table-pos-parent .right .top .theme-toggler {
+    width: 4.4rem;
+    position: absolute;
+    left: 66%;
+  }
+  .table-pos-parent .right .top .profile .info {
+    display: none;
+  }
+  .table-pos-parent .right .top button {
+    display: inline-block;
+    background: transparent;
+    cursor: pointer;
+    color: var(--color-dark);
+    position: absolute;
+    left: 1rem;
+  }
+  .table-pos-parent .right .top button span {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=table.css.map */
