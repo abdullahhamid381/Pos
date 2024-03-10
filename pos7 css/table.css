@@ -391,6 +391,11 @@ body {
   padding: 40px 0;
   gap: 20px;
 }
+@media only screen and (max-width: 992px) {
+  .table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-icon {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-icon .icon {
   background: #F2F3F9;
   display: flex;
@@ -426,7 +431,12 @@ body {
 .table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-dish {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 0 20px;
+  gap: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-dish {
+    grid-template-columns: 1fr;
+  }
 }
 .table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .card-dish .card {
   box-shadow: 0px 21px 16px -7px whitesmoke;
