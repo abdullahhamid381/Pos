@@ -371,7 +371,7 @@ body {
 }
 .table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .buttons .btntwo {
   background: none;
-  padding: 20px 40px;
+  padding: 20px 0px;
   border-radius: 8px;
   width: 100%;
   display: flex;
