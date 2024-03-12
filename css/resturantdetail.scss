@@ -417,10 +417,12 @@ body {
                     grid-template-columns: 1fr 1fr;
                     gap: 0 30px;
                     padding-top: 40px;
-@include lg{
-    grid-template-columns: 1fr;
-    gap: 20px 0;
-}
+
+                    @include lg {
+                        grid-template-columns: 1fr;
+                        gap: 20px 0;
+                    }
+
                     .full-detail {
                         display: grid;
                         grid-template-columns: 4fr 1fr;
@@ -471,7 +473,8 @@ body {
                                 border-radius: 8px;
                                 background: #FF7B5F;
                                 color: white;
-                                @include mobile{
+
+                                @include mobile {
                                     text-align: center;
                                     font-size: 9px;
                                     font-family: "Poppins", sans-serif;
@@ -599,7 +602,7 @@ body {
                     justify-content: space-between;
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
-                  
+
                 }
 
                 .tab {
@@ -625,15 +628,17 @@ body {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 0 20px;
-@include lg{
-    grid-template-columns: 1fr !important;
-}
 
-.map{
-    iframe{
-        width: 100%;
-    }
-}
+                    @include lg {
+                        grid-template-columns: 1fr !important;
+                    }
+
+                    .map {
+                        iframe {
+                            width: 100%;
+                        }
+                    }
+
                     .content {
                         .title {
                             h1 {
@@ -662,20 +667,23 @@ body {
 
 
                 }
+
                 #tabContent1 {
                     padding: 30px 0;
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 0 20px;
-@include lg{
-    grid-template-columns: 1fr !important;
-}
 
-.map{
-    iframe{
-        width: 100%;
-    }
-}
+                    @include lg {
+                        grid-template-columns: 1fr !important;
+                    }
+
+                    .map {
+                        iframe {
+                            width: 100%;
+                        }
+                    }
+
                     .content {
                         .title {
                             h1 {
@@ -705,38 +713,145 @@ body {
 
                 }
 
-#tabContent2{
- 
+                #tabContent2 {
 
-    // .review-buttons{
-    //     display: flex;
-    //     .all{
-    //         background: #fcf0eb;
-    //     }
-    // }
-    .img{
-        padding: 20px 0;
-        img{
-            width: 70% !important;
+
+        .buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+padding-top: 20px;
+       gap:  20px;
+       @include laptop{
+        grid-template-columns: repeat(4,1fr);
+
+       }
+       @include lg{
+        grid-template-columns: repeat(2,1fr);
+       }
+            .button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                border-radius: 4px;
+              cursor: pointer;
+                border: 1px solid whitesmoke;
+                transition: .8s;
+                input{
+                    background: none;
+                    text-align: center;
+                    font-weight: 400;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    color: #565C67;
+                    transition: .8s;
+                }
+                &:hover{
+                    background: #FCF0EB;
+                    input{
+                        color: #E3581C;
+                    }
+                }
+            }
+            .review-btn{
+                background: #F4F4F6;
+                border: none;
+                &:hover{
+                    background: #F4F4F6;
+                    input{
+                        color: #565C67;
+                    }
+                }
+            }
+        }
+
+        .cards-grid{
+            display: grid;
+            gap: 20px;
+            padding-top: 40px;
+            grid-template-columns: 1fr 1fr 1fr;
+            @include lg{
+                grid-template-columns: 1fr;
+            }
+            .card{
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0px 0px 20px 0px whitesmoke;
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .img-name{
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        .image{
+            img{
+                width: 100%;
+            }
+        }
+        .name{
+            color: #111827;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
         }
     }
-    .card{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-        @include lg{
-            grid-template-columns: 1fr;
+    .rev{
+        background: #FFA500;
+        border-radius: 8px;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 5px;
+        span{
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+          
+            
         }
-        div{
-            box-shadow: 0px 0px 10px -8px #0000008f;
-        }
-        img{
-            width: 100%;
-            border-radius: 8px;
-
+        i{
+            color: white;
         }
     }
 }
+.para{
+    padding: 20px 0;
+    border-bottom: 1px solid whitesmoke;
+    p{
+        font-size: 14px;
+        color: #AFB7C3;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+}
+.help-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 10px;
+    padding: 10px 0 0 0 ;
+    .help{
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        i{
+            font-size: 18px;
+            color: #111827;
+        }
+        span{
+            color:#111827;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+}
+            }
+        }
+                }
             }
 
 
@@ -808,60 +923,66 @@ body {
                     box-shadow: 0px 0px 38px 0px #2c2b2b8e;
 
                 }
-                
+
                 .modal-content {
                     background-color: #fff;
                     padding: 20px;
                     border-radius: 10px;
                     max-width: 400px;
                     border-radius: 8px;
-                 
+
                     margin: auto;
-                    .tabs-div{
-                        .heading{
+
+                    .tabs-div {
+                        .heading {
                             display: flex;
-                            justify-content:space-between;
+                            justify-content: space-between;
                             border-bottom: 1px solid whitesmoke;
                             padding-bottom: 10px;
                             align-items: center;
                             font-family: 'Poppins', sans-serif;
-                            h1{
+
+                            h1 {
                                 font-size: 16px;
-                                font-weight:400;
+                                font-weight: 400;
                                 color: #1A202C;
                             }
-                            .mark{
+
+                            .mark {
                                 color: #FF7B5F;
                             }
                         }
+
                         .tabs-parent {
                             padding-top: 20px;
+
                             .tabs-container {
                                 width: 100%;
                             }
-            
+
                             .tabs-header {
-                           
+
                                 border: 1px solid #FF7B5F;
                                 border-radius: 8px;
-            
+
                                 /* display: flex; */
                                 justify-content: space-between;
                                 display: grid;
-                                grid-template-columns: 1fr 1fr ;
-            
+                                grid-template-columns: 1fr 1fr;
+
                             }
 
-                            #tab0{
+                            #tab0 {
                                 background: #FF7B5F;
                                 border-radius: 7px;
-                                h1{
+
+                                h1 {
                                     color: white;
                                 }
                             }
-            
+
                             .tab {
-            
+
                                 padding: 10px 15px;
                                 cursor: pointer;
                                 border-bottom: 1px solid #FE724E;
@@ -869,7 +990,7 @@ body {
                                 background: none;
                                 text-align: center;
                                 transition: .8s;
-                               
+
                                 h1 {
                                     font-size: 16px;
                                     color: #8E97A6;
@@ -877,23 +998,25 @@ body {
                                     cursor: pointer;
                                     font-weight: 400;
                                     font-family: 'Poppins', sans-serif;
-                                   
+
                                 }
                             }
-            
-            // TAB CONTENT CSS==========
-            
+
+                            // TAB CONTENT CSS==========
+
                             .tab-content {
-                        
+
                                 padding-top: 20px;
                                 padding-bottom: 40px;
-                             .title{
-                                h1{
-                                    font-weight: 600;
-                                    font-size: 20px;
-                                    color: #323142;
+
+                                .title {
+                                    h1 {
+                                        font-weight: 600;
+                                        font-size: 20px;
+                                        color: #323142;
+                                    }
                                 }
-                             }
+
                                 .cart-card {
                                     display: flex;
                                     margin-top: 20px;
@@ -904,14 +1027,14 @@ body {
                                     border-radius: 12px;
                                     transition: .8s;
                                     cursor: pointer;
-            
+
                                     .img {
                                         position: relative;
-            
+
                                         img {
                                             width: 100%;
                                         }
-            
+
                                         .del {
                                             img {
                                                 width: 30%;
@@ -920,31 +1043,31 @@ body {
                                             }
                                         }
                                     }
-            
+
                                     .detail {
                                         .name-price {
                                             display: flex;
                                             justify-content: space-between;
                                             gap: 0 20px;
-            
+
                                             h1 {
                                                 font-size: 16px;
                                                 font-weight: 600;
                                                 font-family: 'Poppins', sans-serif;
-            
+
                                                 span {
                                                     color: #FF7B5F;
                                                     font-size: 14px;
                                                 }
                                             }
                                         }
-            
+
                                         .increment {
                                             display: flex;
                                             align-items: center;
                                             gap: 0 10px;
                                             padding: 5px 0;
-            
+
                                             button {
                                                 border: none;
                                                 background: white;
@@ -956,28 +1079,28 @@ body {
                                                 justify-content: center;
                                                 align-items: center;
                                                 cursor: pointer;
-            
+
                                                 i {
                                                     color: #8E97A6;
                                                     font-size: 14px;
                                                 }
                                             }
-            
+
                                             span {
                                                 color: #FF7B5F;
                                                 font-family: 'Poppins', sans-serif;
                                                 font-weight: 500;
-            
+
                                             }
                                         }
-            
+
                                         .on-the-way {
                                             span {
                                                 font-size: 14px;
                                                 font-family: 'Poppins', sans-serif;
                                                 color: #000000;
                                             }
-            
+
                                             p {
                                                 font-size: 12px;
                                                 color: #323142;
@@ -987,11 +1110,12 @@ body {
                                             }
                                         }
 
-                                        .time{
+                                        .time {
                                             display: flex;
                                             justify-content: end;
                                             margin-right: -40px;
-                                            p{
+
+                                            p {
                                                 color: #ACADB9;
                                                 font-size: 12px;
                                                 margin-right: -60px;
@@ -1002,19 +1126,19 @@ body {
                                         }
                                     }
                                 }
-            
+
                                 .cart-card:hover {
                                     background: #ffffff;
                                     box-shadow: 0 35px 23px -13px #ededed;
                                 }
-            
+
                             }
-            
-            
-                        }   
+
+
+                        }
                     }
                 }
-                
+
                 .close-btn {
                     cursor: pointer;
                     font-size: 20px;
