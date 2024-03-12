@@ -636,12 +636,24 @@ body {
           .modal-content {
             background-color: #fefefe;
             margin: 2% auto;
-            padding: 20px;
+            padding: 20px 40px 
+      
+        ;
             border: 1px solid #888;
-            width: 90%;
+            width: 60%;
             position: relative;
-            overflow: scroll;
+            /* overflow: scroll; */
             border-radius: 8px;
+            @include lg{
+                background-color: #fefefe;
+                margin: 2% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 90%;
+                position: relative;
+                overflow: scroll;
+                border-radius: 8px;
+            }
             
 .close-icon{
     position: absolute;

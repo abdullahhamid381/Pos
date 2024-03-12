@@ -542,12 +542,24 @@ body {
 .table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .modal-content {
   background-color: #fefefe;
   margin: 2% auto;
-  padding: 20px;
+  padding: 20px 40px;
   border: 1px solid #888;
-  width: 90%;
+  width: 60%;
   position: relative;
-  overflow: scroll;
+  /* overflow: scroll; */
   border-radius: 8px;
+}
+@media only screen and (max-width: 992px) {
+  .table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .modal-content {
+    background-color: #fefefe;
+    margin: 2% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    position: relative;
+    overflow: scroll;
+    border-radius: 8px;
+  }
 }
 .table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .modal-content .close-icon {
   position: absolute;
