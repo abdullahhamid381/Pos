@@ -647,13 +647,16 @@ gap: 20px;
             position: fixed;
             z-index: 1;
             left: 0;
-            top: 62px;
+            top: 0px;
             width: 100%;
             height: 100%;
             overflow: auto;
             background-color: rgb(0, 0, 0);
             background-color: rgba(0, 0, 0, 0.4);
             padding: 50px 0;
+            @include lg{
+                top: 62px;
+            }
           }
           
           /* Modal Content */
@@ -665,6 +668,7 @@ gap: 20px;
             width: 90%;
             position: relative;
             overflow: scroll;
+            border-radius: 8px;
             .close-icon{
                 position: absolute;
                 cursor: pointer;
