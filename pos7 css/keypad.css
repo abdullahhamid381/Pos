@@ -18,6 +18,17 @@
   place-items: center;
   margin: auto;
 }
+@media only screen and (max-width: 992px) {
+  .key-pad-parent .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 50%;
+    place-content: center;
+    place-items: center;
+    margin: auto;
+    gap: 0 20px;
+  }
+}
 .key-pad-parent .images .div .img {
   width: 80%;
   margin: auto;

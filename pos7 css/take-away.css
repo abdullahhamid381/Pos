@@ -291,6 +291,11 @@ body {
     gap: 20px 0;
   }
 }
+@media only screen and (max-width: 992px) {
+  .takeaway-pos-parent .main-section-parent .main-section-mid-parent main .search {
+    padding-top: 60px;
+  }
+}
 .takeaway-pos-parent .main-section-parent .main-section-mid-parent main .search .title {
   font-family: "Poppins", sans-serif;
   color: #1A202C;
@@ -1380,5 +1385,6 @@ body {
   }
   .takeaway-pos-parent .right .top button span {
     font-size: 2rem;
+    display: none;
   }
 }/*# sourceMappingURL=take-away.css.map */

@@ -363,7 +363,9 @@ body {
                         border-radius: 8px;
                         gap: 20px 0;
                     }
-
+                    @include lg{
+                        padding-top: 60px;
+                    }
                     .title {
                         font-family: 'Poppins', sans-serif;
                         color: #1A202C;
@@ -1655,7 +1657,9 @@ body {
         }
 
         .right .top button span {
+       
             font-size: 2rem;
+            display: none;
         }
     }
 

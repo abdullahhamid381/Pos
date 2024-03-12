@@ -14,7 +14,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 250px;
+  padding-top: 200px;
+}
+@media only screen and (max-width: 450px) {
+  .ime-screen .center {
+    padding-top: 160px;
+  }
 }
 .ime-screen .center .tilte h2 {
   color: white;
@@ -39,6 +44,15 @@
   padding-top: 150px;
   align-items: center;
   gap: 0 20px;
+}
+@media only screen and (max-width: 450px) {
+  .ime-screen .center .profile {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 85px;
+    align-items: center;
+    gap: 0 20px;
+  }
 }
 .ime-screen .center .profile .img img {
   width: 100%;

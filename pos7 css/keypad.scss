@@ -17,6 +17,15 @@ padding-top:140px;
         place-content: center;
         place-items: center;
         margin: auto;
+        @include lg{
+            display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 50%;
+    place-content: center;
+    place-items: center;
+    margin: auto;
+    gap: 0 20px;
+        }
         .div{
           
             

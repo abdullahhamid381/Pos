@@ -292,6 +292,11 @@ body {
     gap: 20px 0;
   }
 }
+@media only screen and (max-width: 992px) {
+  .dashboard-pos-parent .main-section-parent .main-section-mid-parent main .search {
+    padding-top: 60px;
+  }
+}
 .dashboard-pos-parent .main-section-parent .main-section-mid-parent main .search .title {
   font-family: "Poppins", sans-serif;
   color: #1A202C;
@@ -342,6 +347,11 @@ body {
   padding: 10px;
   border-radius: 80px;
   background: #F8F9FD;
+}
+@media only screen and (max-width: 992px) {
+  .dashboard-pos-parent .main-section-parent .main-section-mid-parent main .container .buttons {
+    width: 100%;
+  }
 }
 .dashboard-pos-parent .main-section-parent .main-section-mid-parent main .container .buttons .btn {
   background: white;
@@ -846,5 +856,6 @@ body {
   }
   .dashboard-pos-parent .right .top button span {
     font-size: 2rem;
+    display: none;
   }
 }/*# sourceMappingURL=dashboard-pos.css.map */
