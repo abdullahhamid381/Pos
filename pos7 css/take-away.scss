@@ -655,7 +655,18 @@ gap: 20px;
             border: 1px solid #888;
             width: 60%; /* Could be more or less, depending on screen size */
             
-
+            .close-icon{
+                position: absolute;
+                cursor: pointer;
+                top: 20px;
+                right: 30px;
+                font-size: 29px;
+                color: #1F2937;
+                background: whitesmoke;
+                padding: 0px 15px;
+                /* border-radius: 80px; */
+                border-radius: 8px;
+            }
             .form-parent{
 
             
