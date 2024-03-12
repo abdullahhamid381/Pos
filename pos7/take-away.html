@@ -793,6 +793,15 @@
 <!-- MODAL  BOX FORM -->
 
 <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+    const modal = document.getElementById('myModal');
+    const closeModal = document.getElementsByClassName('close-icon')[0];
+
+    closeModal.onclick = function() {
+        modal.style.display = "none";
+    }
+});
+
     // Get the modal
 var modal = document.getElementById("myModal");
 
