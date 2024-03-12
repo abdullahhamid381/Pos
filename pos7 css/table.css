@@ -529,11 +529,31 @@ body {
   padding: 20px;
   border: 1px solid #888;
   width: 60%; /* Could be more or less, depending on screen size */
+  position: relative;
+}
+.table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .modal-content .close-icon {
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 30px;
+  font-size: 29px;
+  color: #1F2937;
+  background: whitesmoke;
+  padding: 0px 15px;
+  /* border-radius: 80px; */
+  border-radius: 8px;
 }
 .table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .modal-content .form-parent .form-section {
   border-radius: 8px;
   padding: 30px 40px;
   background: white;
+}
+@media only screen and (max-width: 992px) {
+  .table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .modal-content .form-parent .form-section {
+    border-radius: 8px;
+    padding: 30px 0px;
+    background: white;
+  }
 }
 .table-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .modal-content .form-parent .form-section .title {
   padding-bottom: 20px;
