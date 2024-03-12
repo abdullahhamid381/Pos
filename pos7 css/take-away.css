@@ -353,6 +353,16 @@ body {
   border-radius: 80px;
   background: #F8F9FD;
 }
+@media only screen and (max-width: 992px) {
+  .takeaway-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .buttons {
+    display: flex;
+    gap: 0 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 80px;
+    background: #F8F9FD;
+  }
+}
 .takeaway-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .container .buttons .btn {
   background: white;
   padding: 20px 40px;
