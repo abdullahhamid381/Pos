@@ -353,6 +353,7 @@ body {
                     padding: 20px 30px;
                     gap: 0 30px;
                     align-items: center;
+                
 
                     @include laptop {
                         justify-content: center;
@@ -362,9 +363,11 @@ body {
                         margin: auto;
                         border-radius: 8px;
                         gap: 20px 0;
+                        background: none;
                     }
                     @include lg{
                         padding-top: 60px;
+                        background: none;
                     }
                     .title {
                         font-family: 'Poppins', sans-serif;

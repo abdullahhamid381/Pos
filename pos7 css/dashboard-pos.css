@@ -290,11 +290,13 @@ body {
     margin: auto;
     border-radius: 8px;
     gap: 20px 0;
+    background: none;
   }
 }
 @media only screen and (max-width: 992px) {
   .dashboard-pos-parent .main-section-parent .main-section-mid-parent main .search {
     padding-top: 60px;
+    background: none;
   }
 }
 .dashboard-pos-parent .main-section-parent .main-section-mid-parent main .search .title {
