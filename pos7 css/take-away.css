@@ -553,6 +553,7 @@ body {
   padding: 20px;
   border: 1px solid #888;
   width: 60%; /* Could be more or less, depending on screen size */
+  position: relative;
 }
 .takeaway-pos-parent .main-section-parent .main-section-mid-parent main .two-grid .coustmer-information .modal-content .close-icon {
   position: absolute;
