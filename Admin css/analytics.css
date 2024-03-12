@@ -171,16 +171,41 @@ body {
   transition: 0.8s;
   cursor: pointer;
   border-radius: 12px;
+  position: relative;
 }
 .analytics-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list i {
   color: white;
   font-size: 20px;
 }
 .analytics-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list h1 {
-  font-size: 13px;
+  font-size: 14px;
   color: #FFFFFF;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+}
+.analytics-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FF7B5F;
+  min-width: 201px;
+  z-index: 1;
+  top: 41px;
+  left: 0;
+}
+.analytics-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list .dropdown-content a {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.analytics-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list .dropdown-content a:hover {
+  background-color: rgba(242, 102, 74, 0.6156862745);
+}
+.analytics-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list:hover .dropdown-content {
+  display: block;
 }
 .analytics-dashboard-parent .aside-parent aside .top .coloumn .nav-list .list:hover {
   background: rgba(255, 122, 95, 0.862745098);
